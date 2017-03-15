@@ -4,23 +4,23 @@
   margin-top: 65px; }
 
 .isAdmin .d3-main {
-  margin-top: 315px; }
+  margin-top: 305px; }
 
 .isAdmin.hasAlert {
   margin-top: 65px; }
   .isAdmin.hasAlert .d3-main {
-    margin-top: 330px; }
+    margin-top: 320px; }
 
 .isAdmin.sp2016 .d3-navbar {
   margin-top: 85px; }
 
 .isAdmin.sp2016 .d3-main {
-  margin-top: 270px; }
+  margin-top: 260px; }
 
 .isAdmin.sp2016.hasAlert {
   margin-top: 85px; }
   .isAdmin.sp2016.hasAlert .d3-main {
-    margin-top: 270px; }
+    margin-top: 260px; }
 
 /* Alert 
 ***********************/
@@ -31,7 +31,7 @@
   top: 80px; }
 
 .hasAlert .d3-main {
-  margin-top: 330px; }
+  margin-top: 320px; }
 
 .d3-alert {
   padding: 10px 20px;

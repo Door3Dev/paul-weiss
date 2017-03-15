@@ -2,15 +2,17 @@
 
 //backgrounds
 $header-bg-color: #716f73;
-$body-bg-color: #ececec;
+$body-bg-color: #EFEFEF;
 $background-1: #fff;
 $background-2: #ececec;
+$background-3: #E8E8E8;
 
 //texts, lines
 $white: #fff;
 $black: black;
 $gray-1: #999;
 $gray-2: #333;
+$gray-3: #dcdcdc;
 $font-weight-light: 300;
 $font-weight-semibold: 600;
 $font-weight-bold: 700;
@@ -72,7 +74,6 @@ body.paulweiss{
         font-family: $font-1;
         font-weight: $font-weight-bold;
         font-size: $font-size-3;
-        letter-spacing: 2px;
         color: $blue-3; 
     }
 
@@ -311,10 +312,14 @@ body.paulweiss{
     
     /* CARDS
     ***********************************/
+    
+    .side-card-container{
+        background-color: $background-3;
+    }
+    
     .d3-card { 
         &.main-card {
             border: none;
-            border-top:2px solid $purple-1;
              
             h5 {
                 font-family: $font-1;
@@ -331,40 +336,65 @@ body.paulweiss{
         }
         &.side-card {
             margin-bottom: 20px;
-            background-color: white;
+            background-color: $background-3;
             color: $gray-2;
-            border: 1px solid $gray-1;
-            margin-bottom: -1px;
-            padding: 20px;
+            //border: 1px solid $gray-1;
+            margin-bottom: 0px;
+            padding: 30px 0;
+            border-bottom:1px solid $gray-3;
+            
+            h5{
+                line-height: 18px;
+            }
             
             .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover{
                 color: $gray-2;
             }
+            
+            .d3-sharepoint-user-icon{
+                margin:0 10px 0 0;
+            }
         }
         
         .bottom{
-            float:none;
-            margin-top: 20px;
-            text-align: center;
+            display: none;
+//            float:none;
+//            margin-top: 20px;
+//            text-align: center;
+//            
+//            font-family: $font-1;
+//            font-weight: $font-weight-bold;
+//            font-size: $font-size-2;
+//            letter-spacing: 2px;
+//            color: $red-1; 
+//            
+//            .more{
+//                text-transform: capitalize;
+//                color: $red-1;
+//                
+//                &:before, &:after{
+//                    content: "|";
+//                    margin:0 5px;
+//                }
+//                
+//                &:hover{
+//                        text-decoration: none;
+//                    }
+//            }
+        }
+        
+        .read-more-small-button{
+            color: $red-1;
             
-            font-family: $font-1;
-            font-weight: $font-weight-bold;
-            font-size: $font-size-2;
-            letter-spacing: 2px;
-            color: $blue-3; 
-            
-            .more{
-                text-transform: capitalize;
-                color: $blue-2;
-                
-                &:before, &:after{
-                    content: "|";
-                    margin:0 5px;
-                }
-                
-                &:hover{
-                        text-decoration: none;
-                    }
+            &:after{
+                content: "\f101";
+                font-family: "FontAwesome";
+                margin-left: 5px;
+                padding: 0;
+                font-size: 11px;
+                background-color: transparent;
+                color: $red-1;
+                line-height: 14px;
             }
         }
     }
@@ -375,12 +405,12 @@ body.paulweiss{
     //side: new hires
     .d3-new-hires-tab{
         em{
-            color: $blue-3;
+            color: $red-1;
         }
         li{
             &.active{
                 a{
-                    background-color: $blue-3;
+                    background-color: $red-1;
                 }
             }
         }
@@ -390,7 +420,7 @@ body.paulweiss{
     .d3-calendar{ 
         .calendar-list {
             .calendar-date-inner{
-                background-color: $blue-2;
+                background-color: $header-bg-color;
                 padding: 2px 5px;
                 color: $white;
                 
@@ -421,21 +451,21 @@ body.paulweiss{
     
     //main: kendo components
     .k-draghandle.k-state-selected:hover, .k-ghost-splitbar-horizontal, .k-ghost-splitbar-vertical, .k-list>.k-state-highlight, .k-list>.k-state-selected, .k-marquee-color, .k-panel>.k-state-selected, .k-scheduler .k-scheduler-toolbar .k-state-selected, .k-scheduler .k-today.k-state-selected, .k-state-selected, .k-state-selected:link, .k-state-selected:visited{
-        background-color: $blue-2;
-        border-color: $blue-2;
+        background-color: $red-1;
+        border-color: $red-1;
     }
     .k-calendar td.k-state-selected.k-state-hover{
-        background-color: $blue-3; 
-        border-color: $blue-3;
+        background-color: $red-1; 
+        border-color: $red-1;
     }
     .k-button.k-state-active, .k-button:active{
-        background-color: $blue-3;
-        border-color: $blue-3;
+        background-color: $red-1;
+        border-color: $red-1;
     }
     .k-link{
         &.k-state-selected{
-            background-color: $blue-3;
-            border-color: $blue-3;
+            background-color: $red-1;
+            border-color: $red-1;
         }
     }
     
@@ -564,14 +594,6 @@ body.paulweiss{
     .read-more-button{
         background-color: $blue-2;
         &:hover{
-            background-color: $blue-3;
-        }
-    }
-    
-    .read-more-small-button{
-        display:none;
-        
-        &:after{
             background-color: $blue-3;
         }
     }

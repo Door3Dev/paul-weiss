@@ -4,7 +4,7 @@ body.paulweiss {
   font-family: "Montserrat";
   font-size: 15px;
   color: #333;
-  background-color: #ececec;
+  background-color: #EFEFEF;
   /***********************************/
   /* ELEMENTS / SECTIONS
     /***********************************/
@@ -55,7 +55,6 @@ body.paulweiss {
     font-family: "Georgia";
     font-weight: 700;
     font-size: 14px;
-    letter-spacing: 2px;
     color: #1976d2; }
   body.paulweiss .heading-link-text, body.paulweiss .date-text,
   body.paulweiss .carousel-content .date {
@@ -144,13 +143,13 @@ body.paulweiss {
     background-color: #716f73;
     border: none; }
     body.paulweiss .d3-navbar .today {
-      color: #ececec;
+      color: #EFEFEF;
       font-size: 12px;
       min-height: 12px;
       margin-bottom: 10px; }
       body.paulweiss .d3-navbar .today .d3-weather-header {
         font-size: 12px;
-        color: #ececec; }
+        color: #EFEFEF; }
         body.paulweiss .d3-navbar .today .d3-weather-header p {
           display: inline; }
       body.paulweiss .d3-navbar .today #currenttime {
@@ -161,7 +160,7 @@ body.paulweiss {
       padding-top: 12px; }
     body.paulweiss .d3-navbar .search-box input {
       border-color: #999;
-      background-color: #ececec;
+      background-color: #EFEFEF;
       height: 40px;
       font-size: 11pt; }
     body.paulweiss .d3-navbar .search-box .mag-lense {
@@ -194,16 +193,17 @@ body.paulweiss {
             body.paulweiss .d3-navbar .d3-navmenu-wrapper .d3-navmenu .nav > li a {
               color: #333;
               line-height: normal;
-              border-right: 1px solid #ececec; }
+              border-right: 1px solid #EFEFEF; }
           body.paulweiss .d3-navbar .d3-navmenu-wrapper .d3-navmenu .nav .dropdown .dropdown-menu h5 {
             font-size: 21px; }
           body.paulweiss .d3-navbar .d3-navmenu-wrapper .d3-navmenu .nav .dropdown .dropdown-menu li em {
             color: #1976d2; }
           body.paulweiss .d3-navbar .d3-navmenu-wrapper .d3-navmenu .nav .dropdown .dropdown-menu li a {
             border-bottom: none; }
+  body.paulweiss .side-card-container {
+    background-color: #E8E8E8; }
   body.paulweiss .d3-card.main-card {
-    border: none;
-    border-top: 2px solid #3a4d6d; }
+    border: none; }
     body.paulweiss .d3-card.main-card h5 {
       font-family: "Georgia";
       font-weight: 700;
@@ -215,36 +215,36 @@ body.paulweiss {
         font-size: 11px; }
   body.paulweiss .d3-card.side-card {
     margin-bottom: 20px;
-    background-color: white;
+    background-color: #E8E8E8;
     color: #333;
-    border: 1px solid #999;
-    margin-bottom: -1px;
-    padding: 20px; }
+    margin-bottom: 0px;
+    padding: 30px 0;
+    border-bottom: 1px solid #dcdcdc; }
+    body.paulweiss .d3-card.side-card h5 {
+      line-height: 18px; }
     body.paulweiss .d3-card.side-card .list-group-item.active, body.paulweiss .d3-card.side-card .list-group-item.active:focus, body.paulweiss .d3-card.side-card .list-group-item.active:hover {
       color: #333; }
+    body.paulweiss .d3-card.side-card .d3-sharepoint-user-icon {
+      margin: 0 10px 0 0; }
   body.paulweiss .d3-card .bottom {
-    float: none;
-    margin-top: 20px;
-    text-align: center;
-    font-family: "Georgia";
-    font-weight: 700;
-    font-size: 12px;
-    letter-spacing: 2px;
-    color: #1976d2; }
-    body.paulweiss .d3-card .bottom .more {
-      text-transform: capitalize;
-      color: #2196f3; }
-      body.paulweiss .d3-card .bottom .more:before, body.paulweiss .d3-card .bottom .more:after {
-        content: "|";
-        margin: 0 5px; }
-      body.paulweiss .d3-card .bottom .more:hover {
-        text-decoration: none; }
+    display: none; }
+  body.paulweiss .d3-card .read-more-small-button {
+    color: #c13f28; }
+    body.paulweiss .d3-card .read-more-small-button:after {
+      content: "\f101";
+      font-family: "FontAwesome";
+      margin-left: 5px;
+      padding: 0;
+      font-size: 11px;
+      background-color: transparent;
+      color: #c13f28;
+      line-height: 14px; }
   body.paulweiss .d3-new-hires-tab em {
-    color: #1976d2; }
+    color: #c13f28; }
   body.paulweiss .d3-new-hires-tab li.active a {
-    background-color: #1976d2; }
+    background-color: #c13f28; }
   body.paulweiss .d3-calendar .calendar-list .calendar-date-inner {
-    background-color: #2196f3;
+    background-color: #716f73;
     padding: 2px 5px;
     color: #fff; }
     body.paulweiss .d3-calendar .calendar-list .calendar-date-inner:hover {
@@ -258,17 +258,17 @@ body.paulweiss {
     body.paulweiss .office-tabs li a {
       border: 1px solid transparent; }
   body.paulweiss .k-draghandle.k-state-selected:hover, body.paulweiss .k-ghost-splitbar-horizontal, body.paulweiss .k-ghost-splitbar-vertical, body.paulweiss .k-list > .k-state-highlight, body.paulweiss .k-list > .k-state-selected, body.paulweiss .k-marquee-color, body.paulweiss .k-panel > .k-state-selected, body.paulweiss .k-scheduler .k-scheduler-toolbar .k-state-selected, body.paulweiss .k-scheduler .k-today.k-state-selected, body.paulweiss .k-state-selected, body.paulweiss .k-state-selected:link, body.paulweiss .k-state-selected:visited {
-    background-color: #2196f3;
-    border-color: #2196f3; }
+    background-color: #c13f28;
+    border-color: #c13f28; }
   body.paulweiss .k-calendar td.k-state-selected.k-state-hover {
-    background-color: #1976d2;
-    border-color: #1976d2; }
+    background-color: #c13f28;
+    border-color: #c13f28; }
   body.paulweiss .k-button.k-state-active, body.paulweiss .k-button:active {
-    background-color: #1976d2;
-    border-color: #1976d2; }
+    background-color: #c13f28;
+    border-color: #c13f28; }
   body.paulweiss .k-link.k-state-selected {
-    background-color: #1976d2;
-    border-color: #1976d2; }
+    background-color: #c13f28;
+    border-color: #c13f28; }
   body.paulweiss .d3-tabs .nav-tabs {
     border: none;
     border-bottom: 1px solid #999; }
@@ -307,10 +307,6 @@ body.paulweiss {
   body.paulweiss .read-more-button {
     background-color: #2196f3; }
     body.paulweiss .read-more-button:hover {
-      background-color: #1976d2; }
-  body.paulweiss .read-more-small-button {
-    display: none; }
-    body.paulweiss .read-more-small-button:after {
       background-color: #1976d2; }
   body.paulweiss footer {
     background-color: #716f73; }

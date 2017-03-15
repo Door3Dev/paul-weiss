@@ -56,17 +56,6 @@
         border: none;
         cursor: pointer;
         margin-top: -1px;
-
-        &:after {
-            content: "\f054";
-            font-family:"FontAwesome";
-            border-radius: 12px;
-            background-color: #FF4500;
-            color: #fff;
-            margin-left: 5px;
-                font-size: 11px;
-            padding: 3px 2px 2px 5px;
-        }
     }
     .read-more-button {
         width: 120px;

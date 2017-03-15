@@ -25,8 +25,8 @@
 .ms-dialog .d3-main {
   margin-top: 0 !important; }
 
-.ms-dlgContent, .ms-dlgOverlay {
-  z-index: 9999999; }
+.ms-dlgContent {
+  z-index: 9999999 !important; }
 
 /* Sharepoint Overrides */
 /*Boostrap Overrides */

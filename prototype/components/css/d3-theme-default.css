@@ -49,6 +49,16 @@ h1, h2, h3, h4, h5, h6 {
   .d3-card.side-card .list-group-item.active, .d3-card.side-card .list-group-item.active:focus, .d3-card.side-card .list-group-item.active:hover {
     color: white; }
 
+.d3-card .read-more-small-button:after {
+  content: "\f054";
+  font-family: "FontAwesome";
+  border-radius: 12px;
+  background-color: #FF4500;
+  color: #fff;
+  margin-left: 5px;
+  font-size: 11px;
+  padding: 3px 2px 2px 5px; }
+
 .d3-card.d3-topclients td {
   border-top: none; }
   .d3-card.d3-topclients td:nth-child(2) {

@@ -2117,7 +2117,13 @@
                                         </div> <!--LEFT COLUMN END-->
 
                                         <!--RIGHT COLUMN START-->
-                                        <div class="col-sm-3">
+                                        <style>
+                                            .side-container{
+                                                background: green;
+                                            }
+                                        </style>
+                                        
+                                        <div class="col-sm-3 side-card-container">
                                             <div class="d3-card side-card d3-key-contacts">
                                                 <div class="read-more-small-button white-color">More</div>
                                                 <h5>KEY CONTACTS</h5>
@@ -3121,36 +3127,6 @@
     
     <script src="js/d3.dom.js" type="text/javascript">
     //<![CDATA[//]]>
-    </script>
-    
-    <script>
-        $(function(){
-            //add class to body if viewing as admin
-            if($( "#ms-designer-ribbon" ).length){
-                $("body").addClass("isAdmin");
-            }
-            
-            //shrink header on-scroll
-            $(window).scroll(function() {
-              if ($(document).scrollTop() > 100) {
-                $('.d3-navbar').addClass('shrink');
-              } else {
-                $('.d3-navbar').removeClass('shrink');
-              }
-            });
-            
-            
-            //close alert header
-            $(".d3-alert .close-button").on("click", () => {
-                $("body").removeClass("hasAlert");
-            });
-            
-            //show current time
-            var time = moment(new Date()).format("dddd, MMMM DD, YYYY");
-            $("#currenttime").html(time);
-            
-        });
-    
     </script>
     
 </body>

@@ -306,6 +306,31 @@ $(document).ready(function() {
     D3SPCoreDOM.UI.SetCityWeather();
     D3SPCoreDOM.UI.SetGradientTables();
     D3SPCoreDOM.UI.SetCharts();
+    
+    
+    //add class to body if viewing as admin
+    if($( "#ms-designer-ribbon" ).length){
+        $("body").addClass("isAdmin");
+    }
+
+    //shrink header on-scroll
+    $(window).scroll(function() {
+      if ($(document).scrollTop() > 100) {
+        $('.d3-navbar').addClass('shrink');
+      } else {
+        $('.d3-navbar').removeClass('shrink');
+      }
+    });
+
+
+    //close alert header
+    $(".d3-alert .close-button").on("click", () => {
+        $("body").removeClass("hasAlert");
+    });
+
+    //show current time
+    var time = moment(new Date()).format("dddd, MMMM DD, YYYY");
+    $("#currenttime").html(time);
      
     
 });
