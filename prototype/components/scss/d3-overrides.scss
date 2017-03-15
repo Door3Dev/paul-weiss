@@ -53,7 +53,7 @@
     }
 }
 .ms-dlgContent, .ms-dlgOverlay {
-    margin-top: $sp-modal-margin-top; 
+    z-index: 9999999; 
 }
 
 
