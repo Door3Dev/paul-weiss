@@ -247,8 +247,11 @@ body.paulweiss{
             .mag-lense{
                 background-color: $red-1;
                 width:40px;
-                margin-top: -40px;
-                margin-right: 0;
+                right: 0px;
+                margin-right: 15px;
+                margin-top:-40px;
+                position: absolute;
+                
                 &:hover{
                     background-color: $red-1 !important;
                 }
@@ -604,7 +607,7 @@ body.paulweiss{
     /* FOOTER
     ***********************************/
     footer{
-        background-color: $purple-1;
+        background-color: $header-bg-color;
     
         .footer-clock {
             //todo

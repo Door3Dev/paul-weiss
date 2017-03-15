@@ -167,8 +167,10 @@ body.paulweiss {
     body.paulweiss .d3-navbar .search-box .mag-lense {
       background-color: #c13f28;
       width: 40px;
+      right: 0px;
+      margin-right: 15px;
       margin-top: -40px;
-      margin-right: 0; }
+      position: absolute; }
       body.paulweiss .d3-navbar .search-box .mag-lense:hover {
         background-color: #c13f28 !important; }
     body.paulweiss .d3-navbar .d3-navmenu-wrapper {
@@ -311,6 +313,6 @@ body.paulweiss {
     body.paulweiss .read-more-small-button:after {
       background-color: #1976d2; }
   body.paulweiss footer {
-    background-color: #3a4d6d; }
+    background-color: #716f73; }
 
 /*# sourceMappingURL=d3-theme-paulweiss.css.map */
