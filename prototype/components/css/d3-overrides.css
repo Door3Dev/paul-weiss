@@ -13,6 +13,9 @@
     height: 30px !important;
     width: 30px !important; }
 
+.ms-dialog header, .ms-dialog footer {
+  display: none; }
+
 .ms-dialog .ms-dlgCloseBtn > span {
   padding: 0 !important; }
 

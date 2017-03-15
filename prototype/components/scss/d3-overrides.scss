@@ -36,6 +36,10 @@
 
 // dialog
 .ms-dialog{
+    header, footer{
+        display:none;
+    }
+    
     .ms-dlgCloseBtn > span{
         padding: 0 !important;
     }
@@ -51,6 +55,13 @@
 .ms-dlgContent, .ms-dlgOverlay {
     margin-top: -$content-margin-top; 
 }
+
+.ms-dlgContent, .ms-dlgOverlay {
+    //margin-top: - + $content-margin-top; 
+}
+
+
+
 
 /* Sharepoint Overrides */
 

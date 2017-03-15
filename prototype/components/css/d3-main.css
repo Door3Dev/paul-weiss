@@ -33,18 +33,4 @@
 .d3-main {
   margin-top: 240px; }
 
-/* HIDE HEADER AND FOOTER IN SHAREPOINT MODAL
-*******************************/
-.ms-dialog header, .ms-dialog footer {
-  display: none; }
-
-.ms-dialog .d3-main {
-  margin-top: 0; }
-
-.ms-dialog .ms-dlgCloseBtn > span {
-  padding: 0 !important; }
-
-.ms-dlgContent, .ms-dlgOverlay {
-  margin-top: -240px; }
-
 /*# sourceMappingURL=d3-main.css.map */

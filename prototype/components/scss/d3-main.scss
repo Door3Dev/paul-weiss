@@ -40,22 +40,3 @@
 .d3-main {
     margin-top: $content-margin-top;
 }
-
-/* HIDE HEADER AND FOOTER IN SHAREPOINT MODAL
-*******************************/
-.ms-dialog{
-    header, footer{
-        display:none;
-    }
-    
-    .d3-main{
-        margin-top:0;
-    }
-    
-    .ms-dlgCloseBtn > span{
-        padding: 0 !important;
-    }
-}
-.ms-dlgContent, .ms-dlgOverlay {
-    margin-top: - + $content-margin-top; 
-}
