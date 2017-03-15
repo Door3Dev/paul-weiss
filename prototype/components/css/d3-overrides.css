@@ -25,9 +25,6 @@
 .ms-dialog .d3-main {
   margin-top: 0 !important; }
 
-.ms-dlgContent, .ms-dlgOverlay {
-  margin-top: -240px; }
-
 /* Sharepoint Overrides */
 /*Boostrap Overrides */
 .fade {
