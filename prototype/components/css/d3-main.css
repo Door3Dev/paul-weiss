@@ -1,0 +1,50 @@
+/* BOOTSTRAP 
+*******************************/
+.gutter-10.row {
+  margin-right: -5px;
+  margin-left: -5px; }
+
+.gutter-10 > [class^="col-"], .gutter-10 > [class^=" col-"] {
+  padding-right: 5px;
+  padding-left: 5px; }
+
+/* VERTICAL ALIGN CONTENT
+*******************************/
+.valign-wrapper {
+  display: table; }
+  .valign-wrapper .valign {
+    display: table-cell;
+    vertical-align: middle; }
+
+/* BREADCRUMBS
+*******************************/
+.d3-breadcrumb {
+  background-color: none; }
+
+.d3-breadcrumb a {
+  color: black;
+  text-decoration: none; }
+
+.d3-breadcrumb a:hover {
+  text-decoration: underline; }
+
+/* MAIN CONTENT
+*******************************/
+.d3-main {
+  margin-top: 240px; }
+
+/* HIDE HEADER AND FOOTER IN SHAREPOINT MODAL
+*******************************/
+.ms-dialog header, .ms-dialog footer {
+  display: none; }
+
+.ms-dialog .d3-main {
+  margin-top: 0; }
+
+.ms-dialog .ms-dlgCloseBtn > span {
+  padding: 0 !important; }
+
+.ms-dlgContent, .ms-dlgOverlay {
+  margin-top: -240px; }
+
+/*# sourceMappingURL=d3-main.css.map */

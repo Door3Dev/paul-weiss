@@ -1,0 +1,278 @@
+body.smith {
+  /* TYPOGRAPHY (in the order of the "Style Tile" page)
+    ***********************************/
+  font-family: "Montserrat";
+  font-size: 15px;
+  color: #333;
+  background-color: #fff;
+  /***********************************/
+  /* ELEMENTS / SECTIONS
+    /***********************************/
+  /* ALERT
+    ***********************************/
+  /* HEADER
+    ***********************************/
+  /* CARDS
+    ***********************************/
+  /* COMPONENTS
+    ***********************************/
+  /* TABS
+    ***********************************/
+  /* UI-SEARCH
+    ***********************************/
+  /* UI-NAVIGATION
+    ***********************************/
+  /* UI-SLIDE
+    ***********************************/
+  /* UI-PLAY
+    ***********************************/
+  /* UI-MENU
+    ***********************************/
+  /* UI-BUTTONS
+    ***********************************/
+  /* UI-LIST
+    ***********************************/
+  /* FOOTER
+    ***********************************/ }
+
+@font-face {
+  body.smith {
+    font-family: "Montserrat"; } }
+  body.smith h1, body.smith h2, body.smith h3, body.smith h4, body.smith h5, body.smith h6 {
+    font-family: Georgia; }
+  body.smith .heading-text,
+  body.smith .d3-card.main-card h5,
+  body.smith .d3-tabs .tab-content h5 {
+    font-family: "Georgia";
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: 2px;
+    color: #333;
+    margin-top: 0; }
+  body.smith .view-all-text, body.smith .more-text,
+  body.smith .read-more-small-button,
+  body.smith .d3-card .bottom .more {
+    font-family: "Georgia";
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #1976d2; }
+  body.smith .heading-link-text, body.smith .date-text,
+  body.smith .carousel-content .date {
+    font-family: "Georgia";
+    font-weight: 700;
+    font-size: 15px;
+    color: #2196f3; }
+  body.smith .mobile-heading-link-text {
+    font-family: "Georgia";
+    font-weight: 700;
+    font-size: 17px;
+    color: #2196f3; }
+  body.smith .unselected-text, body.smith .search-box-text {
+    font-family: "Georgia";
+    font-size: 17px;
+    letter-spacing: 2px;
+    color: #999; }
+  body.smith .new-hire-name-text {
+    font-family: "Georgia";
+    font-size: 14px;
+    color: #333; }
+  body.smith .page-heading-text,
+  body.smith .d3-main h1 {
+    font-family: "Georgia";
+    font-size: 51px;
+    color: #3a4d6d; }
+  body.smith .title-text,
+  body.smith .news-header {
+    font-family: "Georgia";
+    font-size: 32px;
+    color: #333; }
+  body.smith .bio-position-text {
+    font-family: "Georgia";
+    font-weight: 700;
+    font-size: 21px;
+    color: #333; }
+  body.smith .footer-copyright-text {
+    font-family: "Georgia";
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #fff;
+    background-color: black; }
+  body.smith .footer-copyright-text-mobile {
+    font-family: "Georgia";
+    font-size: 17px;
+    color: #fff;
+    background-color: black; }
+  body.smith .body-text {
+    /* the first style on top */ }
+  body.smith .navigation-text, body.smith .advanced-search-text,
+  body.smith .d3-navbar .search-box input[type="text"] {
+    font-family: "Montserrat";
+    font-size: 12px;
+    color: #333; }
+  body.smith .hi-user-text, body.smith .advanced-search-text {
+    font-family: "Montserrat";
+    font-size: 11px;
+    color: #333; }
+  body.smith .graph-text, body.smith .higher-navigation-text {
+    font-family: "Montserrat";
+    font-size: 14px;
+    color: #999; }
+  body.smith .higher-navigation-current-page-text {
+    font-family: "Montserrat";
+    font-size: 14px;
+    color: #3a4d6d; }
+  body.smith .bio-current-workplace-text {
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-size: 15px;
+    color: #333; }
+  body.smith .subcategory, body.smith mobile-contact {
+    font-family: "Montserrat";
+    font-size: 12px;
+    color: #999; }
+  body.smith .activity-date-text, body.smith engaged-industry-text {
+    font-family: "Georgia";
+    font-size: 14px;
+    font-weight: 600;
+    color: #333; }
+  body.smith .d3-alert {
+    background-color: #1976d2; }
+    body.smith .d3-alert a {
+      color: #99caf9; }
+  body.smith .d3-navbar {
+    background-color: #fff; }
+    body.smith .d3-navbar .search-box input {
+      border-color: #999; }
+    body.smith .d3-navbar .search-box .mag-lense {
+      background-color: #2055ae; }
+      body.smith .d3-navbar .search-box .mag-lense:hover {
+        background-color: #0770e4 !important; }
+    body.smith .d3-navbar .d3-navmenu {
+      border: none;
+      border-bottom: 1px solid #999; }
+      body.smith .d3-navbar .d3-navmenu .nav {
+        border: none; }
+        body.smith .d3-navbar .d3-navmenu .nav > li {
+          border: none; }
+          body.smith .d3-navbar .d3-navmenu .nav > li.active a {
+            border-bottom: 5px solid #333;
+            background-color: transparent; }
+          body.smith .d3-navbar .d3-navmenu .nav > li:last-child {
+            color: #333;
+            border-bottom: 1px solid transparent; }
+            body.smith .d3-navbar .d3-navmenu .nav > li:last-child:hover {
+              border-bottom: 1px solid transparent; }
+          body.smith .d3-navbar .d3-navmenu .nav > li a {
+            color: #333;
+            line-height: normal;
+            border-bottom: 5px solid transparent; }
+            body.smith .d3-navbar .d3-navmenu .nav > li a:hover {
+              border-bottom: 5px solid #333; }
+        body.smith .d3-navbar .d3-navmenu .nav .dropdown .dropdown-menu h5 {
+          font-size: 21px; }
+        body.smith .d3-navbar .d3-navmenu .nav .dropdown .dropdown-menu li em {
+          color: #1976d2; }
+        body.smith .d3-navbar .d3-navmenu .nav .dropdown .dropdown-menu li a {
+          border-bottom: none; }
+    body.smith .d3-navbar .d3-weather-header {
+      color: #999; }
+  body.smith .d3-card.main-card {
+    border: none;
+    border-top: 2px solid #3a4d6d; }
+    body.smith .d3-card.main-card h5 {
+      font-family: "Georgia";
+      font-weight: 700;
+      font-size: 17px;
+      letter-spacing: 2px;
+      color: #333;
+      margin-top: 0; }
+      body.smith .d3-card.main-card h5 small {
+        font-size: 11px; }
+  body.smith .d3-card.side-card {
+    margin-bottom: 20px;
+    background-color: white;
+    color: #333;
+    border: 1px solid #999;
+    margin-bottom: -1px;
+    padding: 20px; }
+    body.smith .d3-card.side-card .list-group-item.active, body.smith .d3-card.side-card .list-group-item.active:focus, body.smith .d3-card.side-card .list-group-item.active:hover {
+      color: #333; }
+  body.smith .d3-card .bottom {
+    float: none;
+    margin-top: 20px;
+    text-align: center;
+    font-family: "Georgia";
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #1976d2; }
+    body.smith .d3-card .bottom .more {
+      text-transform: capitalize;
+      color: #2196f3; }
+      body.smith .d3-card .bottom .more:before, body.smith .d3-card .bottom .more:after {
+        content: "|";
+        margin: 0 5px; }
+      body.smith .d3-card .bottom .more:hover {
+        text-decoration: none; }
+  body.smith .d3-new-hires-tab em {
+    color: #1976d2; }
+  body.smith .d3-new-hires-tab li.active a {
+    background-color: #1976d2; }
+  body.smith .d3-calendar .calendar-list .calendar-date-inner {
+    background-color: #2196f3;
+    padding: 2px 5px;
+    color: #fff; }
+    body.smith .d3-calendar .calendar-list .calendar-date-inner:hover {
+      background-color: #99caf9; }
+  body.smith .office-tabs li {
+    border-bottom-color: #999; }
+    body.smith .office-tabs li.active a {
+      background-color: transparent;
+      border: 1px solid #999;
+      border-bottom: none; }
+    body.smith .office-tabs li a {
+      border: 1px solid transparent; }
+  body.smith .k-draghandle.k-state-selected:hover, body.smith .k-ghost-splitbar-horizontal, body.smith .k-ghost-splitbar-vertical, body.smith .k-list > .k-state-highlight, body.smith .k-list > .k-state-selected, body.smith .k-marquee-color, body.smith .k-panel > .k-state-selected, body.smith .k-scheduler .k-scheduler-toolbar .k-state-selected, body.smith .k-scheduler .k-today.k-state-selected, body.smith .k-state-selected, body.smith .k-state-selected:link, body.smith .k-state-selected:visited {
+    background-color: #2196f3;
+    border-color: #2196f3; }
+  body.smith .k-calendar td.k-state-selected.k-state-hover {
+    background-color: #1976d2;
+    border-color: #1976d2; }
+  body.smith .k-button.k-state-active, body.smith .k-button:active {
+    background-color: #1976d2;
+    border-color: #1976d2; }
+  body.smith .k-link.k-state-selected {
+    background-color: #1976d2;
+    border-color: #1976d2; }
+  body.smith .d3-tabs .nav-tabs {
+    border: none;
+    border-bottom: 1px solid #999; }
+    body.smith .d3-tabs .nav-tabs li {
+      background-color: #f8f8f8; }
+      body.smith .d3-tabs .nav-tabs li.active {
+        background-color: transparent; }
+        body.smith .d3-tabs .nav-tabs li.active a {
+          border: none;
+          border-top: 2px solid #3a4d6d;
+          background-color: white;
+          color: #333;
+          border-radius: 0; }
+          body.smith .d3-tabs .nav-tabs li.active a:hover {
+            background-color: #fff; }
+      body.smith .d3-tabs .nav-tabs li a {
+        color: #333;
+        margin: 0;
+        border-bottom: 1px solid #999; }
+  body.smith .read-more-button {
+    background-color: #2196f3; }
+    body.smith .read-more-button:hover {
+      background-color: #1976d2; }
+  body.smith .read-more-small-button {
+    display: none; }
+    body.smith .read-more-small-button:after {
+      background-color: #1976d2; }
+  body.smith footer {
+    background-color: #3a4d6d; }
+
+/*# sourceMappingURL=d3-theme-smith.css.map */

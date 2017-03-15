@@ -1,0 +1,543 @@
+//backgrounds
+$background-1: #fff;
+$background-2: #f8f8f8;
+
+//texts, lines
+$white: #fff;
+$black: black;
+$gray-1: #999;
+$gray-2: #333;
+$font-weight-light: 300;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+//links, graphs
+$blue-1: #99caf9;
+$blue-2: #2196f3;
+$blue-3: #1976d2;
+$blue-4: #0770e4;
+$blue-5: #2055ae;
+$purple-1: #3a4d6d;
+
+//fonts
+$font-1: "Georgia";
+$font-2: "Montserrat"; //free proxima alternative
+
+//font sizes
+$font-size-1: 11px;
+$font-size-2: 12px;
+$font-size-3: 14px;
+$font-size-4: 15px;
+$font-size-5: 17px;
+$font-size-6: 21px;
+$font-size-7: 32px;
+$font-size-8: 51px;
+
+
+body.smith{
+    
+    /* TYPOGRAPHY (in the order of the "Style Tile" page)
+    ***********************************/
+    @font-face {
+        font-family: $font-2;
+    }
+    
+    font-family: $font-2;
+    font-size: $font-size-4;
+    color: $gray-2; 
+    background-color: $white;
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-family: Georgia;
+    }
+    
+    .heading-text,
+    .d3-card.main-card h5,
+    .d3-tabs .tab-content h5{
+                font-family: $font-1;
+                font-weight: $font-weight-bold;
+                font-size: $font-size-5;
+                letter-spacing: 2px;
+                color: $gray-2;
+                margin-top:0;
+    }
+    
+    .view-all-text, .more-text,
+    .read-more-small-button,
+    .d3-card .bottom .more{
+        font-family: $font-1;
+        font-weight: $font-weight-bold;
+        font-size: $font-size-3;
+        letter-spacing: 2px;
+        color: $blue-3; 
+    }
+
+    .heading-link-text, .date-text,
+    .carousel-content .date{
+        font-family: $font-1;
+        font-weight: $font-weight-bold;
+        font-size: $font-size-4;
+        color: $blue-2;
+    }
+    
+    .mobile-heading-link-text{
+        font-family: $font-1;
+        font-weight: $font-weight-bold;
+        font-size: $font-size-5;
+        color: $blue-2;
+    }
+
+    .unselected-text, .search-box-text{
+        font-family: $font-1;
+        font-size: $font-size-5;
+        letter-spacing: 2px;
+        color: $gray-1; 
+    }
+    
+    .new-hire-name-text{
+        font-family: $font-1;
+        font-size: $font-size-3;
+        color: $gray-2;
+    }
+
+    .page-heading-text,
+    .d3-main h1{
+        font-family: $font-1;
+        font-size: $font-size-8;
+        color: $purple-1;   
+    }
+
+    .title-text,
+    .news-header{
+        font-family: $font-1;
+        font-size: $font-size-7;
+        color: $gray-2;
+    }
+
+    .bio-position-text{
+        font-family: $font-1;
+        font-weight: $font-weight-bold;
+        font-size: $font-size-6;
+        color: $gray-2;
+    }
+
+    .footer-copyright-text{
+        font-family: $font-1;
+        font-size: $font-size-4;
+        letter-spacing: 1px;
+        color: $white; 
+        background-color: $black;
+    }
+
+    .footer-copyright-text-mobile{
+        font-family: $font-1;
+        font-size: $font-size-5;
+        color: $white;
+        background-color: $black;
+    }
+
+    .body-text {
+        /* the first style on top */
+    }
+
+    .navigation-text, .advanced-search-text,
+    .d3-navbar .search-box input[type="text"]
+    {
+        font-family: $font-2;
+        font-size: $font-size-2;
+        color: $gray-2; 
+    }
+    
+    .hi-user-text, .advanced-search-text {
+        font-family: $font-2;
+        font-size: $font-size-1;
+        color: $gray-2; 
+    }
+    
+    .graph-text, .higher-navigation-text {
+        font-family: $font-2;
+        font-size: $font-size-3;
+        color: $gray-1;   
+    }
+
+    .higher-navigation-current-page-text{
+        font-family: $font-2;
+        font-size: $font-size-3;
+        color: $purple-1; 
+    }
+    
+    .bio-current-workplace-text{
+        font-family: $font-2;
+        font-weight: $font-weight-light;
+        font-size: $font-size-4;
+        color: $gray-2;
+    }
+
+    .subcategory, mobile-contact{
+        font-family: $font-2;
+        font-size: $font-size-2;
+        color: $gray-1; 
+    }
+
+    .activity-date-text, engaged-industry-text {
+        font-family: $font-1;
+        font-size: $font-size-3;
+        font-weight: $font-weight-semibold;
+        color: $gray-2; 
+    }
+    
+    /***********************************/ 
+    /* ELEMENTS / SECTIONS
+    /***********************************/
+    
+    
+    /* ALERT
+    ***********************************/  
+    .d3-alert{
+        background-color: $blue-3;
+        
+        a{ color: $blue-1; }
+    }
+    
+
+    /* HEADER
+    ***********************************/
+    
+    .d3-navbar{
+        background-color: $white;
+        .search-box{ 
+            input{
+                border-color: $gray-1;
+            }
+            .mag-lense{
+                background-color: $blue-5;
+                
+                &:hover{
+                    background-color: $blue-4 !important;
+                }
+            }
+        }
+        .d3-navmenu{
+            border:none;
+            border-bottom: 1px solid $gray-1;
+            .nav {
+                border:none;
+                &>li{
+                    border:none;
+                    
+                    &.active{
+                        a{
+                            border-bottom: 5px solid $gray-2;
+                            background-color: transparent;
+                        }
+                    }
+                    
+                    &:last-child{
+                        color: $gray-2;
+                        border-bottom: 1px solid transparent;
+                        
+                        &:hover{
+                            border-bottom: 1px solid transparent;
+                        }
+                    }
+                    
+                    a{
+                        color: $gray-2;
+                        line-height: normal;  
+                        border-bottom: 5px solid transparent;
+                        
+                        &:hover{
+                            border-bottom: 5px solid $gray-2;
+                        }
+                    }
+                }
+                .dropdown {
+                    .dropdown-menu{
+                        h5{
+                            font-size:$font-size-6;
+                        }
+                        
+                        li{
+                            em {color: $blue-3;}
+                            a{
+                                border-bottom: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        .d3-weather-header {
+            color: $gray-1;
+        }
+    }
+    
+    /* CARDS
+    ***********************************/
+    .d3-card { 
+        &.main-card {
+            border: none;
+            border-top:2px solid $purple-1;
+             
+            h5 {
+                font-family: $font-1;
+                font-weight: $font-weight-bold;
+                font-size: $font-size-5;
+                letter-spacing: 2px;
+                color: $gray-2;
+                margin-top:0;
+                
+                small{
+                    font-size:$font-size-1;
+                }
+            }
+        }
+        &.side-card {
+            margin-bottom: 20px;
+            background-color: white;
+            color: $gray-2;
+            border: 1px solid $gray-1;
+            margin-bottom: -1px;
+            padding: 20px;
+            
+            .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover{
+                color: $gray-2;
+            }
+        }
+        
+        .bottom{
+            float:none;
+            margin-top: 20px;
+            text-align: center;
+            
+            font-family: $font-1;
+            font-weight: $font-weight-bold;
+            font-size: $font-size-2;
+            letter-spacing: 2px;
+            color: $blue-3; 
+            
+            .more{
+                text-transform: capitalize;
+                color: $blue-2;
+                
+                &:before, &:after{
+                    content: "|";
+                    margin:0 5px;
+                }
+                
+                &:hover{
+                        text-decoration: none;
+                    }
+            }
+        }
+    }
+    
+    /* COMPONENTS
+    ***********************************/
+    
+    //side: new hires
+    .d3-new-hires-tab{
+        em{
+            color: $blue-3;
+        }
+        li{
+            &.active{
+                a{
+                    background-color: $blue-3;
+                }
+            }
+        }
+    }
+    
+    //main: calendar
+    .d3-calendar{ 
+        .calendar-list {
+            .calendar-date-inner{
+                background-color: $blue-2;
+                padding: 2px 5px;
+                color: $white;
+                
+                &:hover{
+                    background-color: $blue-1;
+                }
+            }
+        }
+    }
+    
+    //main: office-tabs
+    .office-tabs{ 
+        li{ 
+            border-bottom-color: $gray-1;
+            
+            &.active{
+                a{
+                    background-color: transparent;
+                    border: 1px solid $gray-1;
+                    border-bottom: none;
+                }
+            }
+            a{
+                border: 1px solid transparent;
+            }
+        }
+    }
+    
+    //main: kendo components
+    .k-draghandle.k-state-selected:hover, .k-ghost-splitbar-horizontal, .k-ghost-splitbar-vertical, .k-list>.k-state-highlight, .k-list>.k-state-selected, .k-marquee-color, .k-panel>.k-state-selected, .k-scheduler .k-scheduler-toolbar .k-state-selected, .k-scheduler .k-today.k-state-selected, .k-state-selected, .k-state-selected:link, .k-state-selected:visited{
+        background-color: $blue-2;
+        border-color: $blue-2;
+    }
+    .k-calendar td.k-state-selected.k-state-hover{
+        background-color: $blue-3; 
+        border-color: $blue-3;
+    }
+    .k-button.k-state-active, .k-button:active{
+        background-color: $blue-3;
+        border-color: $blue-3;
+    }
+    .k-link{
+        &.k-state-selected{
+            background-color: $blue-3;
+            border-color: $blue-3;
+        }
+    }
+    
+    /* TABS
+    ***********************************/
+    .d3-tabs {
+        .nav-tabs{
+            border: none;
+            border-bottom: 1px solid $gray-1;
+
+            li{
+                background-color: $background-2;
+
+                &.active{
+                    background-color: transparent;
+                    
+                    a{
+                        border:none;
+                        border-top:2px solid $purple-1;
+                        background-color: white;
+                        color: $gray-2;
+                        border-radius: 0;
+
+                        &:hover{
+                             background-color: $white;
+                        }
+                    }
+                }
+                
+                a{
+                    color: $gray-2;
+                    margin: 0;
+                    border-bottom: 1px solid $gray-1;
+                }
+            }
+        }
+
+        .tab-content{
+            h5 {
+            }
+        }
+    }
+    
+    /* UI-SEARCH
+    ***********************************/
+    .search-button-1{
+        //todo
+        &:hover{
+            //todo
+        }
+    }
+
+    .search-button-2{
+        //todo
+        &:hover{
+            //todo
+        }
+    }
+
+    /* UI-NAVIGATION
+    ***********************************/
+    .navigation-button{
+        //todo
+        .selected{
+            //todo
+        }
+    }
+
+    /* UI-SLIDE
+    ***********************************/
+    .slide-navigation {
+        //todo
+    }
+
+    /* UI-PLAY
+    ***********************************/
+    .play-button {
+        //todo
+    }
+
+    /* UI-MENU
+    ***********************************/
+    .menu-button {
+        //todo
+    }
+
+    /* UI-BUTTONS
+    ***********************************/
+    .read-more-button{
+        background-color: $blue-2;
+        &:hover{
+            background-color: $blue-3;
+        }
+    }
+    
+    .read-more-small-button{
+        display:none;
+        
+        &:after{
+            background-color: $blue-3;
+        }
+    }
+
+    .heading-button{
+        //todo
+        &:hover{
+            //todo
+        }
+    }
+
+    .number-button{
+        //todo
+        &:hover{
+            //todo
+        }
+    }
+
+    .view-all-button{
+        //todo
+    }
+
+    .more-button{
+        //todo
+    }
+
+    /* UI-LIST
+    ***********************************/
+    .list-bullet {
+        //todo
+    }
+
+    /* FOOTER
+    ***********************************/
+    footer{
+        background-color: $purple-1;
+    
+        .footer-clock {
+            //todo
+        }
+    }
+}

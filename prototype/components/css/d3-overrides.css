@@ -1,0 +1,128 @@
+/*Sharepoint Overrides */
+#ms-designer-ribbon {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999999; }
+  #ms-designer-ribbon #suiteBar, #ms-designer-ribbon #s4-ribbonrow {
+    background-color: #ddd; }
+  #ms-designer-ribbon #suiteBarButtons #siteactiontd .ms-siteactions-normal > a {
+    height: 30px;
+    width: 30px; }
+  #ms-designer-ribbon #suiteBarButtons #ms-help a > span {
+    height: 30px !important;
+    width: 30px !important; }
+
+.ms-dialog .ms-dlgCloseBtn > span {
+  padding: 0 !important; }
+
+.ms-dialog header, .ms-dialog footer {
+  display: none; }
+
+.ms-dialog .d3-main {
+  margin-top: 0; }
+
+.ms-dlgContent, .ms-dlgOverlay {
+  margin-top: -240px; }
+
+/* Sharepoint Overrides */
+/*Boostrap Overrides */
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity .15s linear;
+  -moz-transition: opacity .15s linear;
+  -ms-transition: opacity .15s linear;
+  -o-transition: opacity .15s linear;
+  transition: opacity .15s linear; }
+
+.breadcrumb {
+  background-color: transparent;
+  background-image: none;
+  margin-left: 0px;
+  padding-left: 0px; }
+
+.carousel-control.right {
+  height: 50px;
+  top: 150px;
+  left: 320px;
+  color: white;
+  background-color: transparent;
+  background-image: none; }
+
+.carousel-control.left {
+  height: 50px;
+  top: 150px;
+  color: white;
+  background-color: transparent;
+  background-image: none; }
+
+/* Bootstrap override
+***********************/
+.navbar-default, .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: transparent; }
+
+.carousel-indicators {
+  left: 25%; }
+
+/*Boostrap Overrides */
+/* bug in boostrap modal */
+.modal-open {
+  padding-right: 0 !important; }
+
+/*Kendo  Overrides */
+.k-header {
+  border: none; }
+
+.k-tabstrip:focus {
+  box-shadow: none !important; }
+
+.k-tabstrip-wrapper {
+  padding-top: 20px;
+  max-width: 960px; }
+
+.k-tabstrip .k-content.k-state-active {
+  border: none;
+  background-color: #fff;
+  border-left: solid 1px #d6d6d6;
+  border-right: solid 1px #d6d6d6;
+  border-bottom: solid 1px #d6d6d6;
+  padding: 25px; }
+
+/*Kendo  Overrides */
+.dropdown-header {
+  border-width: 0 0 1px 0;
+  text-transform: uppercase; }
+
+.dropdown-header > span {
+  display: inline-block;
+  padding: 10px; }
+
+.dropdown-header > span:first-child {
+  width: 50px; }
+
+.k-list-container > .k-footer {
+  padding: 10px; }
+
+.selected-value {
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  background-size: 100%;
+  margin-right: 5px;
+  border-radius: 50%; }
+
+/*Global  Overrides */
+textarea:focus, input:focus {
+  outline: none; }
+
+body {
+  margin: 0;
+  background-color: #f2f2f2; }
+
+:focus {
+  outline: none; }
+
+/*Global Overrides */
+
+/*# sourceMappingURL=d3-overrides.css.map */

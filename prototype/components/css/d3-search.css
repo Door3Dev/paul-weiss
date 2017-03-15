@@ -1,0 +1,87 @@
+.shrink .search-results {
+  margin-top: -10px; }
+
+.search-results {
+  display: none;
+  margin-top: -20px;
+  position: absolute;
+  z-index: 999;
+  padding: 0px 10px 10px;
+  min-height: 100px;
+  background-color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 100%; }
+  .search-results .result {
+    background-color: #f7f7f7;
+    margin-top: 10px;
+    padding: 10px; }
+    .search-results .result .title {
+      margin-bottom: 10px; }
+      .search-results .result .title em {
+        background-color: black;
+        color: white;
+        padding: 2px 4px 3px; }
+      .search-results .result .title .more {
+        color: #c13f28; }
+    .search-results .result ul {
+      list-style: none;
+      padding-left: 0;
+      color: gray; }
+      .search-results .result ul li {
+        margin-bottom: 10px;
+        cursor: pointer; }
+        .search-results .result ul li:hover {
+          background-color: #f0f0f0;
+          border-radius: 3px; }
+    .search-results .result.people-directory .title em {
+      margin-bottom: 15px; }
+    .search-results .result.people-directory ul li {
+      padding: 5px; }
+      .search-results .result.people-directory ul li img {
+        display: inline-block;
+        vertical-align: top;
+        height: 40px; }
+      .search-results .result.people-directory ul li > div {
+        display: inline-block;
+        line-height: normal; }
+    .search-results .result.recent-search ul li {
+      margin-bottom: 3px; }
+      .search-results .result.recent-search ul li .fa-close {
+        font-size: 8pt;
+        background-color: gray;
+        padding: 3px 3px 2px;
+        color: white;
+        margin-left: 7px;
+        vertical-align: text-bottom;
+        display: none; }
+      .search-results .result.recent-search ul li:hover .fa-close {
+        display: inline-block; }
+    .search-results .result.clients .title, .search-results .result.matters .title {
+      margin-bottom: 15px; }
+  .search-results .bottom {
+    margin-top: 20px; }
+    .search-results .bottom .showall-button {
+      background: #c13f28;
+      text-align: center;
+      padding: 10px;
+      color: white;
+      display: block; }
+      .search-results .bottom .showall-button:hover, .search-results .bottom .showall-button:active, .search-results .bottom .showall-button:visited {
+        text-decoration: none; }
+
+/* Responsive
+******************************/
+@media (min-width: 768px) {
+  .search-results {
+    width: 720px; } }
+
+@media (min-width: 992px) {
+  .search-results {
+    width: 615px; } }
+
+@media (min-width: 1200px) {
+  .search-results {
+    width: 750px; } }
+
+/*# sourceMappingURL=d3-search.css.map */

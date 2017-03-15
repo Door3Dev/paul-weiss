@@ -1,0 +1,50 @@
+footer{
+    background-color: #000;
+    color:white;
+    padding:40px 0;
+    margin-top:60px;
+    
+    .logo{
+        height: 100%;
+        text-align: center;
+        
+        img{
+            margin-bottom: 10px;
+        }
+    }
+    
+    .lists{
+        margin-left:40px;
+        
+        &>div{
+            margin: 0 20px 0 0;
+            display: inline-block;
+            
+            h4{
+                font-size: 20px;
+            }
+            
+            ul{
+                float: left;
+                max-width: 100px;
+                list-style: none;
+                
+                a{
+                    font-size: 16px;
+                    font-weight: 700;
+                    font-style: normal;
+                    color: #fff;
+                    text-decoration:none;
+                    
+                    &:hover{
+                        font-size: 16px;
+                        font-weight: 700;
+                        font-style: normal;
+                        color: #fff;
+                        text-decoration:underline;
+                    }
+                }
+            }
+        }
+    }
+}

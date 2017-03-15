@@ -1,0 +1,169 @@
+.d3-tabs>li.active>a,.d3-tabs>li.active>a:focus,.d3-tabs>li.active>a:hover {
+    color: #555;
+    cursor: default;
+    border-left: solid 1px #d6d6d6;
+    border-bottom: solid 1px #d6d6d6;
+    border-bottom-color: transparent;
+    border-right: solid 1px #d6d6d6;
+    border-top: solid 2px #ff4500;
+    border-bottom-color: transparent;
+}
+
+
+.d3-tabs .k-tabstrip {
+    background: none transparent;
+    border-width: 0;
+    margin-top:20px;
+}
+
+.d3-tabs .k-tabstrip .k-tabstrip-items {
+    padding: 0;
+}
+
+.d3-tabs .k-tabstrip .k-content {
+    margin: 0;
+}
+
+.d3-tabs .k-tabstrip-top {
+    border: none;
+}
+
+.d3-tabs .k-tabstrip-items {
+    background-color: #F2F2F2;
+    border: none;
+}
+
+.d3-tabs .k-tabstrip-items .k-item {
+    border-radius: 0;
+    background: none;
+    border: none;
+}
+
+.d3-tabs .k-tabstrip-items .k-state-default .k-link {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+    min-width: 123px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    text-align: center;
+    color: #92959d;
+}
+
+
+.d3-tabs .k-tabstrip-items .k-loading {
+    border: none;
+}
+
+.d3-tabs .k-tabstrip-items .k-state-active {
+    color: #555;
+    cursor: default;
+    border-left: solid 1px #d6d6d6;
+    border-bottom: solid 1px #d6d6d6;
+    border-bottom-color: transparent;
+    border-right: solid 1px #d6d6d6;
+    border-top: solid 2px #ff4500;
+    border-bottom-color: transparent;
+    background-color: #fff;
+}
+
+/* Components Tab */
+.d3-tab-title {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.43;
+    color: #000;
+}
+
+.d3-tab-panel h2 {
+    float: left;
+    font-size: 14px;
+    width: 100%;
+}
+
+.d3-tab-panel {
+    width: 958px;
+    height: 373px;
+    background-color: #fff;
+    border-left: solid 1px #d6d6d6;
+    border-right: solid 1px #d6d6d6;
+    border-bottom: solid 1px #d6d6d6;
+    padding: 20px;
+}
+
+.nav-tabs .d3-tabs >li {
+    float: left;
+    margin-bottom: -1px;
+    min-width: 123px;
+    text-align: center;
+    padding: 0;
+}
+
+
+/* Components Tabs */
+
+.d3-tab {
+    height: 20px;
+    width: 20px;
+    float: left;
+}
+
+/* Components New Hires Tabs */
+.d3-hire-tabs>li>a,.d3-hire-tabs>li>a:focus,.d3-hire-tabs>li>a:hover {
+    color: #555;
+    cursor: default;
+    padding: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    color: #fff;
+    line-height: 20px;
+    text-align: center;
+    background: #eee;
+}
+
+.d3-hire-tabs>li.active>a,.d3-hire-tabs>li.active>a:focus,.d3-hire-tabs>li.active>a:hover {
+    background-color: #ff4500;
+    cursor: default;
+    padding: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    color: #fff;
+    line-height: 20px;
+    text-align: center;
+}
+
+
+.d3-quick-links .list-group-item {
+    padding: 3px 10px 0px 0px;
+    background-color: transparent;
+    border: none;
+}
+
+.d3-quick-links .list-group-item.active,.list-group-item.active:focus,.list-group-item.active:hover {
+    background-color: transparent;
+    border: none;
+}
+
+
+.nav-tabs li:first-child {
+    margin-left: 20px;
+}
+
+.nav-tabs>li.active>a {
+    background-color: #f2f2f2;
+}
+
+.nav-tabs>li.active>a:focus,.nav-tabs>li.active>a:hover {
+    color: #000;
+    cursor: default;
+    border: solid 1px #d6d6d6;
+    background-color: transparent;
+    border-bottom-color: transparent;
+}
+

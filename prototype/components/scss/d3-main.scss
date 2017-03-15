@@ -1,0 +1,61 @@
+@import 'globals';
+
+/* BOOTSTRAP 
+*******************************/
+//.container { max-width: 1440px; } 
+.gutter-10.row {
+    margin-right: -5px;
+    margin-left: -5px;
+}
+.gutter-10 > [class^="col-"], .gutter-10 > [class^=" col-"] {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+/* VERTICAL ALIGN CONTENT
+*******************************/
+.valign-wrapper{
+    display: table;
+    .valign{
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
+
+/* BREADCRUMBS
+*******************************/
+.d3-breadcrumb {
+    background-color: none;
+}
+.d3-breadcrumb a {
+    color: black; 
+    text-decoration: none;
+}
+.d3-breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+/* MAIN CONTENT
+*******************************/
+.d3-main {
+    margin-top: $content-margin-top;
+}
+
+/* HIDE HEADER AND FOOTER IN SHAREPOINT MODAL
+*******************************/
+.ms-dialog{
+    header, footer{
+        display:none;
+    }
+    
+    .d3-main{
+        margin-top:0;
+    }
+    
+    .ms-dlgCloseBtn > span{
+        padding: 0 !important;
+    }
+}
+.ms-dlgContent, .ms-dlgOverlay {
+    margin-top: - + $content-margin-top; 
+}

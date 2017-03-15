@@ -1,0 +1,150 @@
+@import 'globals';
+
+.shrink{
+    .search-results{
+        margin-top:-10px;
+    }
+}
+
+.search-results{
+    display: none;
+    margin-top: -20px;
+    position: absolute;
+    z-index: 999;
+    padding: 0px 10px 10px;
+    min-height:100px;
+    background-color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 100%;
+    
+    .result{
+        background-color: #f7f7f7;
+        margin-top:10px;
+        padding: 10px;
+        
+        .title{
+            margin-bottom: 10px;
+            
+            em{
+                background-color: black;
+                color:white;
+                padding:2px 4px 3px;
+            }
+            
+            .more{
+                color: $red-1;
+            }
+        }
+        
+        ul{
+            list-style: none;
+            padding-left: 0;
+            color: gray;
+            
+            li{
+                margin-bottom: 10px;
+                cursor: pointer;
+                
+                 &:hover{
+                    background-color: #f0f0f0;
+                    border-radius: 3px;
+                }
+            }
+        }
+        
+        &.people-directory{
+            .title{
+                em{
+                    margin-bottom: 15px;
+                }
+            }
+            
+            ul{
+                li{
+                    padding:5px;
+                    img{
+                        display: inline-block;
+                        vertical-align: top;
+                        height:40px;
+                    }
+
+                    &>div{
+                        display: inline-block;
+                        line-height: normal;
+                    }
+                    
+                   
+                }
+            }
+        }
+        
+        &.recent-search{
+            ul{
+                li{
+                    margin-bottom: 3px;
+                    
+                    .fa-close{
+                        font-size: 8pt;
+                        background-color: gray;
+                        padding: 3px 3px 2px;
+                        color: white;
+                        margin-left: 7px;
+                        vertical-align: text-bottom;
+                        display: none;
+                    }
+                    
+                    &:hover{
+                        .fa-close{
+                            display:inline-block;
+                        }
+                    }
+                }
+            }
+        }
+        
+        &.clients, &.matters{
+            .title{
+                margin-bottom: 15px;
+            }
+        }
+    }
+    
+    .bottom{
+        margin-top: 20px;
+        
+        .showall-button{
+            background: $red-1;
+            text-align: center;
+            padding:10px;
+            color:white;
+            display: block;
+            
+            &:hover,&:active, &:visited{
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+/* Responsive
+******************************/
+@media (min-width: 768px){
+    .search-results {
+        width: 720px;
+    }
+}
+
+
+@media (min-width: 992px){
+    .search-results {
+        width: 615px;
+    }
+}
+
+@media (min-width: 1200px){
+    .search-results {
+        width: 750px;
+    }
+}
+    

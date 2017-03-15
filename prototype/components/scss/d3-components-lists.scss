@@ -1,0 +1,203 @@
+.d3-list-alt {
+    padding-top: 20px;
+}
+.d3-list-alt div {
+}
+.d3-list-alt li {
+    list-style: none;
+}
+.d3-list {
+    padding-top: 20px;
+    margin-left:20px;
+}
+.d3-list div {
+    color: #737373;
+}
+.d3-list li {
+    color: #000;
+    list-style: none;
+}
+
+/* Components */
+
+.d3-file-resource-list {
+    list-style: none;
+}
+.d3-file-resource-list li:before {
+    font-family: fontawesome;
+    content: "\f114";
+    color: #9A1F32;
+    margin-right: 15px;
+    font-size: 24px;
+    vertical-align: middle;
+}
+.d3-file-resource-list li {
+    padding-top: 10px;
+}
+.d3-file-resource-list li a {
+    text-decoration: none;
+    color: #000;
+}
+.d3-file-resource-list li a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+/* Components */
+
+.d3-group-list .list-group-item {
+    background-color: transparent;
+    border: none;
+    border-top: 1px solid #dbdbdb;
+    list-style: none;
+    margin-bottom: 10px;
+    color: black;
+    border-radius: 0px;
+}
+.d3-group-list .list-group-item.active:hover {
+    background-color: transparent;
+    border: none;
+    border-top: 1px solid black;
+    list-style: none;
+    margin-bottom: 10px;
+    color: black;
+    border-radius: 0px;
+}
+.d3-quick-links .list-group {
+    padding-top: 20px;
+}
+.list-group-item.active .list-group-item-text,
+.list-group-item.active:focus .list-group-item-text,
+.list-group-item.active:hover .list-group-item-text {
+    color: white;
+}
+
+.d3-group-list {
+    border-top:1px solid #dbdbdb;
+	padding-top: 20px;
+    list-style: none;
+}
+
+.d3-group-list .list-group-item {
+    border: none;
+    background-color: transparent;
+    margin: 0px;
+    padding: 0px;
+}
+.d3-group-list li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.d3-group-list a {
+    color: black;
+    text-decoration: none;
+    cursor:pointer;
+}
+.d3-group-list a:hover {
+    text-decoration: underline;
+}
+/* Components */
+
+.d3-resource-list {
+    list-style: none;
+}
+.d3-resource-list li:before {
+    font-family: fontawesome;
+    content: "\f016";
+    color: #9A1F32;
+    margin-right: 15px;
+    font-size: 24px;
+    vertical-align: middle;
+}
+.d3-resource-list li {
+    padding-top: 10px;
+}
+.d3-resource-list li a {
+    text-decoration: none;
+    color: #000;
+}
+.d3-resource-list li a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+
+/* Components */
+
+.d3-general-list {
+    list-style: none;
+}
+.d3-general-list li:before {
+    margin-right: 15px;
+}
+.d3-general-list li {
+    padding-top: 10px;
+}
+.d3-general-list li a {
+    text-decoration: none;
+    color: #000;
+}
+.d3-general-list li a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+
+/* Components FAQ List*/
+
+.d3-faq-list {
+    list-style: none;
+}
+.d3-faq-list li:before {
+    font-family: fontawesome;
+    content: "\f067";
+    color: #007eb9;
+    margin-right: 15px;
+}
+.d3-faq-list li {
+    padding-top: 10px;
+}
+.d3-faq-list li a {
+    text-decoration: none;
+    color: #000;
+}
+.d3-faq-list li a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+
+/* Components Recent Matters List*/
+.d3-overscroll {
+  overflow-x: scroll;
+  overflow-y: scroll; }
+
+.d3-filter-list-input {
+  background-image: url("../images/ic-mag-glass.png");
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+    padding: 10px;
+}
+
+.d3-filter-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+
+.d3-filter-list li a {
+  border: 1px solid #ddd;
+  margin-top: -1px;
+  /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  display: block; }
+
+.d3-filter-list li a.header {
+  background-color: #e2e2e2;
+  cursor: default; }
+
+.d3-filter-list li a:hover:not(.header) {
+  background-color: #eee; }
+

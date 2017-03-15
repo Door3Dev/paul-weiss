@@ -1,0 +1,149 @@
+.d3-office-list-container {
+  width: 100%;
+  min-height: 500px; }
+
+.d3-office-list {
+  list-style: none; }
+
+.d3-office-list li {
+  float: left;
+  margin-right: 25px; }
+
+.office-intro {
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 18px; }
+
+.office-logo {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.office-details {
+  width: 300px;
+  font-size: 15px;
+  padding-bottom: 10px; }
+
+.office-name {
+  font-size: 17px;
+  font-weight: 700; }
+
+.office-clock {
+  width: 77px;
+  float: right; }
+
+.d3-office-worker-list {
+  list-style: none;
+  columns: 2; }
+
+.d3-office-worker-list + ul:before {
+  border-bottom: 1px solid #979797; }
+
+.d3-office-worker-list li {
+  font-size: 12px;
+  margin: 0;
+  padding-bottom: 20px; }
+
+.d3-office-worker-list img {
+  vertical-align: text-top;
+  float: left; }
+
+.d3-offices h2 {
+  font-size: 50px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: left; }
+
+.d3-office-container {
+  width: 400px;
+  padding: 20px; }
+
+.d3-office-worker-container {
+  padding-top: 10px; }
+
+.d3-office-hero {
+  position: relative;
+  padding-bottom: 50px; }
+
+.d3-office-weather-box {
+  width: 200px;
+  height: 125px;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: #fff;
+  font-size: 50px;
+  padding: 10px; }
+
+.weather-type {
+  font-size: 18px; }
+
+.weather-type img {
+  vertical-align: middle;
+  padding-right: 5px; }
+
+.office-tabs {
+  border: none; }
+  .office-tabs .tab-content > .active {
+    padding-top: 20px; }
+  .office-tabs li {
+    border-bottom: 1px solid #ddd;
+    border-radius: 0; }
+    .office-tabs li.active {
+      border-bottom: none;
+      border-bottom-color: transparent; }
+    .office-tabs li a {
+      margin-right: 2px;
+      border-radius: 0;
+      text-align: center;
+      color: #92959d; }
+      .office-tabs li a:hover {
+        border-bottom: none; }
+
+.d3-office-tabs .k-tabstrip {
+  background: none transparent;
+  border-width: 0; }
+
+.d3-office-tabs .k-tabstrip .k-tabstrip-items {
+  padding: 0; }
+
+.d3-office-tabs .k-tabstrip .k-content {
+  margin: 0; }
+
+.d3-office-tabs .k-tabstrip-top {
+  border: none; }
+
+.d3-office-tabs .k-tabstrip-items {
+  background-color: #F2F2F2;
+  border: none; }
+
+.d3-office-tabs .k-tabstrip-items .k-item {
+  border-radius: 0;
+  background: none;
+  border: none; }
+
+.d3-office-tabs .k-first {
+  margin-left: 20px; }
+
+.d3-office-tabs .k-tabstrip-items .k-state-default .k-link {
+  margin-right: 2px;
+  line-height: 1.42857143;
+  border: 1px solid transparent;
+  border-radius: 4px 4px 0 0;
+  min-width: 123px;
+  text-align: center;
+  font-size: 15px; }
+
+.d3-office-tabs .k-tabstrip-items .k-loading {
+  border: none; }
+
+.d3-office-tabs .k-tabstrip-items .k-state-active {
+  color: #000;
+  cursor: default;
+  border: solid 1px #000;
+  border-bottom-color: transparent;
+  background-color: transparent; }
+
+/*# sourceMappingURL=d3-office.css.map */

@@ -1,0 +1,608 @@
+//backgrounds
+$background-1: #fff;
+$background-2: #f8f8f8;
+
+//texts, lines
+$white: #fff;
+$black: black;
+$gray-1: #999;
+$gray-2: #333;
+$font-weight-light: 300;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+//links, graphs
+$orange-1: #ffa563;
+$orange-2: #ff8038;
+$orange-3: #ff6c2f;
+$blue-1: #0079ff;
+$blue-2: #3276c1;
+$blue-3: #06468e;
+$blue-4: #183c64;
+$blue-5: #4e6d79;
+
+//fonts
+$font-1: "Work Sans", sans-serif;
+$font-2: "Georgia", sans-serif;
+
+//font sizes
+$font-size-1: 10pt;
+$font-size-2: 12pt;
+$font-size-3: 13pt;
+$font-size-4: 14pt;
+$font-size-5: 15pt;
+$font-size-6: 21pt;
+$font-size-7: 30pt;
+$font-size-8: 51pt;
+
+
+body.jones{
+    
+    /* TYPOGRAPHY (in the order of the "Style Tile" page)
+    ***********************************/
+    @font-face {
+        font-family: 'Work Sans';
+    }
+    
+    font-family: $font-1;
+    font-size: $font-size-1;
+    color: $gray-2; 
+    background: $background-2;
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-family: "Work Sans";
+    }
+
+    .heading-link-text{
+        font-family: $font-1;
+        font-weight: $font-weight-bold;
+        font-size: $font-size-5;
+        letter-spacing: 2px;
+        color: $white;
+        background-color: $black;
+    }
+
+    .heading-text,
+    .d3-card.main-card h5,
+    .d3-tabs .tab-content h5{
+                font-family: $font-1;
+                font-weight: $font-weight-bold;
+                font-size: $font-size-5;
+                letter-spacing: 2px;
+                color: $gray-2;
+                margin-top:0;
+    }
+
+    .view-all-text, .more-text,
+    .d3-card .bottom .more{
+        font-family: $font-1;
+        font-weight: $font-weight-bold;
+        font-size: $font-size-2;
+        letter-spacing: 2px;
+        color: $orange-3; 
+    }
+
+    .date-text{
+        font-family: $font-1;
+        font-weight: $font-weight-bold;
+        font-size: $font-size-4;
+        letter-spacing: 1px;
+        color: $gray-1; 
+    }
+
+    .unselected-text{
+        font-family: $font-1;
+        font-size: $font-size-5;
+        letter-spacing: 2px;
+        color: $gray-2; 
+    }
+
+    .search-box-text{
+        font-family: $font-2;
+        font-size: $font-size-4;
+        color: $gray-2;
+    }
+
+    .new-hire-name-text{
+        font-family: $font-1;
+        font-weight: $font-weight-medium;
+        font-size: $font-size-4;
+        color: $gray-2;
+    }
+
+    .page-heading-text,
+    .d3-main h1{
+        font-family: $font-1;
+        font-weight: $font-weight-bold;
+        font-size: $font-size-8;
+        color: $gray-2;   
+    }
+
+    .title-text {
+        font-family: $font-1;
+        font-size: $font-size-7;
+        color: $gray-2;
+    }
+
+    .bio-position-text{
+        font-family: $font-1;
+        font-weight: $font-weight-bold;
+        font-size: $font-size-6;
+        color: $gray-2;
+    }
+
+    .bio-current-workplace-text{
+        font-family: $font-1;
+        font-weight: $font-weight-light;
+        font-size: $font-size-4;
+        color: $gray-2;
+    }
+
+    .mobile-searchbox-h3{
+        font-family: $font-1;
+        font-size: $font-size-2;
+        color: $gray-1;
+    }
+
+    .footer-copyright-text-1{
+        font-family: $font-1;
+        font-weight: $font-weight-medium;
+        font-size: $font-size-4;
+        letter-spacing: 1px;
+        color: $white; 
+        background-color: $black;
+    }
+
+    .footer-copyright-text-2{
+        font-family: $font-2;
+        font-size: $font-size-5;
+        color: $white; 
+        background-color: $black;
+    }
+
+    .body-text {
+        /* the first style on top */
+    }
+
+    .navigation-text, .advanced-search-text, .hi-user-text {
+        font-family: $font-1;
+        font-size: $font-size-3;
+        font-weight: $font-weight-medium;
+        color: $gray-2; 
+    }
+
+    .close-menu-text{
+        font-family: $font-1;
+        font-size: $font-size-1;
+        letter-spacing: 1px;
+        color: $gray-2; 
+    }
+
+    .graph-text {
+        font-family: $font-1;
+        font-size: $font-size-4;
+        color: $gray-1;   
+    }
+
+    .higher-navigation-current-page-text{
+        font-family: $font-1;
+        font-size: $font-size-2;
+        color: $white; 
+    }
+
+    .higher-navigation-text{
+        font-family: $font-1;
+        font-size: $font-size-2;
+        letter-spacing: 0.86px;
+        color: $gray-1; 
+    }
+
+    .subcategory, mobile-contact{
+        font-family: $font-1;
+        font-size: $font-size-2;
+        color: $gray-1; 
+    }
+
+    .activity-date-text, engaged-industry-text {
+        font-family: $font-1;
+        font-size: $font-size-4;
+        font-weight: $font-weight-medium;
+        color: $gray-2; 
+    }
+
+    /***********************************/ 
+    /* ELEMENTS / SECTIONS
+    /***********************************/
+    
+    /* ALERT
+    ***********************************/  
+    .d3-alert{
+        background-color: $orange-3;
+    }
+    
+    
+    /* HEADER
+    ***********************************/    
+    .d3-navbar{
+        background-color: $background-2;
+        font-size: $font-size-2;
+        
+        .search-box{ 
+            input{
+                border-color: $gray-1;
+            }
+            .mag-lense{
+                border-radius: 7px;
+                background-color: $orange-3;
+            }
+        }
+        
+        .d3-navmenu{
+            border:none;
+            border-bottom: 1px solid $gray-1;
+            font-size: 95%;
+            .nav {
+                border:none;
+                &>li{
+                    border:none;
+                    
+                    &.active{
+                        a{
+                            border-bottom: 5px solid $gray-2;
+                            background-color: transparent;
+                        }
+                    }
+                    
+                    &:last-child{
+                        color: $gray-2;
+                        border-bottom: 1px solid transparent;
+                        
+                        &:hover{
+                            border-bottom: 1px solid transparent;
+                        }
+                    }
+                    
+                    a{
+                        color: $gray-2;
+                        line-height: 17px;  
+                        border-bottom: 5px solid transparent;
+                        
+                        &:hover{
+                            border-bottom: 5px solid $gray-2;
+                        }
+                    }
+                }
+                .dropdown{
+                    .dropdown-menu{
+                        h5{
+                            font-size:18pt;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .d3-weather-header {
+            color: $gray-1;
+        }
+    }
+    
+    /* CARDS
+    ***********************************/
+    .d3-card {
+        
+        padding-bottom: 10px;
+        
+        .read-more-small-button{
+            display: none;
+        }
+        
+        &.main-card {
+            border: none;
+            padding-top: 30px;
+            margin-bottom: 30px;
+             
+            h5 {
+                font-family: $font-1;
+                font-weight: $font-weight-bold;
+                font-size: $font-size-2;
+                letter-spacing: 2px;
+                color: $white;
+                margin-top:0;
+                position: absolute;
+                text-transform: uppercase;
+                left: 5px;
+                top: -10px;
+                background-color: $orange-3;
+                padding: 9px 11px;
+                
+                &:after{
+                    margin-left: 5px;
+                    padding: 3px 2px 2px 5px;
+                    content: "\f054";
+                    font: normal normal normal 14px/1 FontAwesome;
+                }
+                
+                small{
+                    font-size:$font-size-1;
+                }
+            }
+        }
+        &.side-card {
+            margin-bottom: 20px;
+            border-top: 3px solid $orange-3;
+            background-color: white;
+            color: $gray-2;
+            
+            h5{
+                text-transform: uppercase;
+            }
+            
+            .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover{
+                color: $gray-2;
+            }
+        }
+        
+        .bottom{
+            float:none;
+            margin-top: 20px;
+            text-align: right;
+            
+            .more{
+                text-transform: uppercase;
+                
+                &:after {
+                    content: " \f054";
+                    font-family:"FontAwesome";
+                    font-size: $font-size-1;
+                }
+            }
+        }
+    }
+    
+    /* COMPONENTS
+    ***********************************/
+    
+    //main: group list
+    .d3-group-list{
+        border-top:none;
+    }
+    
+    //main: news
+    .carousel .d3-card.main-card{
+        .carousel-content{
+            .news-header{
+                margin-top: 0px;
+            }
+            h5{
+                position: relative;
+                left: 0;
+                top: 0;
+                background-color: $white;
+                color: $gray-2;
+                padding: 0;
+                
+                &:after{
+                    content: '';
+                }
+            }
+        }
+    }
+    
+    //main: office-tabs
+    .office-tabs{ 
+        li{ 
+            border-bottom-color: $gray-1;
+            
+            &.active{
+                a{
+                    background-color: transparent;
+                    border: 1px solid $gray-1;
+                    border-bottom: none;
+                }
+            }
+            a{
+                border: 1px solid transparent;
+            }
+        }
+    }
+    
+    //main: practice news and announcements
+    .practicenews-announcements{
+        
+    }
+    
+    //main: kpi-charts
+    .d3-main-kpi-chart{
+
+    }
+    
+    //side: tools
+    .d3-tools{
+        .tool{
+            &:hover{
+                background-color: $orange-3;
+            }
+        }
+    }
+    
+    //side: new hires
+    .d3-new-hires-tab{
+        .d3-new-hires-video{
+            em{
+                color: $orange-3;
+            }
+        }
+        
+        .d3-hire-tabs{
+            li{
+                &.active{
+                    a{
+                        background-color: $orange-3;
+                    }
+                }
+            }
+        }
+    }
+    
+    //side: chairperson corner
+    .d3-chairperson-corner{
+        ul{
+            li{
+                div{
+                    color: $gray-1;
+                }
+            }
+        }
+    }
+    
+    //main: kendo components
+    .k-draghandle.k-state-selected:hover, .k-ghost-splitbar-horizontal, .k-ghost-splitbar-vertical, .k-list>.k-state-highlight, .k-list>.k-state-selected, .k-marquee-color, .k-panel>.k-state-selected, .k-scheduler .k-scheduler-toolbar .k-state-selected, .k-scheduler .k-today.k-state-selected, .k-state-selected, .k-state-selected:link, .k-state-selected:visited{
+        background-color: $orange-2;
+        border-color: $orange-2;
+    }
+    .k-calendar td.k-state-selected.k-state-hover{
+        background-color: $orange-3; 
+        border-color: $orange-3;
+    }
+    .k-button.k-state-active, .k-button:active{
+        background-color: $orange-2;
+        border-color: $orange-2;
+    }
+    .k-link{
+        &.k-state-selected{
+            background-color: $orange-3;
+            border-color: $orange-3;
+        }
+    }
+    
+    /* UI-SEARCH
+    ***********************************/
+    .search-button-1{
+        //todo
+        &:hover{
+            //todo
+        }
+    }
+
+    .search-button-2{
+        //todo
+        &:hover{
+            //todo
+        }
+    }
+
+    /* UI-NAVIGATION
+    ***********************************/
+    .navigation-button{
+        //todo
+        .selected{
+            //todo
+        }
+    }
+
+    /* UI-SLIDE
+    ***********************************/
+    .slide-navigation {
+        //todo
+    }
+
+    /* UI-PLAY
+    ***********************************/
+    .play-button {
+        //todo
+    }
+
+    /* UI-MENU
+    ***********************************/
+    .menu-button {
+        //todo
+    }
+
+    /* UI-BUTTONS
+    ***********************************/
+    .read-more-button{
+        background-color: $orange-3;
+        text-transform: uppercase;
+        &:hover{
+            //todo
+        }
+    }
+
+    .heading-button{
+        //todo
+        &:hover{
+            //todo
+        }
+    }
+
+    .number-button{
+        //todo
+        &:hover{
+            //todo
+        }
+    }
+
+    .view-all-button{
+        //todo
+    }
+
+    .more-button{
+        //todo
+    }
+
+    /* UI-LIST
+    ***********************************/
+    .list-bullet {
+        //todo
+    }
+
+    /* FOOTER
+    ***********************************/
+    footer{
+        background-color: $blue-4;
+        
+        .lists {
+            &>div{ 
+                h4{
+                    font-size: $font-size-4;
+                }
+            }
+        }
+        
+        .footer-clock {
+            //todo
+        }
+    }
+}
+
+
+.d3-tabs{
+    //main: announcements
+    &.announcements{
+        .nav-tabs{ 
+            li{
+                &.active{
+                    a{
+                        border-top: 3px solid $orange-3;
+                        background-color: $white;
+                        
+                        &:hover{
+                            background-color: $white;
+                        }
+                    }
+                }
+                
+                a{
+                    background-color: #eee;
+                    border-radius: 0;  
+                    color: $gray-2;
+                    
+                    &:hover{
+                        background-color: #ddd;
+                    }
+                }
+            }
+        }
+    }
+}

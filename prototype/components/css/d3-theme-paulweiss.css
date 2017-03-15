@@ -1,0 +1,316 @@
+body.paulweiss {
+  /* TYPOGRAPHY (in the order of the "Style Tile" page)
+    ***********************************/
+  font-family: "Montserrat";
+  font-size: 15px;
+  color: #333;
+  background-color: #ececec;
+  /***********************************/
+  /* ELEMENTS / SECTIONS
+    /***********************************/
+  /* ALERT
+    ***********************************/
+  /* HEADER
+    ***********************************/
+  /* CARDS
+    ***********************************/
+  /* COMPONENTS
+    ***********************************/
+  /* TABS
+    ***********************************/
+  /* UI-SEARCH
+    ***********************************/
+  /* UI-NAVIGATION
+    ***********************************/
+  /* UI-SLIDE
+    ***********************************/
+  /* UI-PLAY
+    ***********************************/
+  /* UI-MENU
+    ***********************************/
+  /* UI-BUTTONS
+    ***********************************/
+  /* UI-LIST
+    ***********************************/
+  /* FOOTER
+    ***********************************/ }
+
+@font-face {
+  body.paulweiss {
+    font-family: "Montserrat"; } }
+  body.paulweiss h1, body.paulweiss h2, body.paulweiss h3, body.paulweiss h4, body.paulweiss h5, body.paulweiss h6 {
+    font-family: Georgia; }
+  body.paulweiss .heading-text,
+  body.paulweiss .d3-card.main-card h5,
+  body.paulweiss .d3-tabs .tab-content h5 {
+    font-family: "Georgia";
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: 2px;
+    color: #333;
+    margin-top: 0; }
+  body.paulweiss .view-all-text, body.paulweiss .more-text,
+  body.paulweiss .read-more-small-button,
+  body.paulweiss .d3-card .bottom .more {
+    font-family: "Georgia";
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #1976d2; }
+  body.paulweiss .heading-link-text, body.paulweiss .date-text,
+  body.paulweiss .carousel-content .date {
+    font-family: "Georgia";
+    font-weight: 700;
+    font-size: 15px;
+    color: #2196f3; }
+  body.paulweiss .mobile-heading-link-text {
+    font-family: "Georgia";
+    font-weight: 700;
+    font-size: 17px;
+    color: #2196f3; }
+  body.paulweiss .unselected-text, body.paulweiss .search-box-text {
+    font-family: "Georgia";
+    font-size: 17px;
+    letter-spacing: 2px;
+    color: #999; }
+  body.paulweiss .new-hire-name-text {
+    font-family: "Georgia";
+    font-size: 14px;
+    color: #333; }
+  body.paulweiss .page-heading-text,
+  body.paulweiss .d3-main h1 {
+    font-family: "Georgia";
+    font-size: 51px;
+    color: #3a4d6d; }
+  body.paulweiss .title-text,
+  body.paulweiss .news-header {
+    font-family: "Georgia";
+    font-size: 32px;
+    color: #333; }
+  body.paulweiss .bio-position-text {
+    font-family: "Georgia";
+    font-weight: 700;
+    font-size: 21px;
+    color: #333; }
+  body.paulweiss .footer-copyright-text {
+    font-family: "Georgia";
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #fff;
+    background-color: black; }
+  body.paulweiss .footer-copyright-text-mobile {
+    font-family: "Georgia";
+    font-size: 17px;
+    color: #fff;
+    background-color: black; }
+  body.paulweiss .body-text {
+    /* the first style on top */ }
+  body.paulweiss .navigation-text, body.paulweiss .advanced-search-text,
+  body.paulweiss .d3-navbar .search-box input[type="text"] {
+    font-family: "Montserrat";
+    font-size: 14px;
+    color: #333; }
+  body.paulweiss .hi-user-text, body.paulweiss .advanced-search-text {
+    font-family: "Montserrat";
+    font-size: 11px;
+    color: #333; }
+  body.paulweiss .graph-text, body.paulweiss .higher-navigation-text {
+    font-family: "Montserrat";
+    font-size: 14px;
+    color: #999; }
+  body.paulweiss .higher-navigation-current-page-text {
+    font-family: "Montserrat";
+    font-size: 14px;
+    color: #3a4d6d; }
+  body.paulweiss .bio-current-workplace-text {
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-size: 15px;
+    color: #333; }
+  body.paulweiss .subcategory, body.paulweiss mobile-contact {
+    font-family: "Montserrat";
+    font-size: 12px;
+    color: #999; }
+  body.paulweiss .activity-date-text, body.paulweiss engaged-industry-text {
+    font-family: "Georgia";
+    font-size: 14px;
+    font-weight: 600;
+    color: #333; }
+  body.paulweiss .d3-alert {
+    background-color: #1976d2; }
+    body.paulweiss .d3-alert a {
+      color: #99caf9; }
+  body.paulweiss .d3-navbar {
+    background-color: #716f73;
+    border: none; }
+    body.paulweiss .d3-navbar .today {
+      color: #ececec;
+      font-size: 12px;
+      min-height: 12px;
+      margin-bottom: 10px; }
+      body.paulweiss .d3-navbar .today .d3-weather-header {
+        font-size: 12px;
+        color: #ececec; }
+        body.paulweiss .d3-navbar .today .d3-weather-header p {
+          display: inline; }
+      body.paulweiss .d3-navbar .today #currenttime {
+        margin-right: 8px;
+        padding-right: 10px;
+        border-right: 1px solid #999; }
+    body.paulweiss .d3-navbar .logo {
+      padding-top: 12px; }
+    body.paulweiss .d3-navbar .search-box input {
+      border-color: #999;
+      background-color: #ececec;
+      height: 40px;
+      font-size: 11pt; }
+    body.paulweiss .d3-navbar .search-box .mag-lense {
+      background-color: #c13f28;
+      width: 40px;
+      margin-top: -40px;
+      margin-right: 0; }
+      body.paulweiss .d3-navbar .search-box .mag-lense:hover {
+        background-color: #c13f28 !important; }
+    body.paulweiss .d3-navbar .d3-navmenu-wrapper {
+      background-color: #fff; }
+      body.paulweiss .d3-navbar .d3-navmenu-wrapper .d3-navmenu {
+        border: none; }
+        body.paulweiss .d3-navbar .d3-navmenu-wrapper .d3-navmenu .nav {
+          border: none; }
+          body.paulweiss .d3-navbar .d3-navmenu-wrapper .d3-navmenu .nav > li {
+            border: none;
+            padding: 10px 0 5px;
+            border-bottom: 5px solid transparent;
+            min-width: 150px; }
+            body.paulweiss .d3-navbar .d3-navmenu-wrapper .d3-navmenu .nav > li.active {
+              border-bottom: 5px solid #c13f28;
+              background-color: transparent; }
+            body.paulweiss .d3-navbar .d3-navmenu-wrapper .d3-navmenu .nav > li:hover {
+              border-bottom: 5px solid #c13f28; }
+            body.paulweiss .d3-navbar .d3-navmenu-wrapper .d3-navmenu .nav > li:last-child {
+              color: #333; }
+            body.paulweiss .d3-navbar .d3-navmenu-wrapper .d3-navmenu .nav > li a {
+              color: #333;
+              line-height: normal;
+              border-right: 1px solid #ececec; }
+          body.paulweiss .d3-navbar .d3-navmenu-wrapper .d3-navmenu .nav .dropdown .dropdown-menu h5 {
+            font-size: 21px; }
+          body.paulweiss .d3-navbar .d3-navmenu-wrapper .d3-navmenu .nav .dropdown .dropdown-menu li em {
+            color: #1976d2; }
+          body.paulweiss .d3-navbar .d3-navmenu-wrapper .d3-navmenu .nav .dropdown .dropdown-menu li a {
+            border-bottom: none; }
+  body.paulweiss .d3-card.main-card {
+    border: none;
+    border-top: 2px solid #3a4d6d; }
+    body.paulweiss .d3-card.main-card h5 {
+      font-family: "Georgia";
+      font-weight: 700;
+      font-size: 17px;
+      letter-spacing: 2px;
+      color: #333;
+      margin-top: 0; }
+      body.paulweiss .d3-card.main-card h5 small {
+        font-size: 11px; }
+  body.paulweiss .d3-card.side-card {
+    margin-bottom: 20px;
+    background-color: white;
+    color: #333;
+    border: 1px solid #999;
+    margin-bottom: -1px;
+    padding: 20px; }
+    body.paulweiss .d3-card.side-card .list-group-item.active, body.paulweiss .d3-card.side-card .list-group-item.active:focus, body.paulweiss .d3-card.side-card .list-group-item.active:hover {
+      color: #333; }
+  body.paulweiss .d3-card .bottom {
+    float: none;
+    margin-top: 20px;
+    text-align: center;
+    font-family: "Georgia";
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #1976d2; }
+    body.paulweiss .d3-card .bottom .more {
+      text-transform: capitalize;
+      color: #2196f3; }
+      body.paulweiss .d3-card .bottom .more:before, body.paulweiss .d3-card .bottom .more:after {
+        content: "|";
+        margin: 0 5px; }
+      body.paulweiss .d3-card .bottom .more:hover {
+        text-decoration: none; }
+  body.paulweiss .d3-new-hires-tab em {
+    color: #1976d2; }
+  body.paulweiss .d3-new-hires-tab li.active a {
+    background-color: #1976d2; }
+  body.paulweiss .d3-calendar .calendar-list .calendar-date-inner {
+    background-color: #2196f3;
+    padding: 2px 5px;
+    color: #fff; }
+    body.paulweiss .d3-calendar .calendar-list .calendar-date-inner:hover {
+      background-color: #99caf9; }
+  body.paulweiss .office-tabs li {
+    border-bottom-color: #999; }
+    body.paulweiss .office-tabs li.active a {
+      background-color: transparent;
+      border: 1px solid #999;
+      border-bottom: none; }
+    body.paulweiss .office-tabs li a {
+      border: 1px solid transparent; }
+  body.paulweiss .k-draghandle.k-state-selected:hover, body.paulweiss .k-ghost-splitbar-horizontal, body.paulweiss .k-ghost-splitbar-vertical, body.paulweiss .k-list > .k-state-highlight, body.paulweiss .k-list > .k-state-selected, body.paulweiss .k-marquee-color, body.paulweiss .k-panel > .k-state-selected, body.paulweiss .k-scheduler .k-scheduler-toolbar .k-state-selected, body.paulweiss .k-scheduler .k-today.k-state-selected, body.paulweiss .k-state-selected, body.paulweiss .k-state-selected:link, body.paulweiss .k-state-selected:visited {
+    background-color: #2196f3;
+    border-color: #2196f3; }
+  body.paulweiss .k-calendar td.k-state-selected.k-state-hover {
+    background-color: #1976d2;
+    border-color: #1976d2; }
+  body.paulweiss .k-button.k-state-active, body.paulweiss .k-button:active {
+    background-color: #1976d2;
+    border-color: #1976d2; }
+  body.paulweiss .k-link.k-state-selected {
+    background-color: #1976d2;
+    border-color: #1976d2; }
+  body.paulweiss .d3-tabs .nav-tabs {
+    border: none;
+    border-bottom: 1px solid #999; }
+    body.paulweiss .d3-tabs .nav-tabs li {
+      background-color: #ececec; }
+      body.paulweiss .d3-tabs .nav-tabs li.active {
+        background-color: transparent; }
+        body.paulweiss .d3-tabs .nav-tabs li.active a {
+          border: none;
+          border-top: 2px solid #3a4d6d;
+          background-color: white;
+          color: #333;
+          border-radius: 0; }
+          body.paulweiss .d3-tabs .nav-tabs li.active a:hover {
+            background-color: #fff; }
+      body.paulweiss .d3-tabs .nav-tabs li a {
+        color: #333;
+        margin: 0;
+        border-bottom: 1px solid #999; }
+  body.paulweiss .search-results .result {
+    font-family: "Georgia"; }
+    body.paulweiss .search-results .result .title .more {
+      font-size: 12px; }
+      body.paulweiss .search-results .result .title .more:after {
+        content: " >>"; }
+    body.paulweiss .search-results .result ul {
+      color: #c13f28; }
+      body.paulweiss .search-results .result ul li {
+        margin-bottom: 5px; }
+    body.paulweiss .search-results .result.people-directory .jobtitle, body.paulweiss .search-results .result.people-directory .phone {
+      color: #333;
+      font-family: "Montserrat";
+      font-size: 12px; }
+    body.paulweiss .search-results .result.clients .title, body.paulweiss .search-results .result.matters .title {
+      margin-bottom: 10px; }
+  body.paulweiss .read-more-button {
+    background-color: #2196f3; }
+    body.paulweiss .read-more-button:hover {
+      background-color: #1976d2; }
+  body.paulweiss .read-more-small-button {
+    display: none; }
+    body.paulweiss .read-more-small-button:after {
+      background-color: #1976d2; }
+  body.paulweiss footer {
+    background-color: #3a4d6d; }
+
+/*# sourceMappingURL=d3-theme-paulweiss.css.map */

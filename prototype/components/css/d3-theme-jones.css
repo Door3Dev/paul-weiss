@@ -1,0 +1,299 @@
+body.jones {
+  /* TYPOGRAPHY (in the order of the "Style Tile" page)
+    ***********************************/
+  font-family: "Work Sans", sans-serif;
+  font-size: 10pt;
+  color: #333;
+  background: #f8f8f8;
+  /***********************************/
+  /* ELEMENTS / SECTIONS
+    /***********************************/
+  /* ALERT
+    ***********************************/
+  /* HEADER
+    ***********************************/
+  /* CARDS
+    ***********************************/
+  /* COMPONENTS
+    ***********************************/
+  /* UI-SEARCH
+    ***********************************/
+  /* UI-NAVIGATION
+    ***********************************/
+  /* UI-SLIDE
+    ***********************************/
+  /* UI-PLAY
+    ***********************************/
+  /* UI-MENU
+    ***********************************/
+  /* UI-BUTTONS
+    ***********************************/
+  /* UI-LIST
+    ***********************************/
+  /* FOOTER
+    ***********************************/ }
+
+@font-face {
+  body.jones {
+    font-family: 'Work Sans'; } }
+  body.jones h1, body.jones h2, body.jones h3, body.jones h4, body.jones h5, body.jones h6 {
+    font-family: "Work Sans"; }
+  body.jones .heading-link-text {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+    font-size: 15pt;
+    letter-spacing: 2px;
+    color: #fff;
+    background-color: black; }
+  body.jones .heading-text,
+  body.jones .d3-card.main-card h5,
+  body.jones .d3-tabs .tab-content h5 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+    font-size: 15pt;
+    letter-spacing: 2px;
+    color: #333;
+    margin-top: 0; }
+  body.jones .view-all-text, body.jones .more-text,
+  body.jones .d3-card .bottom .more {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+    font-size: 12pt;
+    letter-spacing: 2px;
+    color: #ff6c2f; }
+  body.jones .date-text {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+    font-size: 14pt;
+    letter-spacing: 1px;
+    color: #999; }
+  body.jones .unselected-text {
+    font-family: "Work Sans", sans-serif;
+    font-size: 15pt;
+    letter-spacing: 2px;
+    color: #333; }
+  body.jones .search-box-text {
+    font-family: "Georgia", sans-serif;
+    font-size: 14pt;
+    color: #333; }
+  body.jones .new-hire-name-text {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    font-size: 14pt;
+    color: #333; }
+  body.jones .page-heading-text,
+  body.jones .d3-main h1 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+    font-size: 51pt;
+    color: #333; }
+  body.jones .title-text {
+    font-family: "Work Sans", sans-serif;
+    font-size: 30pt;
+    color: #333; }
+  body.jones .bio-position-text {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+    font-size: 21pt;
+    color: #333; }
+  body.jones .bio-current-workplace-text {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 300;
+    font-size: 14pt;
+    color: #333; }
+  body.jones .mobile-searchbox-h3 {
+    font-family: "Work Sans", sans-serif;
+    font-size: 12pt;
+    color: #999; }
+  body.jones .footer-copyright-text-1 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    font-size: 14pt;
+    letter-spacing: 1px;
+    color: #fff;
+    background-color: black; }
+  body.jones .footer-copyright-text-2 {
+    font-family: "Georgia", sans-serif;
+    font-size: 15pt;
+    color: #fff;
+    background-color: black; }
+  body.jones .body-text {
+    /* the first style on top */ }
+  body.jones .navigation-text, body.jones .advanced-search-text, body.jones .hi-user-text {
+    font-family: "Work Sans", sans-serif;
+    font-size: 13pt;
+    font-weight: 500;
+    color: #333; }
+  body.jones .close-menu-text {
+    font-family: "Work Sans", sans-serif;
+    font-size: 10pt;
+    letter-spacing: 1px;
+    color: #333; }
+  body.jones .graph-text {
+    font-family: "Work Sans", sans-serif;
+    font-size: 14pt;
+    color: #999; }
+  body.jones .higher-navigation-current-page-text {
+    font-family: "Work Sans", sans-serif;
+    font-size: 12pt;
+    color: #fff; }
+  body.jones .higher-navigation-text {
+    font-family: "Work Sans", sans-serif;
+    font-size: 12pt;
+    letter-spacing: 0.86px;
+    color: #999; }
+  body.jones .subcategory, body.jones mobile-contact {
+    font-family: "Work Sans", sans-serif;
+    font-size: 12pt;
+    color: #999; }
+  body.jones .activity-date-text, body.jones engaged-industry-text {
+    font-family: "Work Sans", sans-serif;
+    font-size: 14pt;
+    font-weight: 500;
+    color: #333; }
+  body.jones .d3-alert {
+    background-color: #ff6c2f; }
+  body.jones .d3-navbar {
+    background-color: #f8f8f8;
+    font-size: 12pt; }
+    body.jones .d3-navbar .search-box input {
+      border-color: #999; }
+    body.jones .d3-navbar .search-box .mag-lense {
+      border-radius: 7px;
+      background-color: #ff6c2f; }
+    body.jones .d3-navbar .d3-navmenu {
+      border: none;
+      border-bottom: 1px solid #999;
+      font-size: 95%; }
+      body.jones .d3-navbar .d3-navmenu .nav {
+        border: none; }
+        body.jones .d3-navbar .d3-navmenu .nav > li {
+          border: none; }
+          body.jones .d3-navbar .d3-navmenu .nav > li.active a {
+            border-bottom: 5px solid #333;
+            background-color: transparent; }
+          body.jones .d3-navbar .d3-navmenu .nav > li:last-child {
+            color: #333;
+            border-bottom: 1px solid transparent; }
+            body.jones .d3-navbar .d3-navmenu .nav > li:last-child:hover {
+              border-bottom: 1px solid transparent; }
+          body.jones .d3-navbar .d3-navmenu .nav > li a {
+            color: #333;
+            line-height: 17px;
+            border-bottom: 5px solid transparent; }
+            body.jones .d3-navbar .d3-navmenu .nav > li a:hover {
+              border-bottom: 5px solid #333; }
+        body.jones .d3-navbar .d3-navmenu .nav .dropdown .dropdown-menu h5 {
+          font-size: 18pt; }
+    body.jones .d3-navbar .d3-weather-header {
+      color: #999; }
+  body.jones .d3-card {
+    padding-bottom: 10px; }
+    body.jones .d3-card .read-more-small-button {
+      display: none; }
+    body.jones .d3-card.main-card {
+      border: none;
+      padding-top: 30px;
+      margin-bottom: 30px; }
+      body.jones .d3-card.main-card h5 {
+        font-family: "Work Sans", sans-serif;
+        font-weight: 700;
+        font-size: 12pt;
+        letter-spacing: 2px;
+        color: #fff;
+        margin-top: 0;
+        position: absolute;
+        text-transform: uppercase;
+        left: 5px;
+        top: -10px;
+        background-color: #ff6c2f;
+        padding: 9px 11px; }
+        body.jones .d3-card.main-card h5:after {
+          margin-left: 5px;
+          padding: 3px 2px 2px 5px;
+          content: "\f054";
+          font: normal normal normal 14px/1 FontAwesome; }
+        body.jones .d3-card.main-card h5 small {
+          font-size: 10pt; }
+    body.jones .d3-card.side-card {
+      margin-bottom: 20px;
+      border-top: 3px solid #ff6c2f;
+      background-color: white;
+      color: #333; }
+      body.jones .d3-card.side-card h5 {
+        text-transform: uppercase; }
+      body.jones .d3-card.side-card .list-group-item.active, body.jones .d3-card.side-card .list-group-item.active:focus, body.jones .d3-card.side-card .list-group-item.active:hover {
+        color: #333; }
+    body.jones .d3-card .bottom {
+      float: none;
+      margin-top: 20px;
+      text-align: right; }
+      body.jones .d3-card .bottom .more {
+        text-transform: uppercase; }
+        body.jones .d3-card .bottom .more:after {
+          content: " \f054";
+          font-family: "FontAwesome";
+          font-size: 10pt; }
+  body.jones .d3-group-list {
+    border-top: none; }
+  body.jones .carousel .d3-card.main-card .carousel-content .news-header {
+    margin-top: 0px; }
+  body.jones .carousel .d3-card.main-card .carousel-content h5 {
+    position: relative;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    color: #333;
+    padding: 0; }
+    body.jones .carousel .d3-card.main-card .carousel-content h5:after {
+      content: ''; }
+  body.jones .office-tabs li {
+    border-bottom-color: #999; }
+    body.jones .office-tabs li.active a {
+      background-color: transparent;
+      border: 1px solid #999;
+      border-bottom: none; }
+    body.jones .office-tabs li a {
+      border: 1px solid transparent; }
+  body.jones .d3-tools .tool:hover {
+    background-color: #ff6c2f; }
+  body.jones .d3-new-hires-tab .d3-new-hires-video em {
+    color: #ff6c2f; }
+  body.jones .d3-new-hires-tab .d3-hire-tabs li.active a {
+    background-color: #ff6c2f; }
+  body.jones .d3-chairperson-corner ul li div {
+    color: #999; }
+  body.jones .k-draghandle.k-state-selected:hover, body.jones .k-ghost-splitbar-horizontal, body.jones .k-ghost-splitbar-vertical, body.jones .k-list > .k-state-highlight, body.jones .k-list > .k-state-selected, body.jones .k-marquee-color, body.jones .k-panel > .k-state-selected, body.jones .k-scheduler .k-scheduler-toolbar .k-state-selected, body.jones .k-scheduler .k-today.k-state-selected, body.jones .k-state-selected, body.jones .k-state-selected:link, body.jones .k-state-selected:visited {
+    background-color: #ff8038;
+    border-color: #ff8038; }
+  body.jones .k-calendar td.k-state-selected.k-state-hover {
+    background-color: #ff6c2f;
+    border-color: #ff6c2f; }
+  body.jones .k-button.k-state-active, body.jones .k-button:active {
+    background-color: #ff8038;
+    border-color: #ff8038; }
+  body.jones .k-link.k-state-selected {
+    background-color: #ff6c2f;
+    border-color: #ff6c2f; }
+  body.jones .read-more-button {
+    background-color: #ff6c2f;
+    text-transform: uppercase; }
+  body.jones footer {
+    background-color: #183c64; }
+    body.jones footer .lists > div h4 {
+      font-size: 14pt; }
+
+.d3-tabs.announcements .nav-tabs li.active a {
+  border-top: 3px solid #ff6c2f;
+  background-color: #fff; }
+  .d3-tabs.announcements .nav-tabs li.active a:hover {
+    background-color: #fff; }
+
+.d3-tabs.announcements .nav-tabs li a {
+  background-color: #eee;
+  border-radius: 0;
+  color: #333; }
+  .d3-tabs.announcements .nav-tabs li a:hover {
+    background-color: #ddd; }
+
+/*# sourceMappingURL=d3-theme-jones.css.map */
