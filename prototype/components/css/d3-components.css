@@ -10,8 +10,6 @@
     ***************************/
   /* ICONS 
     ***************************/
-  /* CAROUSEL 
-    ***************************/
   /* CALENDAR 
     ***************************/
   /* FAQ
@@ -102,15 +100,6 @@
   .d3-card .d3-sharepoint-user-icon {
     vertical-align: middle;
     margin: 10px; }
-  .d3-card .carousel .d3-card.main-card {
-    padding: 0;
-    margin-bottom: 0; }
-    .d3-card .carousel .d3-card.main-card .carousel-inner > .item {
-      padding: 0; }
-    .d3-card .carousel .d3-card.main-card .carousel-content {
-      padding: 30px 30px 30px 0; }
-      .d3-card .carousel .d3-card.main-card .carousel-content .sub-news-header {
-        padding-bottom: 10px; }
   .d3-card .d3-calendar .calendar-list {
     list-style: none; }
     .d3-card .d3-calendar .calendar-list span {
@@ -435,6 +424,12 @@
     padding: 0;
     font-size: .8em; }
 
+/**************************/
+/* OUTSIDE OF CARDS / WRAPPERS 
+***************************
+
+/* FOOTER CLOCK 
+***************************/
 .d3-clock-container {
   display: flex;
   justify-content: center;
@@ -444,5 +439,18 @@
   margin-left: 5px;
   margin-right: 5px;
   text-align: center; }
+
+/* CAROUSEL 
+***************************/
+.carousel .carousel-inner > .item {
+  padding: 0; }
+
+.carousel .d3-card.main-card {
+  padding: 0;
+  margin-bottom: 0; }
+  .carousel .d3-card.main-card .carousel-content {
+    padding: 30px 30px 30px 0; }
+    .carousel .d3-card.main-card .carousel-content .sub-news-header {
+      padding-bottom: 10px; }
 
 /*# sourceMappingURL=d3-components.css.map */
