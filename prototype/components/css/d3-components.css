@@ -105,6 +105,8 @@
   .d3-card .carousel .d3-card.main-card {
     padding: 0;
     margin-bottom: 0; }
+    .d3-card .carousel .d3-card.main-card .carousel-inner > .item {
+      padding: 0; }
     .d3-card .carousel .d3-card.main-card .carousel-content {
       padding: 30px 30px 30px 0; }
       .d3-card .carousel .d3-card.main-card .carousel-content .sub-news-header {
