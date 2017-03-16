@@ -257,6 +257,8 @@ body.paulweiss {
       border-bottom: none; }
     body.paulweiss .office-tabs li a {
       border: 1px solid transparent; }
+  body.paulweiss .d3-hire-tabs > li > a, body.paulweiss .d3-hire-tabs > lia:focus, body.paulweiss .d3-hire-tabs > lia:hover {
+    background: #999; }
   body.paulweiss .k-draghandle.k-state-selected:hover, body.paulweiss .k-ghost-splitbar-horizontal, body.paulweiss .k-ghost-splitbar-vertical, body.paulweiss .k-list > .k-state-highlight, body.paulweiss .k-list > .k-state-selected, body.paulweiss .k-marquee-color, body.paulweiss .k-panel > .k-state-selected, body.paulweiss .k-scheduler .k-scheduler-toolbar .k-state-selected, body.paulweiss .k-scheduler .k-today.k-state-selected, body.paulweiss .k-state-selected, body.paulweiss .k-state-selected:link, body.paulweiss .k-state-selected:visited {
     background-color: #c13f28;
     border-color: #c13f28; }
