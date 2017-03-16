@@ -12,6 +12,8 @@ body.paulweiss {
     ***********************************/
   /* HEADER
     ***********************************/
+  /* BREADCRUMB
+    ***********************************/
   /* CARDS
     ***********************************/
   /* COMPONENTS
@@ -60,10 +62,9 @@ body.paulweiss {
     color: #1976d2; }
   body.paulweiss .heading-link-text, body.paulweiss .date-text,
   body.paulweiss .carousel-content .date {
-    font-family: "Georgia";
-    font-weight: 700;
-    font-size: 15px;
-    color: #2196f3; }
+    font-family: "Montserrat";
+    font-size: 14px;
+    margin-bottom: 5px; }
   body.paulweiss .mobile-heading-link-text {
     font-family: "Georgia";
     font-weight: 700;
@@ -82,12 +83,15 @@ body.paulweiss {
   body.paulweiss .d3-main h1 {
     font-family: "Georgia";
     font-size: 51px;
-    color: #3a4d6d; }
+    color: #333;
+    margin: 0 0 25px 0;
+    border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 15px; }
   body.paulweiss .title-text,
   body.paulweiss .news-header {
     font-family: "Georgia";
     font-size: 32px;
-    color: #333; }
+    color: #c13f28; }
   body.paulweiss .bio-position-text {
     font-family: "Georgia";
     font-weight: 700;
@@ -138,9 +142,13 @@ body.paulweiss {
     font-weight: 600;
     color: #333; }
   body.paulweiss .d3-alert {
-    background-color: #1976d2; }
-    body.paulweiss .d3-alert a {
-      color: #99caf9; }
+    background-color: #c13f28;
+    font-family: "Georgia";
+    font-size: 15px; }
+    body.paulweiss .d3-alert .btn {
+      font-family: "Montserrat";
+      font-weight: 600;
+      font-size: 12px; }
   body.paulweiss .d3-navbar {
     background-color: #716f73;
     border: none; }
@@ -205,6 +213,10 @@ body.paulweiss {
             color: #1976d2; }
           body.paulweiss .d3-navbar .d3-navmenu-wrapper .d3-navmenu .nav .dropdown .dropdown-menu li a {
             border-bottom: none; }
+  body.paulweiss .breadcrumb {
+    padding: 0;
+    margin-bottom: 0;
+    font-family: "Georgia"; }
   body.paulweiss .side-card-container {
     background-color: #E8E8E8; }
   body.paulweiss .d3-card.main-card {
@@ -246,6 +258,8 @@ body.paulweiss {
       line-height: 14px; }
   body.paulweiss .carousel .carousel-inner .img {
     padding: 20px 0 20px 20px; }
+  body.paulweiss .carousel .carousel-inner .carousel-content .sub-news-header {
+    font-family: "Georgia"; }
   body.paulweiss .d3-new-hires-tab em {
     color: #c13f28; }
   body.paulweiss .d3-new-hires-tab li.active a {
@@ -316,12 +330,51 @@ body.paulweiss {
             display: block; }
         body.paulweiss .todays-activities > ul > li ul li p {
           font-family: "Georgia"; }
-  body.paulweiss .recent-arrivals person {
+  body.paulweiss .recent-arrivals h5, body.paulweiss .key-contacts h5 {
+    margin-bottom: 20px; }
+  body.paulweiss .recent-arrivals .person, body.paulweiss .key-contacts .person {
     margin-bottom: 15px; }
-    body.paulweiss .recent-arrivals person img {
+    body.paulweiss .recent-arrivals .person img, body.paulweiss .key-contacts .person img {
       margin-right: 10px; }
-    body.paulweiss .recent-arrivals person .name {
-      color: red-1;
+    body.paulweiss .recent-arrivals .person .name, body.paulweiss .key-contacts .person .name {
+      color: #c13f28;
+      font-family: "Georgia"; }
+  body.paulweiss .office-info .info {
+    width: 60%;
+    padding-right: 20px;
+    font-family: "Georgia"; }
+  body.paulweiss .office-info img {
+    width: 40%; }
+  body.paulweiss .visiting-office h5, body.paulweiss .local-information h5 {
+    margin-bottom: 20px; }
+  body.paulweiss .visiting-office ul, body.paulweiss .local-information ul {
+    list-style: none;
+    padding-left: 0; }
+    body.paulweiss .visiting-office ul a, body.paulweiss .local-information ul a {
+      color: #c13f28;
+      font-family: "Georgia";
+      display: inline-block;
+      margin-bottom: 5px; }
+  body.paulweiss .security-updates h5 {
+    margin-bottom: 20px; }
+  body.paulweiss .security-updates .update h4 {
+    font-family: "Montserrat";
+    font-size: 12px;
+    margin-bottom: 0; }
+  body.paulweiss .security-updates .update p {
+    font-size: 15px;
+    font-family: "Georgia";
+    color: #c13f28; }
+  body.paulweiss .announcements ul, body.paulweiss .community-exchange ul {
+    padding-left: 0;
+    list-style: none; }
+    body.paulweiss .announcements ul li h6, body.paulweiss .community-exchange ul li h6 {
+      color: #c13f28;
+      font-size: 17px;
+      margin-bottom: 5px; }
+    body.paulweiss .announcements ul li > div, body.paulweiss .community-exchange ul li > div {
+      font-size: 12px; }
+    body.paulweiss .announcements ul li p, body.paulweiss .community-exchange ul li p {
       font-family: "Georgia"; }
   body.paulweiss .events ul {
     padding-left: 0; }
@@ -373,7 +426,8 @@ body.paulweiss {
     body.paulweiss .search-results .result.clients .title, body.paulweiss .search-results .result.matters .title {
       margin-bottom: 10px; }
   body.paulweiss .read-more-button {
-    background-color: #c13f28; }
+    background-color: #c13f28;
+    font-weight: 300; }
     body.paulweiss .read-more-button:hover {
       background-color: #c13f28; }
   body.paulweiss .clocks {
@@ -393,5 +447,10 @@ body.paulweiss {
       font-size: 12px;
       padding: 30px;
       line-height: 30px; }
+
+/* SP Stuff
+***********************************/
+#DeltaPlaceHolderMain > div:first-child {
+  display: none; }
 
 /*# sourceMappingURL=d3-theme-paulweiss.css.map */

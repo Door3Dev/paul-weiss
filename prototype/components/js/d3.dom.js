@@ -332,5 +332,11 @@ $(document).ready(function() {
     var time = moment(new Date()).format("dddd, MMMM DD, YYYY");
     $("#currenttime").html(time);
      
+    /// DEMO code
+    
+    //show alert
+    $("#alertTest").on("click", () => {
+        $("body").addClass("hasAlert");
+    });
     
 });
