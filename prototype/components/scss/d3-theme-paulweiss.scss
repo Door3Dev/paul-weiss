@@ -619,7 +619,13 @@ body.paulweiss{
         background-color: $white;
         padding: 20px 0;
         .d3-clock-container{
-            
+            &>li{
+                min-width: 125px;
+
+                .d3-office-clock{
+                    margin:0;
+                }
+            }
         }
     }
     

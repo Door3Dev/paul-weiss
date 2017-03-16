@@ -316,6 +316,10 @@ body.paulweiss {
     margin-top: 60px;
     background-color: #fff;
     padding: 20px 0; }
+    body.paulweiss .clocks .d3-clock-container > li {
+      min-width: 125px; }
+      body.paulweiss .clocks .d3-clock-container > li .d3-office-clock {
+        margin: 0; }
   body.paulweiss .footer {
     padding: 0;
     margin-top: 0;

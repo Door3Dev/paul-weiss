@@ -7,7 +7,7 @@ $alert-background-color: rgba(235,93,68,1);
 $alert-link-color: #2b5273;
 
 $sharepoint-topbar-height: 65px;
-$sharepoint2016-topbar-extra: 20px;
+$sharepoint2016-topbar-extra: 30px;
 $alert-height: 80px;
 
 
@@ -36,7 +36,7 @@ $alert-height: 80px;
         }
 
         .d3-main{
-            margin-top: $content-margin-top + $sharepoint-topbar-height + $sharepoint2016-topbar-extra;
+            margin-top: $content-margin-top + $sharepoint2016-topbar-extra;
         }
 
         &.hasAlert{
