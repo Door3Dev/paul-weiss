@@ -12,15 +12,15 @@
     margin-top: 350px; }
 
 .isAdmin.sp2016 .d3-navbar {
-  margin-top: 95px; }
+  margin-top: 85px; }
 
 .isAdmin.sp2016 .d3-main {
-  margin-top: 300px; }
+  margin-top: 290px; }
 
 .isAdmin.sp2016.hasAlert {
-  margin-top: 95px; }
+  margin-top: 85px; }
   .isAdmin.sp2016.hasAlert .d3-main {
-    margin-top: 300px; }
+    margin-top: 290px; }
 
 /* Alert 
 ***********************/
@@ -214,8 +214,7 @@
     margin-bottom: 10px; }
   .d3-navbar.shrink .d3-navmenu .nav > li {
     padding-top: 5px;
-    padding-bottom: 0;
-    height: 50; }
+    padding-bottom: 0; }
   .d3-navbar.shrink .d3-navmenu .nav > li:last-child > div img {
     height: 35px;
     margin-top: 5px; }

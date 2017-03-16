@@ -519,7 +519,7 @@ var d3UI = function(SharePointSiteURL, SharePointRestAPI, framework) {
     }
     
     self.SetCityWeather = function() {
-        if (self.inDesignMode()) 
+        if (false)//self.inDesignMode()) 
         {
             console.log('I Dont run in Edit mode 2');
         } 

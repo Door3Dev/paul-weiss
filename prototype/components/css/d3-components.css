@@ -104,7 +104,6 @@
     list-style: none; }
     .d3-card .d3-calendar .calendar-list span {
       float: left;
-      padding-top: 5px;
       margin-bottom: 3px; }
     .d3-card .d3-calendar .calendar-list li {
       float: left; }
@@ -126,8 +125,6 @@
       color: #fff;
       padding: 0; }
     .d3-card .d3-calendar .calendar-list .calendar-list-text {
-      display: block;
-      width: 200px;
       margin-left: 70px; }
     .d3-card .d3-calendar .calendar-list .calendar-list-text div {
       color: #737373; }

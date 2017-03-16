@@ -179,17 +179,20 @@ body.paulweiss {
       body.paulweiss .d3-navbar .d3-navmenu-wrapper .d3-navmenu {
         border: none; }
         body.paulweiss .d3-navbar .d3-navmenu-wrapper .d3-navmenu .nav {
-          border: none; }
+          border: none;
+          width: 100%; }
           body.paulweiss .d3-navbar .d3-navmenu-wrapper .d3-navmenu .nav > li {
             border: none;
             padding: 10px 0 5px;
             border-bottom: 5px solid transparent;
-            min-width: 150px; }
+            min-width: 145px; }
             body.paulweiss .d3-navbar .d3-navmenu-wrapper .d3-navmenu .nav > li.active {
               border-bottom: 5px solid #c13f28;
               background-color: transparent; }
             body.paulweiss .d3-navbar .d3-navmenu-wrapper .d3-navmenu .nav > li:hover {
               border-bottom: 5px solid #c13f28; }
+            body.paulweiss .d3-navbar .d3-navmenu-wrapper .d3-navmenu .nav > li:first-child a:first-child {
+              border-left: 1px solid #EFEFEF; }
             body.paulweiss .d3-navbar .d3-navmenu-wrapper .d3-navmenu .nav > li:last-child {
               color: #333; }
             body.paulweiss .d3-navbar .d3-navmenu-wrapper .d3-navmenu .nav > li a {
@@ -241,6 +244,8 @@ body.paulweiss {
       background-color: transparent;
       color: #c13f28;
       line-height: 14px; }
+  body.paulweiss .carousel .carousel-inner .img {
+    padding: 20px 0 20px 20px; }
   body.paulweiss .d3-new-hires-tab em {
     color: #c13f28; }
   body.paulweiss .d3-new-hires-tab li.active a {
@@ -259,8 +264,67 @@ body.paulweiss {
       border-bottom: none; }
     body.paulweiss .office-tabs li a {
       border: 1px solid transparent; }
+  body.paulweiss .d3-tools .fa-search {
+    position: absolute;
+    left: 23px;
+    top: 16px; }
+  body.paulweiss .d3-tools input {
+    width: 100%;
+    margin: 10px 0;
+    border: none;
+    height: 28px;
+    padding-left: 30px;
+    font-size: 12px; }
+  body.paulweiss .d3-tools .tool {
+    border-radius: 0;
+    background-color: #dcdcdc;
+    line-height: 15px;
+    height: 65px;
+    color: #333;
+    padding: 10px 0; }
+    body.paulweiss .d3-tools .tool:hover {
+      background-color: #c13f28; }
   body.paulweiss .d3-hire-tabs > li > a, body.paulweiss .d3-hire-tabs > lia:focus, body.paulweiss .d3-hire-tabs > lia:hover {
     background: #999; }
+  body.paulweiss .side-spotlight {
+    font-size: 15px;
+    font-family: "Georgia"; }
+    body.paulweiss .side-spotlight .title {
+      color: #c13f28; }
+  body.paulweiss .todays-activities {
+    padding-bottom: 0; }
+    body.paulweiss .todays-activities > ul {
+      margin-top: 15px;
+      height: 300px;
+      overflow-y: scroll;
+      list-style: none;
+      padding-left: 0; }
+      body.paulweiss .todays-activities > ul > li > div {
+        font-size: 14px; }
+      body.paulweiss .todays-activities > ul > li ul {
+        list-style: none;
+        padding-left: 0;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #999;
+        margin-bottom: 20px; }
+        body.paulweiss .todays-activities > ul > li ul li h4 {
+          color: #c13f28; }
+          body.paulweiss .todays-activities > ul > li ul li h4 small {
+            font-size: 12px;
+            color: #333;
+            font-family: "Montserrat";
+            display: block; }
+        body.paulweiss .todays-activities > ul > li ul li p {
+          font-family: "Georgia"; }
+  body.paulweiss .recent-arrivals person {
+    margin-bottom: 15px; }
+    body.paulweiss .recent-arrivals person img {
+      margin-right: 10px; }
+    body.paulweiss .recent-arrivals person .name {
+      color: red-1;
+      font-family: "Georgia"; }
+  body.paulweiss .events ul {
+    padding-left: 0; }
   body.paulweiss .k-draghandle.k-state-selected:hover, body.paulweiss .k-ghost-splitbar-horizontal, body.paulweiss .k-ghost-splitbar-vertical, body.paulweiss .k-list > .k-state-highlight, body.paulweiss .k-list > .k-state-selected, body.paulweiss .k-marquee-color, body.paulweiss .k-panel > .k-state-selected, body.paulweiss .k-scheduler .k-scheduler-toolbar .k-state-selected, body.paulweiss .k-scheduler .k-today.k-state-selected, body.paulweiss .k-state-selected, body.paulweiss .k-state-selected:link, body.paulweiss .k-state-selected:visited {
     background-color: #c13f28;
     border-color: #c13f28; }
@@ -309,9 +373,9 @@ body.paulweiss {
     body.paulweiss .search-results .result.clients .title, body.paulweiss .search-results .result.matters .title {
       margin-bottom: 10px; }
   body.paulweiss .read-more-button {
-    background-color: #2196f3; }
+    background-color: #c13f28; }
     body.paulweiss .read-more-button:hover {
-      background-color: #1976d2; }
+      background-color: #c13f28; }
   body.paulweiss .clocks {
     margin-top: 60px;
     background-color: #fff;

@@ -266,11 +266,12 @@ body.paulweiss{
                 
                 .nav {
                     border:none;
+                    width: 100%;
                     &>li{
                         border:none;
                         padding:10px 0 5px;
                         border-bottom:5px solid transparent;
-                        min-width: 150px;
+                        min-width: 145px;
 
                         &.active{
                             border-bottom: 5px solid $red-1;
@@ -280,7 +281,13 @@ body.paulweiss{
                         &:hover{
                             border-bottom: 5px solid $red-1;
                         }
-
+                        
+                        &:first-child{
+                            a:first-child{
+                                border-left: 1px solid $body-bg-color;
+                            }
+                        }
+                        
                         &:last-child{
                             color: $gray-2;
                         }
@@ -338,10 +345,10 @@ body.paulweiss{
             margin-bottom: 20px;
             background-color: $background-3;
             color: $gray-2;
-            //border: 1px solid $gray-1;
             margin-bottom: 0px;
             padding: 30px 0;
             border-bottom:1px solid $gray-3;
+//            font-size: $font-size-3;
             
             h5{
                 line-height: 18px;
@@ -378,6 +385,15 @@ body.paulweiss{
     
     /* COMPONENTS
     ***********************************/
+    
+    //main: carousel
+    .carousel {
+        .carousel-inner{
+            .img{
+                padding:20px 0 20px 20px;
+            }
+        }
+    }
     
     //side: new hires
     .d3-new-hires-tab{
@@ -426,12 +442,117 @@ body.paulweiss{
         }
     }
     
+    //side: apps
+    .d3-tools{
+        .fa-search{
+            position: absolute;
+            left: 23px;
+            top: 16px;
+        }
+        input{
+            width: 100%;
+            margin: 10px 0;
+            border: none;
+            height: 28px;
+            padding-left: 30px;
+            font-size: $font-size-2;
+        }
+        .tool{
+            border-radius: 0;
+            background-color: $gray-3;
+            line-height: 15px;
+            height:65px;
+            color:$gray-2;
+            padding:10px 0;
+            
+            &:hover{
+                background-color: $red-1;
+            }
+        }
+    }
+    
     //side: hire-apps
     .d3-hire-tabs{
         &>li{
             &>a, &a:focus, &a:hover{
                  background: $gray-1;
             }
+        }
+    }
+    
+    //side: spotlight
+    .side-spotlight{
+        font-size: $font-size-4;
+        font-family: $font-1;
+        
+        .title{
+            color:$red-1;
+        }
+    }
+    
+    //main: todays activities
+    .todays-activities{
+        padding-bottom:0;
+        
+        &>ul{
+            margin-top:15px;
+            height:300px;
+            overflow-y: scroll;
+            list-style: none;
+            padding-left: 0;
+            &>li{
+                &>div{
+                    font-size: $font-size-3;
+                }
+                
+                ul{
+                    list-style: none;
+                    padding-left: 0;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid $gray-1;
+                    margin-bottom: 20px;
+                    li{
+                        h4{
+                            color: $red-1;
+                            small{
+                                font-size: $font-size-2;
+                                color: $gray-2;
+                                font-family: $font-2;
+                                display: block;
+                            }
+                        }
+                        p{
+                            font-family: $font-1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    //side: recent arrivals
+    .recent-arrivals{
+        person{
+            margin-bottom: 15px;
+            
+            img{
+                margin-right:10px;
+            }
+            .name{
+                color: red-1;
+                font-family: $font-1;
+            }
+            .jobtitle{
+                
+            }
+            
+        }
+    }
+    
+    //main: events
+    .events{
+        ul{
+            padding-left:0;
         }
     }
     
@@ -578,9 +699,9 @@ body.paulweiss{
     /* UI-BUTTONS
     ***********************************/
     .read-more-button{
-        background-color: $blue-2;
+        background-color: $red-1;
         &:hover{
-            background-color: $blue-3;
+            background-color: $red-1;
         }
     }
 
