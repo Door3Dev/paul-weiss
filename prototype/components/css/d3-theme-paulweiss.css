@@ -32,6 +32,8 @@ body.paulweiss {
     ***********************************/
   /* UI-LIST
     ***********************************/
+  /* CLOCKS
+    ***********************************/
   /* FOOTER
     ***********************************/ }
 
@@ -310,7 +312,18 @@ body.paulweiss {
     background-color: #2196f3; }
     body.paulweiss .read-more-button:hover {
       background-color: #1976d2; }
-  body.paulweiss footer {
+  body.paulweiss .clocks {
+    margin-top: 60px;
+    background-color: #fff;
+    padding: 20px 0; }
+  body.paulweiss .footer {
+    padding: 0;
+    margin-top: 0;
     background-color: #716f73; }
+    body.paulweiss .footer .copyright {
+      text-align: center;
+      font-size: 12px;
+      padding: 30px;
+      line-height: 30px; }
 
 /*# sourceMappingURL=d3-theme-paulweiss.css.map */

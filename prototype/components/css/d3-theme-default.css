@@ -147,4 +147,40 @@ h1, h2, h3, h4, h5, h6 {
 .kpi-sub-header {
   font-family: "Arial"; }
 
+/* FOOTER
+***************************/
+.footer {
+  background-color: #000;
+  color: white;
+  padding: 40px 0;
+  margin-top: 60px; }
+  .footer .logo {
+    height: 100%;
+    text-align: center; }
+    .footer .logo img {
+      margin-bottom: 10px; }
+  .footer .lists {
+    margin-left: 40px; }
+    .footer .lists > div {
+      margin: 0 20px 0 0;
+      display: inline-block; }
+      .footer .lists > div h4 {
+        font-size: 20px; }
+      .footer .lists > div ul {
+        float: left;
+        max-width: 100px;
+        list-style: none; }
+        .footer .lists > div ul a {
+          font-size: 16px;
+          font-weight: 700;
+          font-style: normal;
+          color: #fff;
+          text-decoration: none; }
+          .footer .lists > div ul a:hover {
+            font-size: 16px;
+            font-weight: 700;
+            font-style: normal;
+            color: #fff;
+            text-decoration: underline; }
+
 /*# sourceMappingURL=d3-theme-default.css.map */
