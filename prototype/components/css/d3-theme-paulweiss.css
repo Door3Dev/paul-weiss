@@ -167,7 +167,7 @@ body.paulweiss {
         padding-right: 10px;
         border-right: 1px solid #999; }
     body.paulweiss .d3-navbar .logo {
-      padding-top: 12px; }
+      padding-top: 3px; }
     body.paulweiss .d3-navbar .search-box input {
       border-color: #999;
       background-color: #EFEFEF;
@@ -193,7 +193,7 @@ body.paulweiss {
             border: none;
             padding: 10px 0 5px;
             border-bottom: 5px solid transparent;
-            min-width: 145px; }
+            min-width: 150px; }
             body.paulweiss .d3-navbar .d3-navmenu-wrapper .d3-navmenu .nav > li.active {
               border-bottom: 5px solid #c13f28;
               background-color: transparent; }
@@ -295,9 +295,11 @@ body.paulweiss {
     line-height: 15px;
     height: 65px;
     color: #333;
-    padding: 10px 0; }
+    padding: 10px 0;
+    font-size: 12px; }
     body.paulweiss .d3-tools .tool:hover {
-      background-color: #c13f28; }
+      background-color: #c13f28;
+      color: white; }
   body.paulweiss .d3-hire-tabs > li > a, body.paulweiss .d3-hire-tabs > lia:focus, body.paulweiss .d3-hire-tabs > lia:hover {
     background: #999; }
   body.paulweiss .side-spotlight {
@@ -365,6 +367,9 @@ body.paulweiss {
     font-size: 15px;
     font-family: "Georgia";
     color: #c13f28; }
+  body.paulweiss .announcements > h6, body.paulweiss .community-exchange > h6 {
+    margin-bottom: 20px;
+    margin-top: 20px; }
   body.paulweiss .announcements ul, body.paulweiss .community-exchange ul {
     padding-left: 0;
     list-style: none; }
@@ -376,6 +381,14 @@ body.paulweiss {
       font-size: 12px; }
     body.paulweiss .announcements ul li p, body.paulweiss .community-exchange ul li p {
       font-family: "Georgia"; }
+  body.paulweiss .community-exchange .mart li {
+    margin-bottom: 20px; }
+    body.paulweiss .community-exchange .mart li h6 {
+      margin-top: 0; }
+    body.paulweiss .community-exchange .mart li img {
+      margin-right: 10px; }
+    body.paulweiss .community-exchange .mart li p {
+      font-size: 14px; }
   body.paulweiss .events ul {
     padding-left: 0; }
   body.paulweiss .k-draghandle.k-state-selected:hover, body.paulweiss .k-ghost-splitbar-horizontal, body.paulweiss .k-ghost-splitbar-vertical, body.paulweiss .k-list > .k-state-highlight, body.paulweiss .k-list > .k-state-selected, body.paulweiss .k-marquee-color, body.paulweiss .k-panel > .k-state-selected, body.paulweiss .k-scheduler .k-scheduler-toolbar .k-state-selected, body.paulweiss .k-scheduler .k-today.k-state-selected, body.paulweiss .k-state-selected, body.paulweiss .k-state-selected:link, body.paulweiss .k-state-selected:visited {
@@ -447,10 +460,5 @@ body.paulweiss {
       font-size: 12px;
       padding: 30px;
       line-height: 30px; }
-
-/* SP Stuff
-***********************************/
-#DeltaPlaceHolderMain > div:first-child {
-  display: none; }
 
 /*# sourceMappingURL=d3-theme-paulweiss.css.map */
