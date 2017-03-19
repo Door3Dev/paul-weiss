@@ -11,6 +11,15 @@
           #{$property}: #{$value};
 }
 
+/// Adds a browser prefix to the calc method
+/// @param {*} $property Property
+/// @param {*} $expression Expression
+
+@mixin calc($property, $expression) {
+  #{$property}: -moz-calc(#{$expression});
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}
 
 /// Background Gradient
 /// @param {Color} $startColor [#3C3C3C] - Start Color
