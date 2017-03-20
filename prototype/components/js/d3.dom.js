@@ -331,6 +331,18 @@ $(document).ready(function() {
     //show current time
     var time = moment(new Date()).format("dddd, MMMM DD, YYYY");
     $("#currenttime").html(time);
+    
+    //search box expansion
+    $(".d3-search-box-input").on("blur", () => {
+            setTimeout(()=>{
+                if(!$(".search-results").is(":visible")){
+                    $(".d3-search-box-input").removeClass("active");
+                }
+            },150);
+        });
+    $(".d3-search-box-input").on("focus", () => {
+            $(".d3-search-box-input").addClass("active");
+    });
      
     /// DEMO code
     

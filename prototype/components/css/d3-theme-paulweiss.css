@@ -467,7 +467,9 @@ body.paulweiss {
       margin-bottom: 10px; }
   body.paulweiss .read-more-button {
     background-color: #c13f28;
-    font-weight: 300; }
+    font-weight: 300;
+    font-size: 12px;
+    padding: 7px 10px; }
     body.paulweiss .read-more-button:hover {
       background-color: #c13f28; }
   body.paulweiss .clocks {
