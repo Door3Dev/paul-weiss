@@ -3130,5 +3130,18 @@
     //<![CDATA[//]]>
     </script>
     
+    <script>
+        $(".d3-search-box-input").on("blur", () => {
+            setTimeout(()=>{
+                if(!$(".search-results").is(":visible")){
+                    $(".d3-search-box-input").removeClass("active");
+                }
+            },150);
+        });
+        $(".d3-search-box-input").on("focus", () => {
+                $(".d3-search-box-input").addClass("active");
+        });
+    </script>
+    
 </body>
 </html>

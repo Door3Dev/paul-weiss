@@ -184,10 +184,10 @@ body.paulweiss {
         -ms-transition: all 0.4s ease;
         -o-transition: all 0.4s ease;
         transition: all 0.4s ease; }
-        body.paulweiss .d3-navbar .search-box input[type='text']:focus {
-          width: -moz-calc(100% - 15px);
-          width: -webkit-calc(100% - 15px);
-          width: calc(100% - 15px);
+        body.paulweiss .d3-navbar .search-box input[type='text'].active {
+          width: -moz-calc(100% - 29px);
+          width: -webkit-calc(100% - 29px);
+          width: calc(100% - 29px);
           transition: 0.5s;
           -webkit-transition: all 0.4s ease;
           -khtml-transition: all 0.4s ease;
