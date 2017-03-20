@@ -208,7 +208,7 @@ body.paulweiss {
         border: none; }
         body.paulweiss .d3-navbar .d3-navmenu-wrapper .d3-navmenu .nav {
           border: none;
-          width: 100%; }
+          display: inline-block; }
           body.paulweiss .d3-navbar .d3-navmenu-wrapper .d3-navmenu .nav > li {
             border: none;
             padding: 10px 0 5px;
@@ -233,6 +233,13 @@ body.paulweiss {
             color: #1976d2; }
           body.paulweiss .d3-navbar .d3-navmenu-wrapper .d3-navmenu .nav .dropdown .dropdown-menu li a {
             border-bottom: none; }
+        body.paulweiss .d3-navbar .d3-navmenu-wrapper .d3-navmenu .current-user {
+          display: flex;
+          align-items: center;
+          height: 66px; }
+          body.paulweiss .d3-navbar .d3-navmenu-wrapper .d3-navmenu .current-user img {
+            height: 40px;
+            margin-right: 10px; }
   body.paulweiss .breadcrumb {
     padding: 0;
     margin-bottom: 0;
