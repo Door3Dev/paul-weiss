@@ -1,4 +1,6 @@
 @import 'globals';
+@import 'mixins';
+
 
 //backgrounds
 $header-bg-color: #716f73;
@@ -246,19 +248,29 @@ body.paulweiss{
         }
         
         .search-box{ 
-            input{
+            height:40px;
+            
+            input[type='text']{
                 border-color: $gray-1;
                 background-color: $body-bg-color;
                 height: 40px;
-                font-size: 11pt;
+                width: 420px;
+                position: absolute;
+                right: 15px;
+                transition: 0.5s;
+                @include transition(all 0.4s ease);
+                
+                &.active{
+                    @include calc( width, '100% - 29px');
+                    transition: 0.5s;
+                    @include transition(all 0.4s ease);
+                }
             }
             .mag-lense{
                 background-color: $red-1;
-                width:40px;
-                right: 0px;
-                margin-right: 15px;
-                margin-top:-40px;
-                position: absolute;
+                width: 40px;
+                margin-top: 0;
+                margin-right: 0;
                 
                 &:hover{
                     background-color: $red-1 !important;

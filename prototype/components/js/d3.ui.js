@@ -24,14 +24,19 @@ var d3UI = function(SharePointSiteURL, SharePointRestAPI, framework) {
             
             //search code goes here
             
+            
+            
             //toggle display
-            var results = $(D3SPCoreDOM.Settings.searchResultsBox),
+            var input = $(D3SPCoreDOM.Settings.searchInputText),
+                results = $(D3SPCoreDOM.Settings.searchResultsBox),
                 background = $(D3SPCoreDOM.Settings.backgroundOverlay);
             
             if(results.hasClass('show')){
-                results.removeClass('show')
+                input.removeClass("active");
+                results.removeClass('show');
                 background.removeClass('show');
             } else{
+                input.addClass("active");
                 results.slideDown({duration:250})
                 background.addClass('show');
             }
