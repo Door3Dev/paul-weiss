@@ -91,7 +91,8 @@ body.paulweiss {
   body.paulweiss .news-header {
     font-family: "Georgia";
     font-size: 32px;
-    color: #c13f28; }
+    color: #c13f28;
+    margin-top: 5px; }
   body.paulweiss .bio-position-text {
     font-family: "Georgia";
     font-weight: 700;
@@ -142,7 +143,7 @@ body.paulweiss {
     font-weight: 600;
     color: #333; }
   body.paulweiss .d3-alert {
-    background-color: #e80707;
+    background-color: #d90f0e;
     font-family: "Georgia";
     font-size: 15px; }
     body.paulweiss .d3-alert .btn {
@@ -156,7 +157,7 @@ body.paulweiss {
       color: #EFEFEF;
       font-size: 12px;
       min-height: 12px;
-      margin-bottom: 10px; }
+      margin-bottom: 12px; }
       body.paulweiss .d3-navbar .today .d3-weather-header {
         font-size: 12px;
         color: #EFEFEF; }
@@ -238,8 +239,24 @@ body.paulweiss {
           align-items: center;
           height: 66px; }
           body.paulweiss .d3-navbar .d3-navmenu-wrapper .d3-navmenu .current-user img {
-            height: 40px;
-            margin-right: 10px; }
+            height: 45px;
+            margin-right: 10px;
+            -webkit-transition: all 0.4s ease;
+            -khtml-transition: all 0.4s ease;
+            -moz-transition: all 0.4s ease;
+            -ms-transition: all 0.4s ease;
+            -o-transition: all 0.4s ease;
+            transition: all 0.4s ease; }
+    body.paulweiss .d3-navbar.shrink .d3-navmenu .nav > li {
+      padding: 5px 0 5px; }
+    body.paulweiss .d3-navbar.shrink .d3-navmenu .current-user img {
+      height: 40px;
+      -webkit-transition: all 0.4s ease;
+      -khtml-transition: all 0.4s ease;
+      -moz-transition: all 0.4s ease;
+      -ms-transition: all 0.4s ease;
+      -o-transition: all 0.4s ease;
+      transition: all 0.4s ease; }
   body.paulweiss .breadcrumb {
     padding: 0;
     margin-bottom: 0;
@@ -305,28 +322,38 @@ body.paulweiss {
       border-bottom: none; }
     body.paulweiss .office-tabs li a {
       border: 1px solid transparent; }
-  body.paulweiss .d3-tools .fa-search {
-    position: absolute;
-    left: 23px;
-    top: 16px; }
-  body.paulweiss .d3-tools input {
-    width: 100%;
-    margin: 10px 0;
-    border: none;
-    height: 28px;
-    padding-left: 30px;
-    font-size: 12px; }
-  body.paulweiss .d3-tools .tool {
-    border-radius: 0;
-    background-color: #dcdcdc;
-    line-height: 15px;
-    height: 65px;
-    color: #333;
-    padding: 10px 0;
-    font-size: 12px; }
-    body.paulweiss .d3-tools .tool:hover {
-      background-color: #c13f28;
-      color: white; }
+  body.paulweiss .d3-tools {
+    min-height: 0; }
+    body.paulweiss .d3-tools .fa-search {
+      position: absolute;
+      left: 23px;
+      top: 16px; }
+    body.paulweiss .d3-tools input {
+      width: 100%;
+      margin: 10px 0;
+      border: none;
+      height: 28px;
+      padding-left: 30px;
+      font-size: 12px; }
+    body.paulweiss .d3-tools .tool {
+      border-radius: 0;
+      background-color: #dcdcdc;
+      line-height: 15px;
+      height: 65px;
+      color: #999;
+      padding: 0;
+      font-size: 11px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      flex-direction: column; }
+      body.paulweiss .d3-tools .tool img {
+        height: 15px;
+        margin-bottom: 5px; }
+      body.paulweiss .d3-tools .tool:hover {
+        background-color: #c13f28;
+        color: white; }
   body.paulweiss .d3-hire-tabs > li > a, body.paulweiss .d3-hire-tabs > lia:focus, body.paulweiss .d3-hire-tabs > lia:hover {
     background: #999; }
   body.paulweiss .side-spotlight {
@@ -489,5 +516,8 @@ body.paulweiss {
       font-size: 12px;
       padding: 30px;
       line-height: 30px; }
+  body.paulweiss .feedback {
+    text-align: center;
+    margin-top: 20px; }
 
 /*# sourceMappingURL=d3-theme-paulweiss.css.map */
