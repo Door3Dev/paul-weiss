@@ -343,6 +343,9 @@ $(document).ready(function() {
     $(".d3-search-box-input").on("focus", () => {
             $(".d3-search-box-input").addClass("active");
     });
+    
+    //ellipses for events
+     $(".calendar-list-text").dotdotdot();
      
     /// DEMO code
     
