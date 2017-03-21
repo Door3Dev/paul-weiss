@@ -30,7 +30,7 @@ $purple-1: #3a4d6d;
 
 //fonts
 $font-1: "Georgia";
-$font-2: "Montserrat"; //free proxima alternative
+$font-2: "Arial"; //free proxima alternative
 
 //font sizes
 $font-size-0: 10px;
@@ -122,7 +122,7 @@ body.paulweiss{
     .news-header{
         font-family: $font-1;
         font-size: $font-size-7;
-        color: $red-1;
+        color: $red-2;
         margin-top: 5px;
     }
 
@@ -434,7 +434,7 @@ body.paulweiss{
         }
         
         .read-more-small-button{
-            color: $red-1;
+            color: $red-2;
             
             &:after{
                 content: "\f101";
@@ -443,7 +443,7 @@ body.paulweiss{
                 padding: 0;
                 font-size: 11px;
                 background-color: transparent;
-                color: $red-1;
+                color: $red-2;
                 line-height: 14px;
             }
         }
@@ -469,7 +469,7 @@ body.paulweiss{
     //side: new hires
     .d3-new-hires-tab{
         em{
-            color: $red-1;
+            color: $red-2;
         }
         li{
             &.active{
@@ -598,7 +598,7 @@ body.paulweiss{
                     margin-bottom: 20px;
                     li{
                         h4{
-                            color: $red-1;
+                            color: $red-2;
                             small{
                                 font-size: $font-size-2;
                                 color: $gray-2;
@@ -627,7 +627,7 @@ body.paulweiss{
                 margin-right:10px;
             }
             .name{
-                color: $red-1;
+                color: $red-2;
                 font-family: $font-1;
             }
             .jobtitle{
@@ -660,7 +660,7 @@ body.paulweiss{
             padding-left: 0;
             
             a{
-                color: $red-1;
+                color: $red-2;
                 font-family: $font-1;
                 display: inline-block;
                 margin-bottom: 5px;
@@ -682,7 +682,7 @@ body.paulweiss{
             p{
                 font-size:$font-size-4;
                 font-family: $font-1;
-                color: $red-1;
+                color: $red-2;
             }
         }
     }
@@ -699,7 +699,7 @@ body.paulweiss{
             
             li{
                 h6{
-                    color: $red-1;
+                    color: $red-2;
                     font-size: $font-size-5;
                     margin-bottom: 5px;
                 }
@@ -736,8 +736,10 @@ body.paulweiss{
             
             li{
                 .calendar-list-text{
-                    color: $red-1;
-                    max-height: 50px;
+                    color: $red-2;
+                    max-height: 45px;
+                    overflow: hidden;
+                    font-family: font-1;
                 }
             }
         }
@@ -818,7 +820,7 @@ body.paulweiss{
                 }
             }
             ul{
-                color: $red-1;
+                color: $red-2;
                 
                 li{
                     margin-bottom: 5px;
@@ -886,7 +888,7 @@ body.paulweiss{
     /* UI-BUTTONS
     ***********************************/
     .read-more-button{
-        background-color: $red-1;
+        background-color: $red-2;
         font-weight: 300;
         font-size: $font-size-2;
         padding: 7px 10px;
