@@ -5,7 +5,7 @@
 //backgrounds
 $header-bg-color: #716f73;
 $body-bg-color: #EFEFEF;
-$alert-bg-color: #e80707;
+$alert-bg-color: #d90f0e;
 $background-1: #fff;
 $background-2: #ececec;
 $background-3: #E8E8E8;
@@ -33,6 +33,7 @@ $font-1: "Georgia";
 $font-2: "Montserrat"; //free proxima alternative
 
 //font sizes
+$font-size-0: 10px;
 $font-size-1: 11px;
 $font-size-2: 12px;
 $font-size-3: 14px;
@@ -122,6 +123,7 @@ body.paulweiss{
         font-family: $font-1;
         font-size: $font-size-7;
         color: $red-1;
+        margin-top: 5px;
     }
 
     .bio-position-text{
@@ -226,7 +228,7 @@ body.paulweiss{
             color: $body-bg-color;
             font-size: 12px;
             min-height: 12px;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
             
             .d3-weather-header{
                 font-size: 12px;
@@ -340,15 +342,33 @@ body.paulweiss{
                     align-items: center;
                     height: 66px;
                     img{
-                        height:40px;
+                        height:45px;
                         margin-right: 10px;
+                        @include transition(all 0.4s ease);
                     }
                     span{
                      
                     }
                 }
             }
-        }        
+        }
+        
+        &.shrink{
+            .d3-navmenu{
+                .nav{
+                    &>li{
+                         padding:5px 0 5px;   
+                    }
+                }
+                
+                .current-user{
+                    img{
+                        height: 40px;
+                        @include transition(all 0.4s ease);
+                    }
+                }
+            }   
+        }
     }
     
     
@@ -493,6 +513,8 @@ body.paulweiss{
     
     //side: apps
     .d3-tools{
+        min-height: 0;
+        
         .fa-search{
             position: absolute;
             left: 23px;
@@ -511,9 +533,20 @@ body.paulweiss{
             background-color: $gray-3;
             line-height: 15px;
             height:65px;
-            color:$gray-2;
-            padding:10px 0;
-            font-size: $font-size-2;
+            color:$gray-1;
+            padding:0;
+            font-size: $font-size-1;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            flex-direction: column;
+            
+            img{
+                height:15px;
+                margin-bottom: 5px;
+            }
+            
             &:hover{
                 background-color: $red-1;
                 color:white;
@@ -912,5 +945,10 @@ body.paulweiss{
             padding:30px;
             line-height: 30px;
         }
+    }
+    
+    .feedback{
+        text-align: center;
+        margin-top: 20px;
     }
 }
