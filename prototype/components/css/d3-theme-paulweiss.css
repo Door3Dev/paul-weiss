@@ -271,7 +271,9 @@ body.paulweiss {
       font-size: 17px;
       letter-spacing: 2px;
       color: #333;
-      margin-top: 0; }
+      margin-top: 0;
+      margin-bottom: 20px;
+      text-transform: uppercase; }
       body.paulweiss .d3-card.main-card h5 small {
         font-size: 11px; }
   body.paulweiss .d3-card.side-card {
@@ -445,6 +447,9 @@ body.paulweiss {
       font-size: 14px; }
   body.paulweiss .events ul {
     padding-left: 0; }
+    body.paulweiss .events ul li .calendar-list-text {
+      color: #c13f28;
+      max-height: 50px; }
   body.paulweiss .k-draghandle.k-state-selected:hover, body.paulweiss .k-ghost-splitbar-horizontal, body.paulweiss .k-ghost-splitbar-vertical, body.paulweiss .k-list > .k-state-highlight, body.paulweiss .k-list > .k-state-selected, body.paulweiss .k-marquee-color, body.paulweiss .k-panel > .k-state-selected, body.paulweiss .k-scheduler .k-scheduler-toolbar .k-state-selected, body.paulweiss .k-scheduler .k-today.k-state-selected, body.paulweiss .k-state-selected, body.paulweiss .k-state-selected:link, body.paulweiss .k-state-selected:visited {
     background-color: #c13f28;
     border-color: #c13f28; }
@@ -518,6 +523,10 @@ body.paulweiss {
       line-height: 30px; }
   body.paulweiss .feedback {
     text-align: center;
-    margin-top: 20px; }
+    margin-top: 40px;
+    color: #999; }
+    body.paulweiss .feedback a {
+      color: #999;
+      text-decoration: underline; }
 
 /*# sourceMappingURL=d3-theme-paulweiss.css.map */
