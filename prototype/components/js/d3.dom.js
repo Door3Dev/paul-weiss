@@ -104,7 +104,8 @@ $(document).ready(function() {
 
     //for the FAQ panels takes the data-faq="id#" generated from list
     $(D3SPCoreDOM.Settings.FAQClass).click(function() {
-        $('#' + $(this).attr('data-faq')).toggle();
+          $($(this).next()).toggle();
+        $($(this).children().first()).toggleClass('fa-caret-right fa-caret-down');
     });
 
     $(D3SPCoreDOM.Settings.modalClass).on('hide.bs.modal', function() {
@@ -308,7 +309,9 @@ $(document).ready(function() {
    
     D3SPCoreDOM.UI.SetGradientTables();
     D3SPCoreDOM.UI.SetCharts();
-    
+    D3SPCoreDOM.UI.GetCurrentSpotlight();
+      D3SPCoreDOM.UI.GetSecurityUpdate();
+
     
     //add class to body if viewing as admin
     if($( "#ms-designer-ribbon" ).length){

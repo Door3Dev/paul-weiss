@@ -9,6 +9,18 @@ var Clock = function (city, timeZone){
     };
 };
 
+if (!String.prototype.format) {
+  String.prototype.format = function() {
+    var args = arguments;
+    return this.replace(/{(\d+)}/g, function(match, number) { 
+      return typeof args[number] != 'undefined'
+        ? args[number]
+        : match
+      ;
+    });
+  };
+}
+
 Clock .fromJson = function (json){
     var obj = JSON.parse (json);
     return new Clock (obj.city, obj.timeZone);
