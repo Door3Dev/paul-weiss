@@ -104,7 +104,8 @@ $(document).ready(function() {
 
     //for the FAQ panels takes the data-faq="id#" generated from list
     $(D3SPCoreDOM.Settings.FAQClass).click(function() {
-        $('#' + $(this).attr('data-faq')).toggle();
+        $($(this).next()).toggle();
+        $(this).prev().toggleClass('fa-caret-right fa-caret-down');
     });
 
     $(D3SPCoreDOM.Settings.modalClass).on('hide.bs.modal', function() {
