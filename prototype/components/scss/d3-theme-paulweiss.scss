@@ -393,6 +393,14 @@ body.paulweiss{
         padding:0;
         margin-bottom: 0;
         font-family: $font-1;
+        
+        &>li+li:before{
+            content: ">";
+        }
+        
+        .active{
+            font-weight: 600;
+        }
     }
     
     
@@ -404,6 +412,8 @@ body.paulweiss{
     }
     
     .d3-card { 
+        line-height: normal;
+        
         &.main-card {
             border: none;
              
@@ -419,6 +429,19 @@ body.paulweiss{
                 
                 small{
                     font-size:$font-size-1;
+                }
+            }
+            
+            .left{
+                border-right: 1px solid $gray-3;
+
+                .left-content{
+                    padding-right:20px;
+                }
+            }
+            .right{
+                .right-content{
+                    padding-left:20px;
                 }
             }
         }
@@ -455,7 +478,7 @@ body.paulweiss{
     //main: carousel
     .carousel {
         .carousel-inner{
-            .img{
+            img{
                 padding:20px 0 20px 20px;
             }
             .carousel-content {
@@ -483,13 +506,28 @@ body.paulweiss{
     //main: calendar
     .d3-calendar{ 
         .calendar-list {
-            .calendar-date-inner{
-                background-color: $header-bg-color;
-                padding: 2px 5px;
-                color: $white;
+            
+            li{
+                &:last-child{
+                    .calendar-list-item{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            
+            .calendar-list-item{
+                height:50px;
+                margin-bottom: 20px;
                 
-                &:hover{
-                    background-color: $blue-1;
+                .calendar-date-inner{
+                    background-color: $header-bg-color;
+                    padding: 0;
+                    color: $white;
+                    height: 20px;
+
+                    &:hover{
+                        background-color: $blue-1;
+                    }
                 }
             }
         }
@@ -558,7 +596,20 @@ body.paulweiss{
     
     //side: hire-apps
     .d3-hire-tabs{
+        padding-top:20px;
+        margin-left: 0;
+        transform: none;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        
         &>li{
+            height:12px;
+            width:12px;
+            padding: 0;
+            justify-content: center;
+            margin: auto 5px;
+            
             &>a, &a:focus, &a:hover{
                  background: $gray-1;
             }
@@ -689,15 +740,19 @@ body.paulweiss{
     
     //main: announcements, exchange
     .announcements, .community-exchange{
-        &>h6{
-            margin-bottom: 20px;
-            margin-top: 20px;
+        .left, .right{ 
+            &>h6{
+                margin-bottom: 20px;
+                margin-top: 20px;
+                font-family: $font-2;
+            }
         }
         ul{
             padding-left: 0;
             list-style: none;
             
             li{
+                margin-bottom: 20px;
                 h6{
                     color: $red-2;
                     font-size: $font-size-5;
@@ -705,6 +760,7 @@ body.paulweiss{
                 }
                 &>div{
                     font-size: $font-size-2;
+                    color: $gray-1;
                 }
                 p{
                     font-family: $font-1;
@@ -740,6 +796,78 @@ body.paulweiss{
                     max-height: 45px;
                     overflow: hidden;
                     font-family: font-1;
+                }
+            }
+        }
+    }
+    
+    //main: office cards
+    .office-card{
+        h3{
+            margin:0 0 10px;
+            line-height: normal;
+            font-size: $font-size-6;
+            font-weight: 600;
+        }
+        .read-more-small-button{
+            margin-top: 3px;
+        }
+        
+        .location{
+            min-height: 210px;
+            margin-bottom: 20px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid $gray-3;
+            h4{
+                color: $red-2;
+                font-size: $font-size-4;
+                margin: 15px 0 0;
+            }
+            div{
+                font-family: $font-1;
+                line-height: $font-size-6;
+            }
+        }
+        
+        .d3-clock-container{
+            padding: 0;
+            .d3-office-clock{
+                color:transparent;
+                margin-top: 15px;
+
+                .d3-clock-item{
+                    color: $black;
+                    
+                    .analog{
+                        height:50px;
+                        width: 50px;
+                        margin-right: 10px;
+                        
+                        .min,.hour{
+                            top: -15px;
+                            left:24px;
+                        }
+                        
+                    }
+                }
+            }
+        }
+        
+        .person{
+            margin-bottom: 10px;
+            img{ 
+                width: 35px;
+                margin-right:5px;
+            }
+            
+            .info{
+                font-size: $font-size-2;
+                color: $gray-1;
+                
+                a{
+                    color: $red-2;
+                    font-family: $font-1;
+                    font-size: $font-size-4;
                 }
             }
         }
@@ -986,6 +1114,15 @@ body.paulweiss{
                 }
             }
         }
+        
+        .classic-clock{
+            font-family: $font-1;
+            font-size: $font-size-2;
+        }
+        
+        .d3-clock-item{
+            margin-bottom: 20px;   
+        }
     }
     
     /* FOOTER
@@ -1013,4 +1150,86 @@ body.paulweiss{
             text-decoration: underline;
         }
     }
+    
+    /* MODAL
+    **********************************/
+    .modal {
+      text-align: center;
+      padding: 0!important;
+    }
+
+    .modal:before {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+      margin-right: -4px;
+    }
+
+    .modal-dialog {
+      display: inline-block;
+      text-align: left;
+      vertical-align: middle;
+        
+        .modal-content{
+            border-radius: 1px;
+            padding: 10px;
+            
+            .modal-header{
+                border-bottom: none;
+                
+                h4{
+                    color:black;
+                    font-size: $font-size-4;
+                }
+
+                .close{
+                    text-align: right;
+                }
+            }
+
+            .modal-body{
+                padding-top: 0;
+                padding-bottom: 0;
+                
+                p{
+                    margin: 10px 0 30px;
+                    font-family: font-1;
+                    color: $gray-1;    
+                }
+                div{
+                    font-family: $font-2;
+                    font-weight: 700;
+                    font-size: $font-size-2;
+                }
+                input, textarea{
+                    width: 100%;
+                    background-color: $gray-3;
+                    border:none;
+                }
+                input{
+                    margin-bottom: 20px;
+                }
+                textarea{
+                    height: 150px;
+                    padding: 5px;
+                }
+            }
+
+            .modal-footer{
+                border-top: none;
+                text-align:center;
+                padding: 20px 0;
+
+                .btn{
+                    background-color: $red-1;
+                    color: $white;
+                    border: 0;
+                    border-radius: 0;
+                    padding: 5px 30px;
+                }
+            }
+        }
+    }
+    
 }
