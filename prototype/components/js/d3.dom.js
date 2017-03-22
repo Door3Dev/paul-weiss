@@ -1,5 +1,6 @@
 //Start D3SP Core
 var D3SPCoreDOM = Object.create(D3SPCoreDOM);
+D3SPCoreDOM.create();
 $(document).ready(function() {
 
 
@@ -304,6 +305,7 @@ $(document).ready(function() {
     //Run on the office only page
     D3SPCoreDOM.UI.CraftClocks($(D3SPCoreDOM.Settings.ClockContainer));
     D3SPCoreDOM.UI.SetCityWeather();
+   
     D3SPCoreDOM.UI.SetGradientTables();
     D3SPCoreDOM.UI.SetCharts();
     

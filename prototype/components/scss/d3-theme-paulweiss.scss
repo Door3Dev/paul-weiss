@@ -9,7 +9,7 @@ $alert-bg-color: #d90f0e;
 $background-1: #fff;
 $background-2: #ececec;
 $background-3: #E8E8E8;
-
+$fontLink: #802528;
 //texts, lines
 $white: #fff;
 $black: black;
@@ -419,6 +419,56 @@ body.paulweiss{
                 }
             }
         }
+        
+        &.resource-card {
+        
+            li {
+                 list-style: disc;
+            }
+            a {
+                font-family: $font-1;
+                  color: $fontLink;
+            }
+        }
+        
+        &.service-directory-card {
+          
+            a {
+                 font-family: $font-1;
+                padding:0px;
+                color:#802528;
+                
+            }
+            .d3-faq-list li:before {
+                content:"\f0da";
+                color:#696969;
+                font-size: 20px;
+               
+            }
+             .fa-envelope:before {
+                    color:#555555;
+                 padding:5px;
+                }
+              .fa-phone:before {
+                    color:#555555;
+                 padding:5px;
+                }
+            .service-text {
+                padding-left:25px;
+            }
+            .resource-list li{
+                  list-style: disc;
+                 font-family: $font-1;
+                color:#717073;
+                font-size: 15px;
+            }
+            .resource-list li:before {
+              
+                
+                content:none;
+            }
+        }
+        
         &.side-card {
             margin-bottom: 20px;
             background-color: $background-3;
