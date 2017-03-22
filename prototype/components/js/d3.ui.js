@@ -27,7 +27,7 @@ var d3UI = function(SharePointSiteURL, SharePointRestAPI, framework) {
             
             
             //toggle display
-            var input = $(D3SPCoreDOM.Settings.searchInputText),
+            var input = $(D3SPCoreDOM.Settings.searchBox),
                 results = $(D3SPCoreDOM.Settings.searchResultsBox),
                 background = $(D3SPCoreDOM.Settings.backgroundOverlay);
             

@@ -338,12 +338,12 @@ $(document).ready(function() {
     $(".d3-search-box-input").on("blur", () => {
             setTimeout(()=>{
                 if(!$(".search-results").is(":visible")){
-                    $(".d3-search-box-input").removeClass("active");
+                    $(".search-box").removeClass("active");
                 }
             },150);
         });
     $(".d3-search-box-input").on("focus", () => {
-            $(".d3-search-box-input").addClass("active");
+        $(".search-box").addClass("active");
     });
     
     //ellipses for events
