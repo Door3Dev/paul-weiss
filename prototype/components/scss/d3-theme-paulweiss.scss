@@ -253,21 +253,33 @@ body.paulweiss{
         .search-box{ 
             height:40px;
             
+            &.active{
+                z-index: 999999;
+                position: inherit;
+                margin-right: 0;
+                
+                input[type='text']{
+                    @include calc( width, '100% - 65px');
+                    transition: 0.5s;
+                    @include transition(all 0.4s ease);
+                }
+            }
+            
             input[type='text']{
                 border-color: $gray-1;
                 background-color: $body-bg-color;
                 height: 40px;
                 width: 420px;
                 position: absolute;
-                right: 15px;
+                right: 65px;
                 transition: 0.5s;
                 @include transition(all 0.4s ease);
                 
-                &.active{
-                    @include calc( width, '100% - 29px');
-                    transition: 0.5s;
-                    @include transition(all 0.4s ease);
-                }
+//                &.active{
+//                    @include calc( width, '100% - 29px');
+//                    transition: 0.5s;
+//                    @include transition(all 0.4s ease);
+//                }
             }
             .mag-lense{
                 background-color: $red-1;
@@ -431,21 +443,6 @@ body.paulweiss{
         
         .bottom{
             display: none;
-        }
-        
-        .read-more-small-button{
-            color: $red-2;
-            
-            &:after{
-                content: "\f101";
-                font-family: "FontAwesome";
-                margin-left: 5px;
-                padding: 0;
-                font-size: 11px;
-                background-color: transparent;
-                color: $red-2;
-                line-height: 14px;
-            }
         }
     }
     
@@ -808,17 +805,18 @@ body.paulweiss{
     /* UI-SEARCH
     ***********************************/
     .search-results{
+        padding: 15px 20px;
+        
         .result{
             font-family: $font-1;
+            padding:0;
+            background-color: transparent;
             
             .title{
-                .more{
-                    font-size: 12px;
-                    &:after{
-                        content: " >>";
-                    }
-                }
+                font-size: $font-size-4;
+                color: $black;
             }
+            
             ul{
                 color: $red-2;
                 
@@ -828,18 +826,41 @@ body.paulweiss{
             }
             
             &.people-directory{
-                .jobtitle, .phone{
+                padding-right:20px;
+                
+                img{
+                    margin-right: 10px;
+                }
+                
+                .name{
+                    margin-bottom: 3px;
+                }
+                .metadata{
                     color: $gray-2;
                     font-family: $font-2;
                     font-size: $font-size-2;
+                    margin-bottom: 3px;
                 }
             }
             
-            &.clients, &.matters{
-                .title{
-                    margin-bottom: 10px;
+            &.select-a-search, &.recent-search{
+                padding-left:20px;
+                
+                em{
+                    color: $gray-2;
+                    margin-right: 5px;
+                    font-size: 13px;
                 }
             }
+        }
+        
+        hr{
+            border-top-color: $gray-3;
+            width: 90%;
+        }
+        
+        .right{
+            border-left: 1px solid $gray-3;
         }
     }
     
@@ -918,6 +939,22 @@ body.paulweiss{
 
     .more-button{
         //todo
+    }
+    
+    .read-more-small-button{
+        color: $red-2;
+        font-weight: 500;
+
+        &:after{
+            content: "\f101";
+            font-family: "FontAwesome";
+            margin-left: 5px;
+            padding: 0;
+            font-size: 11px;
+            background-color: transparent;
+            color: $red-2;
+            line-height: 14px;
+        }
     }
 
     /* UI-LIST

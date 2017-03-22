@@ -8,6 +8,7 @@ var Settings = function(name) {
 	//the heights for the header in both the affixed and default states
 	self.SharePointMenuId = "#ms-designer-ribbon";
 	//DOM classes
+    self.searchBox = ".search-box";
 	self.searchResultsBox = ".search-results";
 	self.searchInputText = ".d3-search-box-input";
 	self.modalContent = ".d3-modal-content"; 
