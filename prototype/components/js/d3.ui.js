@@ -27,7 +27,7 @@ var d3UI = function(SharePointSiteURL, SharePointRestAPI, framework) {
             
             
             //toggle display
-            var input = $(D3SPCoreDOM.Settings.searchBox),
+            var input = $(D3SPCoreDOM.Settings.searchInputText),
                 results = $(D3SPCoreDOM.Settings.searchResultsBox),
                 background = $(D3SPCoreDOM.Settings.backgroundOverlay);
             
@@ -74,7 +74,7 @@ var d3UI = function(SharePointSiteURL, SharePointRestAPI, framework) {
         }
     };
 
-
+ //MARK FOR REMOVE
     self.FilterSearch = function(text) {
         var filter, ul, li, a, i;
         filter = text.value.toUpperCase();
@@ -90,7 +90,7 @@ var d3UI = function(SharePointSiteURL, SharePointRestAPI, framework) {
             }
         }
     };
-
+ //MARK FOR REMOVE
     self.VideoModal = function(element) {
 
         if (self.inDesignMode()) {
@@ -108,7 +108,7 @@ var d3UI = function(SharePointSiteURL, SharePointRestAPI, framework) {
 
         }
     };
-
+ //MARK FOR REMOVE
     self.CloseVideoModal = function() {
         self.VideoPlayerOpen = false;
         //order is important
@@ -128,6 +128,7 @@ var d3UI = function(SharePointSiteURL, SharePointRestAPI, framework) {
         });
     };
     
+    //MARK FOR REMOVE
     self.SetCharts = function() {
                    $(D3SPCoreDOM.Settings.KendoWorkInProgress).kendoChart({
                 title: {
@@ -518,5 +519,60 @@ var d3UI = function(SharePointSiteURL, SharePointRestAPI, framework) {
                 }
               });
         }
-    };   
+    }; 
+    
+    
+    self.GetListData = function(url, listname, complete, failure)
+	{
+    	$.ajax({
+				url: url + "/_api/web/lists/getbytitle('" + listname + "')/items",
+				//(" + id + ")"
+				method: "GET",
+				headers: { "Accept": "application/json; odata=verbose" },
+				success: function (data) {
+					// Returning the results
+					console.log(typeof(complete));
+					console.log(typeof(self.SpotLightComplete));
+					complete(data);
+				},
+				error: function (data) {
+					failure(data);
+				}
+				});
+			
+    };
+		
+	self.GetSecurityUpdate = function()
+	{
+		self.GetListData("http://akins2016/sites/pw","SECURITY UPDATES", self.SecurityListComplete);
+    };
+	self.GetCurrentSpotlight = function()
+	{
+	 self.GetListData("http://akins2016/sites/pw","Company Spotlight", self.SpotLightComplete);
+	};
+	
+	self.SecurityListComplete = function(data)
+	{
+		var d = $('.security-updates');
+		$.each(data.d.results, function(i,e){
+		
+	$(d).append("<div class=\"update\"><h4>{0}<br></h4><p>{1}</p></div>".format(e.Created, e.Title));
+		});
+	};	
+	
+	self.SpotLightComplete = function(data)
+	{
+	
+		if(data.d.results.length >0)
+		{
+			$(D3SPCoreDOM.Settings.SpolitLightContentHtml).children('.title').html(data.d.results[0].Title);
+			$(D3SPCoreDOM.Settings.SpolitLightContentHtml).children('p').html(data.d.results[0].SpotLightContent);
+		}
+	};	
+
+  	self.ListFailure = function(data)
+	{
+  		
+  	};	
+  
 };
