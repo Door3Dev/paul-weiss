@@ -315,6 +315,9 @@ body.paulweiss {
       font-family: "Georgia";
       padding: 0px;
       color: #802528; }
+    body.paulweiss .d3-card.service-directory-card .faq-click {
+      font-family: "Georgia";
+      font-weight: bold; }
     body.paulweiss .d3-card.service-directory-card .d3-tip-list {
       list-style: none;
       padding-left: 5px; }
