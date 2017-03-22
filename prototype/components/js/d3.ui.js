@@ -69,6 +69,8 @@ var d3UI = function(SharePointSiteURL, SharePointRestAPI, framework) {
         D3SPCoreDOM.Settings.SPUserName = user.get_title();
         $(D3SPCoreDOM.Settings.SPUser).text("Welcome, " + D3SPCoreDOM.Settings.SPUserName);
         $(D3SPCoreDOM.Settings.SPUserProfileIconID).attr('src', D3SPCoreDOM.Settings.SPUserProfileIcon);
+        
+          
         }
     };
 
@@ -116,54 +118,7 @@ var d3UI = function(SharePointSiteURL, SharePointRestAPI, framework) {
 
     };
 
-    //MARKED FOR REMOVAL
-    self.SetNModal = function(h) {
-        if (self.inDesignMode()) {
-        console.log('I Dont run in Edit mode 5');
-        } else {
-
-            if (self.VideoPlayerOpen) {
-                $(D3SPCoreDOM.Settings.modalBgdrop).css("top", "0px");
-                return;
-            }
-
-            if (D3SPCoreDOM.Settings.modalClass != null || D3SPCoreDOM.Settings.modalBgdrop != null) {
-                $(D3SPCoreDOM.Settings.modalBgdrop).css("top", h);
-                $(D3SPCoreDOM.Settings.modalClass).css("top", h);
-            };
-
-        }
-    };
- //MARKED FOR REMOVAL
-    self.DisplayTab = function(element) {
-        if (self.inDesignMode()) {
-          console.log('I Dont run in Edit mode 4');
-        } else {
-            var modalType = $(element).attr('ref');
-            var modalName = ".modal-" + modalType;
-            $(D3SPCoreDOM.Settings.modalContent).hide();
-            $(D3SPCoreDOM.Settings.modalDialog).show();
-            $(D3SPCoreDOM.Settings.modalClass).modal('show');
-            $(modalName).show();
-            $("body").css("padding-right", "");
-        }
-    };
- //MARKED FOR REMOVAL
-    self.HideTab = function(element) {
-        if (self.inDesignMode()) {
-           console.log('I Dont run in Edit mode 3');
-        } else {
-            var modalType = $(element).attr('ref');
-            var modalName = ".modal-" + modalType;
-            $(D3SPCoreDOM.Settings.modalContent).hide();
-            $(D3SPCoreDOM.Settings.modalDialog).hide();
-            $(D3SPCoreDOM.Settings.modalClass).modal('hide');
-            $(modalName).hide();
-            $("body").css("padding-right", "");
-        }
-    };
-
-    self.SetGradientTables = function(){
+   self.SetGradientTables = function(){
         $(D3SPCoreDOM.Settings.GradientTable).each(function(i,e){
             var rateLimit = parseInt($(e).attr('data-limit'));
             var height = D3SPCoreDOM.Settings.GradientTableRowHeight;
@@ -215,7 +170,7 @@ var d3UI = function(SharePointSiteURL, SharePointRestAPI, framework) {
                 }
             });
 
-            $(D3SPCoreDOM.Settings.KendoChartFeesBilled).kendoChart({
+    		$(D3SPCoreDOM.Settings.KendoChartFeesBilled).kendoChart({
 
             legend: {
                 visible: false
@@ -346,7 +301,6 @@ var d3UI = function(SharePointSiteURL, SharePointRestAPI, framework) {
                                     $(element).append(city);
                         }
                                    
-                        
                         //this renders the clock
                         $(cItem).clock({
                             offset: clockData.timeZone,
@@ -513,25 +467,38 @@ var d3UI = function(SharePointSiteURL, SharePointRestAPI, framework) {
     }
     
     
-    self.SetProfileWeather = function(weather) 
-    {
-        html = '<p>';
-        html += ' <i class="wi ' + self.SetWeathIcon(parseInt(weather.code)) + '"></i> &nbsp;';
-        html += weather.currently; 
-        html += ',  ' + weather.temp + '&deg; ' + weather.units.temp + '';
-        html += '</p>';
-        $(D3SPCoreDOM.Settings.UserWeatherBox).html(html);
+    self.SetProfileWeather = function() 
+    {    
+    		city = D3SPCoreDOM.WeatherLocation;
+		 $.simpleWeather({
+	                location: city ,
+	                woeid: '',
+	                unit: 'f',
+	                success: function(weather) {
+	                      	html = '<p>';
+					        html += ' <i class="wi ' + self.SetWeathIcon(parseInt(weather.code)) + '"></i> &nbsp;';
+					        html += weather.currently; 
+					        html += ',  ' + weather.temp + '&deg; ' + weather.units.temp + '';
+					        html += '</p>';
+					        	$(D3SPCoreDOM.Settings.UserWeatherBox).html(html);
+	                        },
+	                error: function(error) {
+	                  $(D3SPCoreDOM.Settings.CityWeatherBox).html('<span style="font-size:10px">Unavailable Please Reload.</span>');
+	                }
+	              });
     }
     
-    self.SetCityWeather = function() {
+    self.SetCityWeather = function(city) {
         if (false)//self.inDesignMode()) 
         {
             console.log('I Dont run in Edit mode 2');
         } 
         else 
         {
-            var city =  $(D3SPCoreDOM.Settings.CityWeatherBox).attr("data-city");
-            
+        	if(!city)
+        	{
+        	  city =  $(D3SPCoreDOM.Settings.CityWeatherBox).attr("data-city");
+        	}
             $.simpleWeather({
                 location: city ,
                 woeid: '',
@@ -544,7 +511,6 @@ var d3UI = function(SharePointSiteURL, SharePointRestAPI, framework) {
                       html += '<li class="currently"><small>'+weather.currently+'</small><br/>'+weather.temp+'&deg;'+weather.units.temp+'<i class="wi ' + self.SetWeathIcon(parseInt(weather.code)) + '"></i></li>';
                       //html += '<li>'+weather.wind.direction+' '+weather.wind.speed+' '+weather.units.speed+'</li>';
                       html += '</ul>';
-                      self.SetProfileWeather(weather);
                       $(D3SPCoreDOM.Settings.CityWeatherBox).html(html);
                 },
                 error: function(error) {

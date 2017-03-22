@@ -276,6 +276,34 @@ body.paulweiss {
       text-transform: uppercase; }
       body.paulweiss .d3-card.main-card h5 small {
         font-size: 11px; }
+  body.paulweiss .d3-card.resource-card li {
+    list-style: disc; }
+  body.paulweiss .d3-card.resource-card a {
+    font-family: "Georgia";
+    color: #802528; }
+  body.paulweiss .d3-card.service-directory-card a {
+    font-family: "Georgia";
+    padding: 0px;
+    color: #802528; }
+  body.paulweiss .d3-card.service-directory-card .d3-faq-list li:before {
+    content: "\f0da";
+    color: #696969;
+    font-size: 20px; }
+  body.paulweiss .d3-card.service-directory-card .fa-envelope:before {
+    color: #555555;
+    padding: 5px; }
+  body.paulweiss .d3-card.service-directory-card .fa-phone:before {
+    color: #555555;
+    padding: 5px; }
+  body.paulweiss .d3-card.service-directory-card .service-text {
+    padding-left: 25px; }
+  body.paulweiss .d3-card.service-directory-card .resource-list li {
+    list-style: disc;
+    font-family: "Georgia";
+    color: #717073;
+    font-size: 15px; }
+  body.paulweiss .d3-card.service-directory-card .resource-list li:before {
+    content: none; }
   body.paulweiss .d3-card.side-card {
     margin-bottom: 20px;
     background-color: #E8E8E8;
