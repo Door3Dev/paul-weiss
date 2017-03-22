@@ -158,6 +158,7 @@ body.paulweiss{
         font-family: $font-2;
         font-size: $font-size-3;
         color: $gray-2; 
+        border: 0;
     }
     
     .hi-user-text, .advanced-search-text {
@@ -262,6 +263,7 @@ body.paulweiss{
                     @include calc( width, '100% - 65px');
                     transition: 0.5s;
                     @include transition(all 0.4s ease);
+                    background-color: $white;
                 }
             }
             
@@ -275,11 +277,12 @@ body.paulweiss{
                 transition: 0.5s;
                 @include transition(all 0.4s ease);
                 
-//                &.active{
-//                    @include calc( width, '100% - 29px');
-//                    transition: 0.5s;
-//                    @include transition(all 0.4s ease);
-//                }
+                &:focus{
+                    @include calc( width, '100% - 65px');
+                    transition: 0.5s;
+                    @include transition(all 0.4s ease);
+                    background-color: $white;
+                }
             }
             .mag-lense{
                 background-color: $red-1;
@@ -806,6 +809,11 @@ body.paulweiss{
     ***********************************/
     .search-results{
         padding: 15px 20px;
+        margin-top:-18px;
+        
+        a{
+            color:$red-2;
+        }
         
         .result{
             font-family: $font-1;

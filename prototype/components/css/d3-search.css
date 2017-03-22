@@ -29,11 +29,7 @@
       padding-left: 0;
       color: gray; }
       .search-results .result ul li {
-        margin-bottom: 10px;
-        cursor: pointer; }
-        .search-results .result ul li:hover {
-          background-color: #f0f0f0;
-          border-radius: 3px; }
+        margin-bottom: 10px; }
     .search-results .result.people-directory .title em {
       margin-bottom: 15px; }
     .search-results .result.people-directory ul li {

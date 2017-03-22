@@ -115,7 +115,8 @@ body.paulweiss {
   body.paulweiss .d3-navbar .search-box input[type="text"] {
     font-family: "Arial";
     font-size: 14px;
-    color: #333; }
+    color: #333;
+    border: 0; }
   body.paulweiss .hi-user-text, body.paulweiss .advanced-search-text {
     font-family: "Arial";
     font-size: 11px;
@@ -185,7 +186,8 @@ body.paulweiss {
           -moz-transition: all 0.4s ease;
           -ms-transition: all 0.4s ease;
           -o-transition: all 0.4s ease;
-          transition: all 0.4s ease; }
+          transition: all 0.4s ease;
+          background-color: #fff; }
       body.paulweiss .d3-navbar .search-box input[type='text'] {
         border-color: #999;
         background-color: #EFEFEF;
@@ -200,6 +202,18 @@ body.paulweiss {
         -ms-transition: all 0.4s ease;
         -o-transition: all 0.4s ease;
         transition: all 0.4s ease; }
+        body.paulweiss .d3-navbar .search-box input[type='text']:focus {
+          width: -moz-calc(100% - 65px);
+          width: -webkit-calc(100% - 65px);
+          width: calc(100% - 65px);
+          transition: 0.5s;
+          -webkit-transition: all 0.4s ease;
+          -khtml-transition: all 0.4s ease;
+          -moz-transition: all 0.4s ease;
+          -ms-transition: all 0.4s ease;
+          -o-transition: all 0.4s ease;
+          transition: all 0.4s ease;
+          background-color: #fff; }
       body.paulweiss .d3-navbar .search-box .mag-lense {
         background-color: #c13f28;
         width: 40px;
@@ -477,7 +491,10 @@ body.paulweiss {
         margin: 0;
         border-bottom: 1px solid #999; }
   body.paulweiss .search-results {
-    padding: 15px 20px; }
+    padding: 15px 20px;
+    margin-top: -18px; }
+    body.paulweiss .search-results a {
+      color: #802528; }
     body.paulweiss .search-results .result {
       font-family: "Georgia";
       padding: 0;

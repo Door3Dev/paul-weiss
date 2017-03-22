@@ -313,14 +313,14 @@ $(document).ready(function() {
         $("body").addClass("isAdmin");
     }
 
-    //shrink header on-scroll
-    $(window).scroll(function() {
-      if ($(document).scrollTop() > 100) {
-        $('.d3-navbar').addClass('shrink');
-      } else {
-        $('.d3-navbar').removeClass('shrink');
-      }
-    });
+//    //shrink header on-scroll
+//    $(window).scroll(function() {
+//      if ($(document).scrollTop() > 100) {
+//        $('.d3-navbar').addClass('shrink');
+//      } else {
+//        $('.d3-navbar').removeClass('shrink');
+//      }
+//    });
 
 
     //close alert header
