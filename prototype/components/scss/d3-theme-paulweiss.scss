@@ -10,6 +10,7 @@ $background-1: #fff;
 $background-2: #ececec;
 $background-3: #E8E8E8;
 $fontLink: #802528;
+$appColor: #c13f28;
 //texts, lines
 $white: #fff;
 $black: black;
@@ -1054,5 +1055,9 @@ body.paulweiss{
             color: $gray-1;
             text-decoration: underline;
         }
+    }
+    
+    .ms-storefront-appiconspan {
+        background-color: $appColor;
     }
 }

@@ -582,5 +582,7 @@ body.paulweiss {
     body.paulweiss .feedback a {
       color: #999;
       text-decoration: underline; }
+  body.paulweiss .ms-storefront-appiconspan {
+    background-color: #c13f28; }
 
 /*# sourceMappingURL=d3-theme-paulweiss.css.map */
