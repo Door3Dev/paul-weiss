@@ -18,31 +18,48 @@ Clock .fromJson = function (json){
 var ClockData = [];
 
 //ADD DATA
-var dc = new Clock ("DC", "+5");
-ClockData.push(dc);
+var a1 = new Clock ("WASHINGTON DC", "-5");
+ClockData.push(a1);
 
-var nyc = new Clock ("NYC", "-5");
-ClockData.push(nyc);
+var a2 = new Clock ("NEW YORK", "-5");
+ClockData.push(a2);
 
-var mos = new Clock ("MOS", "+2");
-ClockData.push(mos);
+var a3 = new Clock ("MOS", "+3");
+ClockData.push(a3);
 
-var dub = new Clock ("DUB", "+12");
-ClockData.push(dub);
+var a4 = new Clock ("DUB", "+3");
+ClockData.push(a4);
 
-var dub = new Clock ("ABU", "+12");
-ClockData.push(dub);
+var a5 = new Clock ("ABU", "+3");
+ClockData.push(a5);
 
-var dub = new Clock ("CHI", "-6");
-ClockData.push(dub);
+var a6 = new Clock ("CHI", "-6");
+ClockData.push(a6);
 
-var lon = new Clock ("LON", "0");
-ClockData.push(lon);
+var a7  = new Clock ("LONDON", "0");
+ClockData.push(a7);
 
-var la = new Clock ("LA", "-8");
-ClockData.push(la);
+var a8 = new Clock ("LA", "-8");
+ClockData.push(a8);
+
+var a9 = new Clock ("TORONTO", "-5");
+ClockData.push(a9);
+
+var a10 = new Clock ("WILMINGTON", "-6");
+ClockData.push(a10);
+
+var a11 = new Clock ("BEIJING", "+8");
+ClockData.push(a11);
+
+var a12 = new Clock ("HONG KONG", "+8");
+ClockData.push(a12);
+
+var a13 = new Clock ("TOKYO", "+9");
+ClockData.push(a13);
+
+
 //EXAMPLE
-var json = dc.toJson();
-var clock = Clock.fromJson(json);
-var c = clock.city;
+//var json = dc.toJson();
+//var clock = Clock.fromJson(json);
+//var c = clock.city;
 

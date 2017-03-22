@@ -37,9 +37,7 @@ body.paulweiss {
   /* CLOCKS
     ***********************************/
   /* FOOTER
-    ***********************************/
-  /* MODAL
-    **********************************/ }
+    ***********************************/ }
 
 @font-face {
   body.paulweiss {
@@ -686,58 +684,63 @@ body.paulweiss {
     body.paulweiss .feedback a {
       color: #999;
       text-decoration: underline; }
-  body.paulweiss .modal {
-    text-align: center;
-    padding: 0 !important; }
-  body.paulweiss .modal:before {
-    content: '';
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-    margin-right: -4px; }
-  body.paulweiss .modal-dialog {
-    display: inline-block;
-    text-align: left;
-    vertical-align: middle; }
-    body.paulweiss .modal-dialog .modal-content {
-      border-radius: 1px;
-      padding: 10px; }
-      body.paulweiss .modal-dialog .modal-content .modal-header {
-        border-bottom: none; }
-        body.paulweiss .modal-dialog .modal-content .modal-header h4 {
-          color: black;
-          font-size: 15px; }
-        body.paulweiss .modal-dialog .modal-content .modal-header .close {
-          text-align: right; }
-      body.paulweiss .modal-dialog .modal-content .modal-body {
-        padding-top: 0;
-        padding-bottom: 0; }
-        body.paulweiss .modal-dialog .modal-content .modal-body p {
-          margin: 10px 0 30px;
-          font-family: font-1;
-          color: #999; }
-        body.paulweiss .modal-dialog .modal-content .modal-body div {
-          font-family: "Arial";
-          font-weight: 700;
-          font-size: 12px; }
-        body.paulweiss .modal-dialog .modal-content .modal-body input, body.paulweiss .modal-dialog .modal-content .modal-body textarea {
-          width: 100%;
-          background-color: #dcdcdc;
-          border: none; }
-        body.paulweiss .modal-dialog .modal-content .modal-body input {
-          margin-bottom: 20px; }
-        body.paulweiss .modal-dialog .modal-content .modal-body textarea {
-          height: 150px;
-          padding: 5px; }
-      body.paulweiss .modal-dialog .modal-content .modal-footer {
-        border-top: none;
-        text-align: center;
-        padding: 20px 0; }
-        body.paulweiss .modal-dialog .modal-content .modal-footer .btn {
-          background-color: #c13f28;
-          color: #fff;
-          border: 0;
-          border-radius: 0;
-          padding: 5px 30px; }
+
+/* MODAL
+    **********************************/
+.modal {
+  text-align: center;
+  padding: 0 !important; }
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px; }
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle; }
+  .modal-dialog .modal-content {
+    border-radius: 1px;
+    padding: 10px; }
+    .modal-dialog .modal-content .modal-header {
+      border-bottom: none; }
+      .modal-dialog .modal-content .modal-header h4 {
+        color: black;
+        font-size: 15px; }
+      .modal-dialog .modal-content .modal-header .close {
+        text-align: right; }
+    .modal-dialog .modal-content .modal-body {
+      padding-top: 0;
+      padding-bottom: 0; }
+      .modal-dialog .modal-content .modal-body p {
+        margin: 10px 0 30px;
+        font-family: font-1;
+        color: #999; }
+      .modal-dialog .modal-content .modal-body div {
+        font-family: "Arial";
+        font-weight: 700;
+        font-size: 12px; }
+      .modal-dialog .modal-content .modal-body input, .modal-dialog .modal-content .modal-body textarea {
+        width: 100%;
+        background-color: #dcdcdc;
+        border: none; }
+      .modal-dialog .modal-content .modal-body input {
+        margin-bottom: 20px; }
+      .modal-dialog .modal-content .modal-body textarea {
+        height: 150px;
+        padding: 5px; }
+    .modal-dialog .modal-content .modal-footer {
+      border-top: none;
+      text-align: center;
+      padding: 20px 0; }
+      .modal-dialog .modal-content .modal-footer .btn {
+        background-color: #c13f28;
+        color: #fff;
+        border: 0;
+        border-radius: 0;
+        padding: 5px 30px; }
 
 /*# sourceMappingURL=d3-theme-paulweiss.css.map */
