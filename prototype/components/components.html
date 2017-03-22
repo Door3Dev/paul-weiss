@@ -92,78 +92,57 @@
                         
                         <!--SEARCH RESULTS-->
                         <div class="search-results hasBackground">
-                           <div class="row gutter-10">
-                               <div class="col-xs-6">
-                                    <div class="select-a-search result">
-                                        <div class="title">Select a search</div>
-                                        <ul>
-                                            <li><em class="fa fa-search"></em> Experience in John</li>
-                                            <li><em class="fa fa-search"></em> Documents that contain John</li>
-                                            <li><em class="fa fa-search"></em> Matter Profiles that contain John</li>
-                                        </ul>
-                                    </div>
+                          <div class="row gutter-10">
+                                   <div class="col-xs-6">
+                                        <div class="people-directory result">
+                                            <div class="title">People Directory <a class="more pull-right">More</a></div>
+                                            <ul class="clearfix">
+                                                <li>
+                                                    <img src="http://akins2016/sites/pw/SiteAssets/d3/images/office-avatar.png" alt="" >   
+                                                    <div>
+                                                        <div class="name">John name</div>
+                                                        <div class="jobtitle">Job Title</div>
+                                                        <div class="phone">+1 123 456 7890</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <img src="http://akins2016/sites/pw/SiteAssets/d3/images/office-avatar2.png" alt="" >   
+                                                    <div>
+                                                        <div class="name">John name</div>
+                                                        <div class="jobtitle">Job Title</div>
+                                                        <div class="phone">+1 123 456 7890</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <img src="http://akins2016/sites/pw/SiteAssets/d3/images/office-avatar.png" alt="" >   
+                                                    <div>
+                                                        <div class="name">John name</div>
+                                                        <div class="jobtitle">Job Title</div>
+                                                        <div class="phone">+1 123 456 7890</div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                   </div>
+                                    <div class="col-xs-6">
+                                        <div class="select-a-search result">
+                                            <div class="title">Select a search</div>
+                                            <ul>
+                                                <li><em class="fa fa-search"></em> Experience in John</li>
+                                                <li><em class="fa fa-search"></em> Documents that contain John</li>
+                                                <li><em class="fa fa-search"></em> Matter Profiles that contain John</li>
+                                            </ul>
+                                        </div>
+                                        <div class="recent-search result">
+                                            <div class="title">Recent Search</div>
+                                            <ul>
+                                                <li>John Profile <em class="fa fa-close" onclick="D3SPCoreDOM.UI.RemoveSearchHistoryItem(1)"></em></li>
+                                                <li>John New York  <em class="fa fa-close" onclick="D3SPCoreDOM.UI.RemoveSearchHistoryItem(2)"></em></li>
+                                                <li>John in People Directory  <em class="fa fa-close" onclick="D3SPCoreDOM.UI.RemoveSearchHistoryItem(3)"></em></li>
+                                            </ul>
+                                        </div>
+                                   </div>
                                </div>
-                                <div class="col-xs-6">
-                                    <div class="recent-search result">
-                                        <div class="title">Recent Search</div>
-                                        <ul>
-                                            <li>John Profile <em class="fa fa-close" onclick="D3SPCoreDOM.UI.RemoveSearchHistoryItem(1)"></em></li>
-                                            <li>John New York  <em class="fa fa-close" onclick="D3SPCoreDOM.UI.RemoveSearchHistoryItem(2)"></em></li>
-                                            <li>John in People Directory  <em class="fa fa-close" onclick="D3SPCoreDOM.UI.RemoveSearchHistoryItem(3)"></em></li>
-                                        </ul>
-                                    </div>
-                               </div>
-                            </div>
-                            <div class="row gutter-10">
-                               <div class="col-xs-6">
-                                    <div class="people-directory result">
-                                        <div class="title">People Directory <a class="more pull-right">More</a></div>
-                                        <ul class="clearfix">
-                                            <li>
-                                                <img src="http://akins2016/sites/pw/SiteAssets/d3/images/office-avatar.png" alt="" >   
-                                                <div>
-                                                    <div class="name">John name</div>
-                                                    <div class="jobtitle">Job Title</div>
-                                                    <div class="phone">+1 123 456 7890</div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <img src="http://akins2016/sites/pw/SiteAssets/d3/images/office-avatar2.png" alt="" >   
-                                                <div>
-                                                    <div class="name">John name</div>
-                                                    <div class="jobtitle">Job Title</div>
-                                                    <div class="phone">+1 123 456 7890</div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <img src="http://akins2016/sites/pw/SiteAssets/d3/images/office-avatar.png" alt="" >   
-                                                <div>
-                                                    <div class="name">John name</div>
-                                                    <div class="jobtitle">Job Title</div>
-                                                    <div class="phone">+1 123 456 7890</div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                               </div>
-                               <div class="col-xs-6">
-                                    <div class="clients result">
-                                        <div class="title">Client Lookup <a class="more pull-right">More</a></div>
-                                        <ul class="clearfix">
-                                            <li>John name - 123456</li>
-                                            <li>John name - 123456</li>
-                                            <li>John name - 123456</li>
-                                        </ul>
-                                    </div>
-                                    <div class="matters result">
-                                        <div class="title">Matter Lookup <a class="more pull-right">More</a></div>
-                                        <ul class="clearfix">
-                                            <li>John name - 123456</li>
-                                            <li>John name - 123456</li>
-                                        </ul>
-                                    </div>
-                               </div>
-                           </div>
                         </div>
                    </div>
                   </div>
