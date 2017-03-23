@@ -386,14 +386,19 @@ body.paulweiss {
     background-color: #c13f28; }
   body.paulweiss .d3-calendar .calendar-list li:last-child .calendar-list-item {
     margin-bottom: 0; }
+  body.paulweiss .d3-calendar .calendar-list .calendar-date-outer {
+    height: 41px;
+    widht: 41px;
+    font-size: 12px; }
   body.paulweiss .d3-calendar .calendar-list .calendar-list-item {
     height: 50px;
     margin-bottom: 20px; }
     body.paulweiss .d3-calendar .calendar-list .calendar-list-item .calendar-date-inner {
-      background-color: #716f73;
+      background-color: #c13f28;
       padding: 0;
       color: #fff;
-      height: 20px; }
+      height: 20px;
+      font-size: 10px; }
       body.paulweiss .d3-calendar .calendar-list .calendar-list-item .calendar-date-inner:hover {
         background-color: #99caf9; }
   body.paulweiss .office-tabs li {
