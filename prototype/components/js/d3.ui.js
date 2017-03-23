@@ -585,9 +585,6 @@ var d3UI = function(SharePointSiteURL, SharePointRestAPI, framework) {
         if(w.indexOf("offices") != -1){
                $('.office').toggleClass('active');
         }
-        if(w.indexOf("office") != -1){
-               $('.office').toggleClass('active');
-        }
          if(w.indexOf("employee-profile") != -1){
                $('.firm').toggleClass('active');
         }
