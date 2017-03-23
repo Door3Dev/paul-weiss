@@ -239,12 +239,15 @@ body.paulweiss{
                 p{
                     display: inline;
                 }
+                i{
+                    font-size: 20px;
+                }
             }
             
             #currenttime{
                 margin-right: 8px;
                 padding-right: 10px;
-                border-right: 1px solid $gray-1;
+                border-right: 1px solid black;
             }
         }
         
@@ -603,7 +606,7 @@ body.paulweiss{
             .calendar-date-outer {
                 height:41px;
                 widht:41px;
-                font-size: 12px;
+                font-size: 10px;
             }
             .calendar-list-item{
                 height:50px;

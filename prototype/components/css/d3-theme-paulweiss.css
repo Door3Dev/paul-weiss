@@ -164,10 +164,12 @@ body.paulweiss {
         color: #EFEFEF; }
         body.paulweiss .d3-navbar .today .d3-weather-header p {
           display: inline; }
+        body.paulweiss .d3-navbar .today .d3-weather-header i {
+          font-size: 20px; }
       body.paulweiss .d3-navbar .today #currenttime {
         margin-right: 8px;
         padding-right: 10px;
-        border-right: 1px solid #999; }
+        border-right: 1px solid black; }
     body.paulweiss .d3-navbar .logo {
       padding-top: 3px; }
     body.paulweiss .d3-navbar .search-box {
@@ -389,7 +391,7 @@ body.paulweiss {
   body.paulweiss .d3-calendar .calendar-list .calendar-date-outer {
     height: 41px;
     widht: 41px;
-    font-size: 12px; }
+    font-size: 10px; }
   body.paulweiss .d3-calendar .calendar-list .calendar-list-item {
     height: 50px;
     margin-bottom: 20px; }
