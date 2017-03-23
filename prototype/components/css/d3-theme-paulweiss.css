@@ -308,7 +308,8 @@ body.paulweiss {
       body.paulweiss .d3-card.main-card .right .right-content {
         padding-left: 20px; }
     body.paulweiss .d3-card.resource-card li {
-      list-style: disc; }
+      list-style: disc;
+      color: #802528; }
     body.paulweiss .d3-card.resource-card a {
       font-family: "Georgia";
       color: #802528; }

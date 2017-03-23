@@ -555,14 +555,12 @@ var d3UI = function(SharePointSiteURL, SharePointRestAPI, framework) {
 	{
 		var d = $('.security-updates');
 		$.each(data.d.results, function(i,e){
-		
-	$(d).append("<div class=\"update\"><h4>{0}<br></h4><p>{1}</p></div>".format(e.Created, e.Title));
+	       $(d).append("<div class=\"update\"><h4>{0}<br></h4><p>{1}</p></div>".format(e.Created, e.Title));
 		});
 	};	
 	
 	self.SpotLightComplete = function(data)
 	{
-	
 		if(data.d.results.length >0)
 		{
 			$(D3SPCoreDOM.Settings.SpolitLightContentHtml).children('.title').html(data.d.results[0].Title);
@@ -574,6 +572,31 @@ var d3UI = function(SharePointSiteURL, SharePointRestAPI, framework) {
 	{
   		
   	};	
+    
+    self.SetHeaderUI = function(){
+       var w = window.location.pathname;
+        $(".d3-navbar").children('li').removeClass('active');
+        if(w.indexOf("ServiceDirectory") != -1){
+            $('.service').toggleClass('active');
+        }
+        if(w.indexOf("homepage") != -1){
+               $('.home').toggleClass('active');
+        }
+        if(w.indexOf("offices") != -1){
+               $('.office').toggleClass('active');
+        }
+        if(w.indexOf("office") != -1){
+               $('.office').toggleClass('active');
+        }
+         if(w.indexOf("employee-profile") != -1){
+               $('.firm').toggleClass('active');
+        }
+         if(w.indexOf("resources") != -1){
+               $('.resource').toggleClass('active');
+        }
+        
+    }
+    
   
     //highlights the active menu link for the current page
     self.ActiveNavMenuLink = (index) => {

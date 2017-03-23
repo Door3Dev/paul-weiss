@@ -310,7 +310,8 @@ $(document).ready(function() {
     D3SPCoreDOM.UI.SetGradientTables();
     D3SPCoreDOM.UI.SetCharts();
     D3SPCoreDOM.UI.GetCurrentSpotlight();
-      D3SPCoreDOM.UI.GetSecurityUpdate();
+    D3SPCoreDOM.UI.GetSecurityUpdate();
+    D3SPCoreDOM.UI.SetHeaderUI();
 
     
     //add class to body if viewing as admin
