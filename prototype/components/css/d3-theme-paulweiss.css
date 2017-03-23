@@ -174,7 +174,7 @@ body.paulweiss {
       height: 40px; }
       body.paulweiss .d3-navbar .search-box.active {
         z-index: 999999;
-        position: inherit;.d3-navmenu
+        position: inherit;
         margin-right: 0; }
         body.paulweiss .d3-navbar .search-box.active input[type='text'] {
           width: -moz-calc(100% - 65px);
