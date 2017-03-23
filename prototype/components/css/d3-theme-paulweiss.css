@@ -284,7 +284,9 @@ body.paulweiss {
     body.paulweiss .breadcrumb .active {
       font-weight: 600; }
   body.paulweiss .side-card-container {
-    background-color: #E8E8E8; }
+    background-color: #E8E8E8;
+    margin-left: -10px;
+    padding: 0 15px 0 15px; }
   body.paulweiss .d3-card {
     line-height: normal; }
     body.paulweiss .d3-card.main-card {
@@ -293,7 +295,7 @@ body.paulweiss {
         font-family: "Georgia";
         font-weight: 700;
         font-size: 17px;
-        letter-spacing: 2px;
+        letter-spacing: 0;
         color: #333;
         margin-top: 0;
         margin-bottom: 20px;
@@ -318,34 +320,35 @@ body.paulweiss {
       color: #802528; }
     body.paulweiss .d3-card.service-directory-card .faq-click {
       font-family: "Georgia";
-      font-weight: bold; }
+      font-size: 17px;
+      color: black; }
     body.paulweiss .d3-card.service-directory-card .d3-tip-list {
       list-style: none;
-      padding-left: 5px; }
+      padding-left: 0; }
     body.paulweiss .d3-card.service-directory-card .d3-tip-list li:before {
       color: #696969;
       font-size: 20px; }
     body.paulweiss .d3-card.service-directory-card .fa-caret-down {
       color: #555555;
-      padding: 5px; }
+      padding: 5px 5px 5px 0; }
     body.paulweiss .d3-card.service-directory-card .fa-caret-right {
       color: #555555;
-      padding: 5px; }
+      padding: 5px 5px 5px 0; }
     body.paulweiss .d3-card.service-directory-card .fa-envelope:before {
       color: #555555;
-      padding: 5px;
+      padding: 5px 5px 5px 0;
       margin-right: 0px; }
     body.paulweiss .d3-card.service-directory-card .fa-phone:before {
       color: #555555;
       padding: 5px; }
     body.paulweiss .d3-card.service-directory-card .service-text {
       border-bottom: none;
-      padding-left: 30px; }
+      padding-left: 24px; }
     body.paulweiss .d3-card.service-directory-card .service-text-last {
       border-bottom: 1px solid #d8d9da;
       margin-bottom: 20px;
       padding-bottom: 20px;
-      padding-left: 30px; }
+      padding-left: 24px; }
     body.paulweiss .d3-card.service-directory-card .resource-list {
       padding-left: 5px;
       padding-top: 8px; }
@@ -356,7 +359,8 @@ body.paulweiss {
       list-style: disc;
       font-family: "Georgia";
       color: #717073;
-      font-size: 15px; }
+      font-size: 14px;
+      line-height: 20px; }
     body.paulweiss .d3-card.service-directory-card .resource-list li:before {
       content: none; }
     body.paulweiss .d3-card.side-card {
@@ -418,11 +422,11 @@ body.paulweiss {
     body.paulweiss .d3-tools .tool {
       border-radius: 0;
       background-color: #dcdcdc;
-      line-height: 15px;
+      line-height: 12px;
       height: 65px;
       color: #999;
-      padding: 0;
-      font-size: 11px;
+      padding: 2px;
+      font-size: 10px;
       display: flex;
       align-items: center;
       text-align: center;
@@ -434,6 +438,10 @@ body.paulweiss {
       body.paulweiss .d3-tools .tool:hover {
         background-color: #c13f28;
         color: white; }
+    body.paulweiss .d3-tools .tab-pane .row .col-xs-6:nth-child(odd) .tool {
+      margin: 0 -10px 10px 0; }
+    body.paulweiss .d3-tools .tab-pane .row .col-xs-6:nth-child(even) .tool {
+      margin: 0 0 10px -10px; }
   body.paulweiss .d3-hire-tabs {
     padding-top: 20px;
     margin-left: 0;
@@ -448,7 +456,8 @@ body.paulweiss {
       justify-content: center;
       margin: auto 5px; }
       body.paulweiss .d3-hire-tabs > li > a, body.paulweiss .d3-hire-tabs > lia:focus, body.paulweiss .d3-hire-tabs > lia:hover {
-        background: #999; }
+        background: #999;
+        cursor: pointer; }
   body.paulweiss .side-spotlight {
     font-size: 15px;
     font-family: "Georgia"; }
@@ -479,19 +488,29 @@ body.paulweiss {
             display: block; }
         body.paulweiss .todays-activities > ul > li ul li p {
           font-family: "Georgia"; }
+  body.paulweiss .d3-general-list {
+    padding-left: 25px; }
   body.paulweiss .recent-arrivals h5, body.paulweiss .key-contacts h5 {
     margin-bottom: 20px; }
   body.paulweiss .recent-arrivals .person, body.paulweiss .key-contacts .person {
-    margin-bottom: 15px; }
+    margin-bottom: 20px; }
     body.paulweiss .recent-arrivals .person img, body.paulweiss .key-contacts .person img {
       margin-right: 10px; }
     body.paulweiss .recent-arrivals .person .name, body.paulweiss .key-contacts .person .name {
       color: #802528;
       font-family: "Georgia"; }
+    body.paulweiss .recent-arrivals .person .meta, body.paulweiss .key-contacts .person .meta {
+      font-size: 12px; }
   body.paulweiss .office-info .info {
     width: 60%;
     padding-right: 20px;
     font-family: "Georgia"; }
+    body.paulweiss .office-info .info p {
+      font-size: 17px;
+      line-height: 24px;
+      margin-bottom: 20px; }
+    body.paulweiss .office-info .info div {
+      margin-bottom: 7px; }
   body.paulweiss .office-info img {
     width: 40%; }
   body.paulweiss .visiting-office h5, body.paulweiss .local-information h5 {
@@ -503,7 +522,7 @@ body.paulweiss {
       color: #802528;
       font-family: "Georgia";
       display: inline-block;
-      margin-bottom: 5px; }
+      margin-bottom: 7px; }
   body.paulweiss .security-updates h5 {
     margin-bottom: 20px; }
   body.paulweiss .security-updates .update h4 {
@@ -592,6 +611,46 @@ body.paulweiss {
         color: #802528;
         font-family: "Georgia";
         font-size: 15px; }
+  body.paulweiss .d3-profile-card img {
+    margin: 0 auto 20px; }
+  body.paulweiss .d3-profile-card .basicinfo {
+    font-family: "Georgia";
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 10px; }
+  body.paulweiss .d3-profile-card fieldset {
+    margin-bottom: 20px; }
+    body.paulweiss .d3-profile-card fieldset legend {
+      border-bottom: none;
+      font-family: "Arial";
+      font-size: 12px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+      color: #999; }
+    body.paulweiss .d3-profile-card fieldset .field {
+      margin-bottom: 7px; }
+      body.paulweiss .d3-profile-card fieldset .field span {
+        font-family: "Georgia";
+        display: inline-block;
+        vertical-align: top; }
+        body.paulweiss .d3-profile-card fieldset .field span:first-child {
+          width: 40%;
+          color: #999; }
+        body.paulweiss .d3-profile-card fieldset .field span:last-child {
+          width: 60%;
+          color: black; }
+  body.paulweiss .profile-bio p {
+    font-family: "Georgia"; }
+  body.paulweiss .table thead {
+    font-size: 12px; }
+    body.paulweiss .table thead th {
+      font-weight: normal;
+      padding-bottom: 5px; }
+      body.paulweiss .table thead th:first-child {
+        padding-left: 0; }
+  body.paulweiss .table tbody {
+    font-family: "Georgia";
+    color: black; }
   body.paulweiss .k-draghandle.k-state-selected:hover, body.paulweiss .k-ghost-splitbar-horizontal, body.paulweiss .k-ghost-splitbar-vertical, body.paulweiss .k-list > .k-state-highlight, body.paulweiss .k-list > .k-state-selected, body.paulweiss .k-marquee-color, body.paulweiss .k-panel > .k-state-selected, body.paulweiss .k-scheduler .k-scheduler-toolbar .k-state-selected, body.paulweiss .k-scheduler .k-today.k-state-selected, body.paulweiss .k-state-selected, body.paulweiss .k-state-selected:link, body.paulweiss .k-state-selected:visited {
     background-color: #c13f28;
     border-color: #c13f28; }
@@ -753,7 +812,8 @@ body.paulweiss {
         background-color: #dcdcdc;
         border: none; }
       .modal-dialog .modal-content .modal-body input {
-        margin-bottom: 20px; }
+        margin-bottom: 20px;
+        padding: 5px; }
       .modal-dialog .modal-content .modal-body textarea {
         height: 150px;
         padding: 5px; }

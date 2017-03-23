@@ -410,6 +410,8 @@ body.paulweiss{
     
     .side-card-container{
         background-color: $background-3;
+        margin-left:-10px;
+        padding: 0 15px 0 15px;
     }
     
     .d3-card { 
@@ -422,7 +424,7 @@ body.paulweiss{
                 font-family: $font-1;
                 font-weight: $font-weight-bold;
                 font-size: $font-size-5;
-                letter-spacing: 2px;
+                letter-spacing: 0;
                 color: $gray-2;
                 margin-top:0;
                 margin-bottom: 20px;
@@ -468,12 +470,13 @@ body.paulweiss{
                 
             }
             .faq-click {
-                 font-family: $font-1;
-                font-weight: bold;
+                font-family: $font-1;
+                font-size: $font-size-5;
+                color: $black;
             }
             .d3-tip-list {
                 list-style:none;
-	            padding-left: 5px;
+	            padding-left: 0;
 
             }
             .d3-tip-list li:before {
@@ -482,16 +485,16 @@ body.paulweiss{
             }
             .fa-caret-down {
               color: #555555;
-              padding: 5px; 
+              padding: 5px 5px 5px 0;
             }
             .fa-caret-right {
               color: #555555;
-              padding: 5px; 
+              padding: 5px 5px 5px 0; 
             }
 
              .fa-envelope:before {
                     color:#555555;
-                 padding:5px;
+                 padding:5px 5px 5px 0;
                  margin-right: 0px;
                 }
               .fa-phone:before {
@@ -500,17 +503,16 @@ body.paulweiss{
                 }
             .service-text {
                 border-bottom:none;
-     padding-left: 30px;
-
+                 padding-left: 24px;
             }
             .service-text-last {
                border-bottom:1px solid #d8d9da;
                margin-bottom: 20px;
                 padding-bottom: 20px;
-                padding-left: 30px; }
+                padding-left: 24px; }
             .resource-list {
-                     padding-left:5px;
-	                padding-top:8px; 
+                padding-left:5px;
+	            padding-top:8px; 
             }
           
             .resource-list{
@@ -521,11 +523,10 @@ body.paulweiss{
                   list-style: disc;
                  font-family: $font-1;
                 color:#717073;
-                font-size: 15px;
+                font-size: $font-size-3;
+                line-height: 20px;
             }
             .resource-list li:before {
-              
-                
                 content:none;
             }
         }
@@ -656,11 +657,11 @@ body.paulweiss{
         .tool{
             border-radius: 0;
             background-color: $gray-3;
-            line-height: 15px;
+            line-height: 12px;
             height:65px;
             color:$gray-1;
-            padding:0;
-            font-size: $font-size-1;
+            padding:2px;
+            font-size: $font-size-0;
             display: flex;
             align-items: center;
             text-align: center;
@@ -675,6 +676,24 @@ body.paulweiss{
             &:hover{
                 background-color: $red-1;
                 color:white;
+            }
+        }
+        
+        .tab-pane{
+            .row{
+                .col-xs-6{
+                    &:nth-child(odd){
+                        .tool{
+                            margin: 0 -10px 10px 0;
+                        }
+                    }
+
+                    &:nth-child(even){
+                        .tool{
+                            margin: 0 0 10px -10px;
+                        }
+                    }
+                }
             }
         }
     }
@@ -697,6 +716,7 @@ body.paulweiss{
             
             &>a, &a:focus, &a:hover{
                  background: $gray-1;
+                cursor: pointer;
             }
         }
     }
@@ -751,13 +771,18 @@ body.paulweiss{
         }
     }
     
+    //main: bullet list
+    .d3-general-list{
+        padding-left:25px;
+    }
+    
     //side: recent arrivals
     .recent-arrivals,.key-contacts{
         h5{
             margin-bottom: 20px;
         }
         .person{
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             
             img{
                 margin-right:10px;
@@ -766,10 +791,9 @@ body.paulweiss{
                 color: $red-2;
                 font-family: $font-1;
             }
-            .jobtitle{
-                
+            .meta{
+                font-size: $font-size-2;
             }
-            
         }
     }
     
@@ -779,6 +803,16 @@ body.paulweiss{
             width:60%;
             padding-right: 20px;
             font-family: $font-1;
+            
+            p{
+                font-size: $font-size-5;
+                line-height: 24px;
+                margin-bottom: 20px;
+            }
+            
+            div{
+                margin-bottom: 7px;
+            }
         }
         
         img{
@@ -799,7 +833,7 @@ body.paulweiss{
                 color: $red-2;
                 font-family: $font-1;
                 display: inline-block;
-                margin-bottom: 5px;
+                margin-bottom: 7px;
             }
         }
     }
@@ -955,6 +989,78 @@ body.paulweiss{
                     font-size: $font-size-4;
                 }
             }
+        }
+    }
+    
+    //main: profile 
+    .d3-profile-card{
+        img{
+            margin: 0 auto 20px;
+        }
+        
+        .basicinfo{
+            font-family: $font-1;
+            font-size: $font-size-5;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        fieldset{
+            margin-bottom: 20px;
+            
+            legend{
+                border-bottom: none;
+                font-family: $font-2;
+                font-size: $font-size-2;
+                text-transform: uppercase;
+                margin-bottom: 15px;
+                color: $gray-1;
+            }
+            .field{
+                margin-bottom: 7px;
+                
+                span{
+                    font-family: $font-1;
+                    display: inline-block;
+                    vertical-align: top;
+                    
+                    &:first-child{
+                        width: 40%;
+                        color: $gray-1;
+                    }
+                    &:last-child{
+                        width: 60%; 
+                        color: $black;
+                    }
+                }
+            }
+        }
+    }
+    
+    .profile-bio{
+        p{
+            font-family: $font-1;
+        }
+        
+    }
+    
+    //main: tables
+    .table{
+        thead{
+            font-size: $font-size-2;
+            
+            th{
+                &:first-child{
+                    padding-left:0;
+                }
+                font-weight: normal;
+                padding-bottom: 5px;
+            }
+        }
+        
+        tbody{
+            font-family: $font-1;
+            color: $black;
         }
     }
     
@@ -1295,6 +1401,7 @@ body.paulweiss{
                 }
                 input{
                     margin-bottom: 20px;
+                    padding: 5px;
                 }
                 textarea{
                     height: 150px;
