@@ -27,7 +27,7 @@ var d3UI = function(SharePointSiteURL, SharePointRestAPI, framework) {
             
             
             //toggle display
-            var input = $(D3SPCoreDOM.Settings.searchInputText),
+            var input = $(D3SPCoreDOM.Settings.searchBox),
                 results = $(D3SPCoreDOM.Settings.searchResultsBox),
                 background = $(D3SPCoreDOM.Settings.backgroundOverlay);
             
@@ -577,7 +577,7 @@ var d3UI = function(SharePointSiteURL, SharePointRestAPI, framework) {
   
     //highlights the active menu link for the current page
     self.ActiveNavMenuLink = (index) => {
-        $(".nav.navbar-nav li").removeClass("active");
-        $(".nav.navbar-nav li:nth-child(" + index + ")").addClass("active");
+        $(".paulweiss .nav.navbar-nav li").removeClass("active");
+        $(".paulweiss .nav.navbar-nav li:nth-child(" + index + ")").addClass("active");
     };
 };

@@ -285,7 +285,6 @@ body.paulweiss {
       font-weight: 600; }
   body.paulweiss .side-card-container {
     background-color: #E8E8E8;
-    margin-left: -10px;
     padding: 0 15px 0 15px; }
   body.paulweiss .d3-card {
     line-height: normal; }
@@ -298,7 +297,7 @@ body.paulweiss {
         letter-spacing: 0;
         color: #333;
         margin-top: 0;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         text-transform: uppercase; }
         body.paulweiss .d3-card.main-card h5 small {
           font-size: 11px; }
@@ -363,7 +362,6 @@ body.paulweiss {
     body.paulweiss .d3-card.service-directory-card .resource-list li:before {
       content: none; }
     body.paulweiss .d3-card.side-card {
-      margin-bottom: 20px;
       background-color: #E8E8E8;
       color: #333;
       margin-bottom: 0px;
@@ -378,7 +376,7 @@ body.paulweiss {
     body.paulweiss .d3-card .bottom {
       display: none; }
   body.paulweiss .carousel .carousel-inner img {
-    padding: 20px 0 20px 20px; }
+    padding: 20px 10px 20px 20px; }
   body.paulweiss .carousel .carousel-inner .carousel-content .sub-news-header {
     font-family: "Georgia"; }
   body.paulweiss .d3-new-hires-tab em {
@@ -413,7 +411,7 @@ body.paulweiss {
       top: 16px; }
     body.paulweiss .d3-tools input {
       width: 100%;
-      margin: 10px 0;
+      margin: 10px 0 15px;
       border: none;
       height: 28px;
       padding-left: 30px;
@@ -438,9 +436,9 @@ body.paulweiss {
         background-color: #c13f28;
         color: white; }
     body.paulweiss .d3-tools .tab-pane .row .col-xs-6:nth-child(odd) .tool {
-      margin: 0 -10px 10px 0; }
+      margin: 0 0 15px 0; }
     body.paulweiss .d3-tools .tab-pane .row .col-xs-6:nth-child(even) .tool {
-      margin: 0 0 10px -10px; }
+      margin: 0 0 15px 0; }
   body.paulweiss .d3-hire-tabs {
     padding-top: 20px;
     margin-left: 0;
@@ -469,7 +467,8 @@ body.paulweiss {
       height: 300px;
       overflow-y: scroll;
       list-style: none;
-      padding-left: 0; }
+      padding-left: 0;
+      padding-right: 30px; }
       body.paulweiss .todays-activities > ul > li > div {
         font-size: 14px; }
       body.paulweiss .todays-activities > ul > li ul {
@@ -683,7 +682,8 @@ body.paulweiss {
         border-bottom: 1px solid #999; }
   body.paulweiss .search-results {
     padding: 15px 20px;
-    margin-top: -18px; }
+    margin-top: -18px;
+    width: 838px; }
     body.paulweiss .search-results a {
       color: #802528; }
     body.paulweiss .search-results .result {
@@ -713,7 +713,8 @@ body.paulweiss {
         body.paulweiss .search-results .result.select-a-search em, body.paulweiss .search-results .result.recent-search em {
           color: #333;
           margin-right: 5px;
-          font-size: 13px; }
+          font-size: 13px;
+          background-color: transparent; }
     body.paulweiss .search-results hr {
       border-top-color: #dcdcdc;
       width: 90%; }
