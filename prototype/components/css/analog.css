@@ -1,7 +1,7 @@
 .analog {
   position: relative;
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
   margin: auto;
   background: url(../images/clock.png);
   list-style: none;
@@ -10,11 +10,11 @@
     margin: 0;
     padding: 0; }
   .analog .hour, .analog .min, .analog .sec {
-    height: 80px;
+    height: 78px;
     position: absolute;
-    width: 3px;
-    top: 0;
-    left: 39px;
+    width: 2px;
+    top: -14px;
+    left: 24px;
     padding: 0; }
   .analog .sec {
     background: url(../images/sechand.png);
