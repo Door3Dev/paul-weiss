@@ -485,6 +485,8 @@ body.paulweiss {
             display: block; }
         body.paulweiss .todays-activities > ul > li ul li p {
           font-family: "Georgia"; }
+  body.paulweiss .d3-general-list {
+    padding-left: 25px; }
   body.paulweiss .recent-arrivals h5, body.paulweiss .key-contacts h5 {
     margin-bottom: 20px; }
   body.paulweiss .recent-arrivals .person, body.paulweiss .key-contacts .person {
