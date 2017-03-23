@@ -410,6 +410,8 @@ body.paulweiss{
     
     .side-card-container{
         background-color: $background-3;
+        margin-left:-10px;
+        padding: 0 15px 0 15px;
     }
     
     .d3-card { 
@@ -641,6 +643,24 @@ body.paulweiss{
             &:hover{
                 background-color: $red-1;
                 color:white;
+            }
+        }
+        
+        .tab-pane{
+            .row{
+                .col-xs-6{
+                    &:nth-child(odd){
+                        .tool{
+                            margin: 0 -10px 10px 0;
+                        }
+                    }
+
+                    &:nth-child(even){
+                        .tool{
+                            margin: 0 0 10px -10px;
+                        }
+                    }
+                }
             }
         }
     }

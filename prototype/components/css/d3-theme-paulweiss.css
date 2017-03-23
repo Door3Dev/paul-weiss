@@ -284,7 +284,9 @@ body.paulweiss {
     body.paulweiss .breadcrumb .active {
       font-weight: 600; }
   body.paulweiss .side-card-container {
-    background-color: #E8E8E8; }
+    background-color: #E8E8E8;
+    margin-left: -10px;
+    padding: 0 15px 0 15px; }
   body.paulweiss .d3-card {
     line-height: normal; }
     body.paulweiss .d3-card.main-card {
@@ -409,6 +411,10 @@ body.paulweiss {
       body.paulweiss .d3-tools .tool:hover {
         background-color: #c13f28;
         color: white; }
+    body.paulweiss .d3-tools .tab-pane .row .col-xs-6:nth-child(odd) .tool {
+      margin: 0 -10px 10px 0; }
+    body.paulweiss .d3-tools .tab-pane .row .col-xs-6:nth-child(even) .tool {
+      margin: 0 0 10px -10px; }
   body.paulweiss .d3-hire-tabs {
     padding-top: 20px;
     margin-left: 0;
