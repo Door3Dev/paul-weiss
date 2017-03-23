@@ -59,4 +59,5 @@ var Settings = function(name) {
     self.CityWeatherBox = ".d3-city-weather-box";
     self.KendoProfileFilterBox = ".d3-profile-filter";
     self.KendoWorkInProgress = ".d3-work-in-progress";
+     self.SpolitLightContentHtml = ".side-spotlight";
 };
