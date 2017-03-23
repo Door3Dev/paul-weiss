@@ -573,9 +573,10 @@ var d3UI = function(SharePointSiteURL, SharePointRestAPI, framework) {
   		
   	};	
     
+    //UPDATE THIS
     self.SetHeaderUI = function(){
        var w = window.location.pathname;
-        $(".d3-navbar").children('li').removeClass('active');
+        $(".d3-navbar").find('li').removeClass('active');
         if(w.indexOf("ServiceDirectory") != -1){
             $('.service').toggleClass('active');
         }
