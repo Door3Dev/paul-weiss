@@ -174,7 +174,7 @@ body.paulweiss {
       height: 40px; }
       body.paulweiss .d3-navbar .search-box.active {
         z-index: 999999;
-        position: inherit;
+        position: inherit;.d3-navmenu
         margin-right: 0; }
         body.paulweiss .d3-navbar .search-box.active input[type='text'] {
           width: -moz-calc(100% - 65px);
@@ -235,7 +235,9 @@ body.paulweiss {
             min-width: 150px; }
             body.paulweiss .d3-navbar .d3-navmenu-wrapper .d3-navmenu .nav > li.active {
               border-bottom: 5px solid #c13f28;
-              background-color: transparent; }
+              background-color: transparent; 
+                font-weight: bold;
+            }
             body.paulweiss .d3-navbar .d3-navmenu-wrapper .d3-navmenu .nav > li:hover {
               border-bottom: 5px solid #c13f28; }
             body.paulweiss .d3-navbar .d3-navmenu-wrapper .d3-navmenu .nav > li:first-child a:first-child {
