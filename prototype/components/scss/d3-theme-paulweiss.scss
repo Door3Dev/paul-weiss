@@ -410,7 +410,7 @@ body.paulweiss{
     
     .side-card-container{
         background-color: $background-3;
-        margin-left:-10px;
+        //margin-left:-10px;
         padding: 0 15px 0 15px;
     }
     
@@ -427,7 +427,7 @@ body.paulweiss{
                 letter-spacing: 0;
                 color: $gray-2;
                 margin-top:0;
-                margin-bottom: 20px;
+                margin-bottom: 15px;
                 text-transform: uppercase;
                 
                 small{
@@ -532,7 +532,7 @@ body.paulweiss{
         }
         
         &.side-card {
-            margin-bottom: 20px;
+            //margin-bottom: 15px;
             background-color: $background-3;
             color: $gray-2;
             margin-bottom: 0px;
@@ -565,7 +565,7 @@ body.paulweiss{
     .carousel {
         .carousel-inner{
             img{
-                padding:20px 0 20px 20px;
+                padding:20px 10px 20px 20px;
             }
             .carousel-content {
                 .sub-news-header{
@@ -648,7 +648,7 @@ body.paulweiss{
         }
         input{
             width: 100%;
-            margin: 10px 0;
+            margin: 10px 0 15px;
             border: none;
             height: 28px;
             padding-left: 30px;
@@ -684,13 +684,15 @@ body.paulweiss{
                 .col-xs-6{
                     &:nth-child(odd){
                         .tool{
-                            margin: 0 -10px 10px 0;
+                            //margin: 0 -10px 10px 0;
+                            margin: 0 0 15px 0;
                         }
                     }
 
                     &:nth-child(even){
                         .tool{
-                            margin: 0 0 10px -10px;
+                            //margin: 0 0 10px -10px;
+                            margin: 0 0 15px 0;
                         }
                     }
                 }
@@ -741,6 +743,7 @@ body.paulweiss{
             overflow-y: scroll;
             list-style: none;
             padding-left: 0;
+            padding-right: 30px;
             &>li{
                 &>div{
                     font-size: $font-size-3;
@@ -1129,6 +1132,7 @@ body.paulweiss{
     .search-results{
         padding: 15px 20px;
         margin-top:-18px;
+        width: 838px;
         
         a{
             color:$red-2;
@@ -1177,6 +1181,7 @@ body.paulweiss{
                     color: $gray-2;
                     margin-right: 5px;
                     font-size: 13px;
+                    background-color: transparent;
                 }
             }
         }

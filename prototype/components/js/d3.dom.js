@@ -352,6 +352,12 @@ $(document).ready(function() {
     
     //ellipses for events
      $(".calendar-list-text").dotdotdot();
+    
+    //feedback
+    $(".feedback a").on("click", () => {
+        event.preventDefault();
+        $(".feedback-modal").modal();
+    });
      
     /// DEMO code
     
