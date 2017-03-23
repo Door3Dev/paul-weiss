@@ -453,7 +453,9 @@ body.paulweiss{
         }
         
         &.resource-card {
-        
+            margin-bottom: 0px;
+            margin-top: 0px;
+            padding-bottom:0px;
             li {
                 list-style: disc;
                 color:#802528;

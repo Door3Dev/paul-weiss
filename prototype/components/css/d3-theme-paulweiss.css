@@ -309,12 +309,16 @@ body.paulweiss {
           padding-right: 20px; }
       body.paulweiss .d3-card.main-card .right .right-content {
         padding-left: 20px; }
-    body.paulweiss .d3-card.resource-card li {
-      list-style: disc;
-      color: #802528; }
-    body.paulweiss .d3-card.resource-card a {
-      font-family: "Georgia";
-      color: #802528; }
+    body.paulweiss .d3-card.resource-card {
+      margin-bottom: 0px;
+      margin-top: 0px;
+      padding-bottom: 0px; }
+      body.paulweiss .d3-card.resource-card li {
+        list-style: disc;
+        color: #802528; }
+      body.paulweiss .d3-card.resource-card a {
+        font-family: "Georgia";
+        color: #802528; }
     body.paulweiss .d3-card.service-directory-card a {
       font-family: "Georgia";
       padding: 0px;
