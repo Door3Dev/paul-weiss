@@ -1593,7 +1593,6 @@ pre code {
   padding-left: 7px;
   padding-right: 8px;
 }
-/*
 @media (min-width: 768px) {
   .container {
     width: 735px;
@@ -1604,7 +1603,6 @@ pre code {
     width: 955px;
   }
 }
-*/
 @media (min-width: 1200px) {
   .container {
     width: 1280px;
