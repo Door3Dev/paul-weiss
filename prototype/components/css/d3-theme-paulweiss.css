@@ -235,9 +235,7 @@ body.paulweiss {
             min-width: 150px; }
             body.paulweiss .d3-navbar .d3-navmenu-wrapper .d3-navmenu .nav > li.active {
               border-bottom: 5px solid #c13f28;
-              background-color: transparent; 
-                font-weight: bold;
-            }
+              background-color: transparent; }
             body.paulweiss .d3-navbar .d3-navmenu-wrapper .d3-navmenu .nav > li:hover {
               border-bottom: 5px solid #c13f28; }
             body.paulweiss .d3-navbar .d3-navmenu-wrapper .d3-navmenu .nav > li:first-child a:first-child {
