@@ -419,11 +419,11 @@ body.paulweiss {
     body.paulweiss .d3-tools .tool {
       border-radius: 0;
       background-color: #dcdcdc;
-      line-height: 15px;
+      line-height: 12px;
       height: 65px;
       color: #999;
-      padding: 0;
-      font-size: 11px;
+      padding: 2px;
+      font-size: 10px;
       display: flex;
       align-items: center;
       text-align: center;
@@ -453,7 +453,8 @@ body.paulweiss {
       justify-content: center;
       margin: auto 5px; }
       body.paulweiss .d3-hire-tabs > li > a, body.paulweiss .d3-hire-tabs > lia:focus, body.paulweiss .d3-hire-tabs > lia:hover {
-        background: #999; }
+        background: #999;
+        cursor: pointer; }
   body.paulweiss .side-spotlight {
     font-size: 15px;
     font-family: "Georgia"; }
@@ -758,7 +759,8 @@ body.paulweiss {
         background-color: #dcdcdc;
         border: none; }
       .modal-dialog .modal-content .modal-body input {
-        margin-bottom: 20px; }
+        margin-bottom: 20px;
+        padding: 5px; }
       .modal-dialog .modal-content .modal-body textarea {
         height: 150px;
         padding: 5px; }
