@@ -436,16 +436,16 @@ body.paulweiss {
       margin: 10px 0 15px;
       border: none;
       height: 28px;
-      padding-left: 30px;
+      padding-left: 35px;
       font-size: 12px; }
     body.paulweiss .d3-tools .tool {
       border-radius: 0;
       background-color: #dcdcdc;
       line-height: 12px;
       height: 65px;
-      color: #999;
+      color: #787878;
       padding: 2px;
-      font-size: 10px;
+      font-size: 11px;
       display: flex;
       align-items: center;
       text-align: center;
