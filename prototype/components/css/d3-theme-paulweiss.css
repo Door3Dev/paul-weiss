@@ -236,7 +236,8 @@ body.paulweiss {
             padding: 10px 0 5px;
             border-bottom: 5px solid transparent;
             min-width: 160px;
-            margin-bottom: 1px; }
+            margin-bottom: 1px;
+            height: 65px; }
             body.paulweiss .d3-navbar .d3-navmenu-wrapper .d3-navmenu .nav > li.active {
               border-bottom: 5px solid #c13f28;
               background-color: transparent;
@@ -403,7 +404,7 @@ body.paulweiss {
     height: 50px;
     margin-bottom: 20px; }
     body.paulweiss .d3-calendar .calendar-list .calendar-list-item .calendar-date-inner {
-      background-color: #c13f28;
+      background-color: #716f73;
       padding: 0;
       color: #fff;
       height: 20px;
@@ -770,11 +771,12 @@ body.paulweiss {
   body.paulweiss .footer {
     padding: 0;
     margin-top: 0;
-    background-color: #716f73; }
+    background-color: #716f73;
+    height: 80px; }
     body.paulweiss .footer .copyright {
       text-align: center;
       font-size: 12px;
-      padding: 30px;
+      padding: 10px;
       line-height: 30px; }
   body.paulweiss .feedback {
     text-align: center;
