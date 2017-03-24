@@ -301,12 +301,13 @@ var d3UI = function(SharePointSiteURL, SharePointRestAPI, framework) {
                              $(element).append(cItem);
                                     $(element).append(city);
                         }
-                                   
+                                
                         //this renders the clock
                         $(cItem).clock({
                             offset: clockData.timeZone,
                             type: mode
                         }); 
+                    
                     }
                 }
             }
