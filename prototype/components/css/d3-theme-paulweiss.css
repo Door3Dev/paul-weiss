@@ -285,8 +285,12 @@ body.paulweiss {
     padding: 0;
     margin-bottom: 0;
     font-family: "Georgia"; }
+    body.paulweiss .breadcrumb li:first-child a {
+      color: #5e5d60; }
     body.paulweiss .breadcrumb > li + li:before {
-      content: ">"; }
+      content: ">";
+      padding-left: 5px;
+      padding-right: 5px; }
     body.paulweiss .breadcrumb .active {
       font-weight: 600; }
   body.paulweiss .side-card-container {

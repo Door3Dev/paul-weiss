@@ -401,8 +401,13 @@ body.paulweiss{
         margin-bottom: 0;
         font-family: $font-1;
         
+        li:first-child a {
+            color:#5e5d60;
+        }
         &>li+li:before{
             content: ">";
+            padding-left:5px;
+            padding-right:5px;
         }
         
         .active{
