@@ -17,6 +17,7 @@ $black: black;
 $gray-1: #999;
 $gray-2: #333;
 $gray-3: #dcdcdc;
+$gray-4: #787878;
 $font-weight-light: 300;
 $font-weight-semibold: 600;
 $font-weight-bold: 700;
@@ -671,17 +672,17 @@ body.paulweiss{
             margin: 10px 0 15px;
             border: none;
             height: 28px;
-            padding-left: 30px;
+            padding-left: 35px;
             font-size: $font-size-2;
         }
         .tool{
             border-radius: 0;
             background-color: $gray-3;
             line-height: 12px;
-            height:65px;
-            color:$gray-1;
+            height:65px; 
+            color:$gray-4;
             padding:2px;
-            font-size: $font-size-0;
+            font-size: $font-size-1;
             display: flex;
             align-items: center;
             text-align: center;
