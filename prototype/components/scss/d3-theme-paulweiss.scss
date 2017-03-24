@@ -316,7 +316,7 @@ body.paulweiss{
                         border-bottom:5px solid transparent;
                         min-width: 160px;
                         margin-bottom:1px;
-
+                        height: 65px;
                         &.active{
                             border-bottom: 5px solid $red-1;
                             background-color: transparent;
@@ -618,7 +618,7 @@ body.paulweiss{
                 margin-bottom: 20px;
                 
                 .calendar-date-inner{
-                    background-color: #c13f28;
+                    background-color: #716f73;
                     padding: 0;
                     color: $white;
                     height: 20px;
@@ -1339,11 +1339,11 @@ body.paulweiss{
         padding: 0;
         margin-top:0;
         background-color: $header-bg-color;
-        
+        height:80px;
         .copyright{
             text-align:center;
             font-size: $font-size-2;
-            padding:30px;
+            padding:10px;
             line-height: 30px;
         }
     }
