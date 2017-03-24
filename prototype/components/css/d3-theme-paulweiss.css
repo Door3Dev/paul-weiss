@@ -271,6 +271,8 @@ body.paulweiss {
             -ms-transition: all 0.4s ease;
             -o-transition: all 0.4s ease;
             transition: all 0.4s ease; }
+          body.paulweiss .d3-navbar .d3-navmenu-wrapper .d3-navmenu .current-user i {
+            padding-left: 10px; }
     body.paulweiss .d3-navbar.shrink .d3-navmenu .nav > li {
       padding: 5px 0 5px; }
     body.paulweiss .d3-navbar.shrink .d3-navmenu .current-user img {
