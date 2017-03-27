@@ -29,15 +29,6 @@ $(document).ready(function() {
     //CHECK IF ALERT IS OPEN
     D3SPCoreDOM.Settings.Alert = $(D3SPCoreDOM.Settings.alertClass).filter(":visible").length > 0;
 
-    //HIDE MODAL BACK ON SCROLL
-    window.onscroll = function(e) {
-        //IF THE MODAL IS VIDEO STOP
-        if (!D3SPCoreDOM.Settings.VideoPlayerOpen) {
-            $(D3SPCoreDOM.Settings.modalClass).modal('hide');
-            $(D3SPCoreDOM.Settings.modalBgdrop).hide();
-            e.preventDefault();
-        }
-    }
 
     //AFFIX NAV MODAL ON SCROLL
     $(D3SPCoreDOM.Settings.nav).affix({
