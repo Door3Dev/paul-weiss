@@ -446,6 +446,10 @@ body.paulweiss{
         line-height: normal;
         padding: 24px;
         
+        h5{
+            font-weight: normal;
+        }
+        
         &.main-card {
             border: none;
              
@@ -678,14 +682,14 @@ body.paulweiss{
         
         .fa-search{
             position: absolute;
-            left: 23px;
+            left: 18px;
             top: 16px;
         }
         input{
             width: 100%;
             margin: 10px 0 15px;
             border: none;
-            height: 28px;
+            height: 30px;
             padding-left: 35px;
             font-size: $font-size-3;
         }
@@ -763,6 +767,10 @@ body.paulweiss{
         font-size: $font-size-4;
         font-family: $font-1;
         
+        h5{
+            margin-bottom: 24px;
+        }
+        
         .title{
             color:$red-2;
         }
@@ -822,10 +830,10 @@ body.paulweiss{
     //side: recent arrivals
     .recent-arrivals,.key-contacts{
         h5{
-            margin-bottom: 20px;
+            margin-bottom:32px;
         }
         .person{
-            margin-bottom: 20px;
+            margin-bottom: 32px;
             
             img{
                 margin-right:10px;
@@ -836,6 +844,8 @@ body.paulweiss{
             }
             .meta{
                 font-size: $font-size-3;
+                line-height: 20px;
+                color: $gray-5;
             }
         }
     }
@@ -865,6 +875,7 @@ body.paulweiss{
     
     //main: visiting office, local information
     .visiting-office, .local-information{
+        min-height: 270px;
         ul{
             list-style: none;
             padding-left: 0;
@@ -881,7 +892,7 @@ body.paulweiss{
     //side: security updates
     .security-updates{
         h5{
-            margin-bottom: 20px;
+            margin-bottom: 24px;
         }
         .update{
             h4{
@@ -901,9 +912,10 @@ body.paulweiss{
     .announcements, .community-exchange{
         .left, .right{ 
             &>h6{
-                margin-bottom: 20px;
+                margin-bottom: 16px;
                 margin-top: 20px;
                 font-family: $font-2;
+                font-size: $font-size-3;
             }
         }
         ul{
@@ -975,7 +987,7 @@ body.paulweiss{
         }
         
         .location{
-            min-height: 210px;
+            min-height: 215px;
             margin-bottom: 20px;
             padding-bottom: 40px;
             border-bottom: 1px solid $gray-3;
@@ -1017,18 +1029,21 @@ body.paulweiss{
         .person{
             margin-bottom: 10px;
             img{ 
-                width: 35px;
+                width: 38px;
                 margin-right:5px;
             }
             
             .info{
-                font-size: $font-size-2;
-                color: $gray-1;
                 
                 a{
                     color: $red-2;
                     font-family: $font-1;
                     font-size: $font-size-4;
+                }
+                
+                .meta{
+                    font-size: $font-size-3;
+                    color: $gray-1;
                 }
             }
         }
