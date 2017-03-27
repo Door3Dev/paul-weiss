@@ -18,6 +18,7 @@ $gray-1: #999;
 $gray-2: #333;
 $gray-3: #dcdcdc;
 $gray-4: #717073;
+$gray-5: #5e5d60;
 $font-weight-light: 300;
 $font-weight-semibold: 600;
 $font-weight-bold: 700;
@@ -45,6 +46,8 @@ $font-size-6: 22px;
 $font-size-7: 28px;
 $font-size-8: 54px;
 $font-size-9: 13px;
+$font-size-10: 21px;
+$font-size-11: 20px;
 
 
 body.paulweiss{
@@ -69,7 +72,7 @@ body.paulweiss{
     .d3-card.main-card h5,
     .d3-tabs .tab-content h5{
                 font-family: $font-1;
-                font-weight: $font-weight-bold;
+                font-weight: $font-weight-light;
                 font-size: $font-size-5;
                 letter-spacing: 2px;
                 color: $gray-2;
@@ -407,17 +410,23 @@ body.paulweiss{
         margin-bottom: 0;
         font-family: $font-1;
         
-        li:first-child a {
-            color:#5e5d60;
+        li{ 
+            &:last-child{
+                a{
+                    font-weight: 600;
+                    color: $black;
+                }
+            }
+            
+            a {
+                color: $gray-5;
+                font-size: $font-size-3;
+            }
         }
         &>li+li:before{
             content: ">";
             padding-left:5px;
             padding-right:5px;
-        }
-        
-        .active{
-            font-weight: 600;
         }
     }
     
@@ -440,7 +449,6 @@ body.paulweiss{
              
             h5 {
                 font-family: $font-1;
-                font-weight: $font-weight-bold;
                 font-size: $font-size-5;
                 letter-spacing: 0;
                 color: $gray-2;
@@ -833,13 +841,13 @@ body.paulweiss{
             font-family: $font-1;
             
             p{
-                font-size: $font-size-5;
-                line-height: 24px;
-                margin-bottom: 20px;
+                font-size: $font-size-11;
+                line-height: 1.3;
+                margin-bottom: 24px;
             }
             
             div{
-                margin-bottom: 7px;
+                margin-bottom: 8px;
             }
         }
         
@@ -850,9 +858,6 @@ body.paulweiss{
     
     //main: visiting office, local information
     .visiting-office, .local-information{
-        h5{
-            margin-bottom: 20px;
-        }
         ul{
             list-style: none;
             padding-left: 0;
@@ -952,10 +957,10 @@ body.paulweiss{
     //main: office cards
     .office-card{
         h3{
-            margin:0 0 10px;
+            margin:0 0 16px;
             line-height: normal;
             font-size: $font-size-6;
-            font-weight: 600;
+            color: $black;
         }
         .read-more-small-button{
             margin-top: 3px;
@@ -969,7 +974,7 @@ body.paulweiss{
             h4{
                 color: $red-2;
                 font-size: $font-size-4;
-                margin: 15px 0 0;
+                margin: 16px 0 0;
             }
             div{
                 font-family: $font-1;
@@ -1024,14 +1029,14 @@ body.paulweiss{
     //main: profile 
     .d3-profile-card{
         img{
-            margin: 0 auto 20px;
+            margin: 0 auto 27px;
         }
         
         .basicinfo{
             font-family: $font-1;
-            font-size: $font-size-5;
-            font-weight: 600;
-            margin-bottom: 10px;
+            font-size: $font-size-10;
+            margin-bottom: 29px;
+            color: $black;
         }
         
         fieldset{
@@ -1046,7 +1051,8 @@ body.paulweiss{
                 color: $gray-1;
             }
             .field{
-                margin-bottom: 7px;
+                margin-bottom: 8px;
+                line-height: 19px;
                 
                 span{
                     font-family: $font-1;
@@ -1065,6 +1071,17 @@ body.paulweiss{
             }
         }
     }
+    
+    .main-card[class*="profile-"], 
+    .main-card[class*="service-directory-card"],
+    .main-card[class*="local-information"],
+    .main-card[class*="visiting-office"],
+    .main-card[class*="resource-card"],{
+        h5{
+            margin-bottom: 32px;
+        }
+    }
+    
     
     .profile-bio{
         p{

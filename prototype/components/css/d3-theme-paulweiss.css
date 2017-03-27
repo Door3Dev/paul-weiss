@@ -49,7 +49,7 @@ body.paulweiss {
   body.paulweiss .d3-card.main-card h5,
   body.paulweiss .d3-tabs .tab-content h5 {
     font-family: "Georgia";
-    font-weight: 700;
+    font-weight: 300;
     font-size: 18px;
     letter-spacing: 2px;
     color: #333;
@@ -288,14 +288,16 @@ body.paulweiss {
     padding: 0;
     margin-bottom: 0;
     font-family: "Georgia"; }
-    body.paulweiss .breadcrumb li:first-child a {
-      color: #5e5d60; }
+    body.paulweiss .breadcrumb li:last-child a {
+      font-weight: 600;
+      color: black; }
+    body.paulweiss .breadcrumb li a {
+      color: #5e5d60;
+      font-size: 14px; }
     body.paulweiss .breadcrumb > li + li:before {
       content: ">";
       padding-left: 5px;
       padding-right: 5px; }
-    body.paulweiss .breadcrumb .active {
-      font-weight: 600; }
   body.paulweiss .side-card-container {
     background-color: #E8E8E8;
     padding: 0 15px 0 15px; }
@@ -306,7 +308,6 @@ body.paulweiss {
       border: none; }
       body.paulweiss .d3-card.main-card h5 {
         font-family: "Georgia";
-        font-weight: 700;
         font-size: 18px;
         letter-spacing: 0;
         color: #333;
@@ -339,7 +340,7 @@ body.paulweiss {
         color: #802528; }
       body.paulweiss .d3-card.service-directory-card .faq-click {
         font-family: "Georgia";
-        font-size: 17px;
+        font-size: 18px;
         color: black; }
       body.paulweiss .d3-card.service-directory-card .d3-tip-list {
         list-style: none;
@@ -531,15 +532,13 @@ body.paulweiss {
     padding-right: 20px;
     font-family: "Georgia"; }
     body.paulweiss .office-info .info p {
-      font-size: 18px;
-      line-height: 24px;
-      margin-bottom: 20px; }
+      font-size: 20px;
+      line-height: 1.3;
+      margin-bottom: 24px; }
     body.paulweiss .office-info .info div {
-      margin-bottom: 7px; }
+      margin-bottom: 8px; }
   body.paulweiss .office-info img {
     width: 40%; }
-  body.paulweiss .visiting-office h5, body.paulweiss .local-information h5 {
-    margin-bottom: 20px; }
   body.paulweiss .visiting-office ul, body.paulweiss .local-information ul {
     list-style: none;
     padding-left: 0; }
@@ -593,10 +592,10 @@ body.paulweiss {
       overflow: hidden;
       font-family: "Georgia"; }
   body.paulweiss .office-card h3 {
-    margin: 0 0 10px;
+    margin: 0 0 16px;
     line-height: normal;
     font-size: 22px;
-    font-weight: 600; }
+    color: black; }
   body.paulweiss .office-card .read-more-small-button {
     margin-top: 3px; }
   body.paulweiss .office-card .location {
@@ -607,7 +606,7 @@ body.paulweiss {
     body.paulweiss .office-card .location h4 {
       color: #802528;
       font-size: 16px;
-      margin: 15px 0 0; }
+      margin: 16px 0 0; }
     body.paulweiss .office-card .location div {
       font-family: "Georgia";
       line-height: 22px; }
@@ -638,12 +637,12 @@ body.paulweiss {
         font-family: "Georgia";
         font-size: 16px; }
   body.paulweiss .d3-profile-card img {
-    margin: 0 auto 20px; }
+    margin: 0 auto 27px; }
   body.paulweiss .d3-profile-card .basicinfo {
     font-family: "Georgia";
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 10px; }
+    font-size: 21px;
+    margin-bottom: 29px;
+    color: black; }
   body.paulweiss .d3-profile-card fieldset {
     margin-bottom: 20px; }
     body.paulweiss .d3-profile-card fieldset legend {
@@ -654,7 +653,8 @@ body.paulweiss {
       margin-bottom: 15px;
       color: #999; }
     body.paulweiss .d3-profile-card fieldset .field {
-      margin-bottom: 7px; }
+      margin-bottom: 8px;
+      line-height: 19px; }
       body.paulweiss .d3-profile-card fieldset .field span {
         font-family: "Georgia";
         display: inline-block;
@@ -665,6 +665,12 @@ body.paulweiss {
         body.paulweiss .d3-profile-card fieldset .field span:last-child {
           width: 60%;
           color: black; }
+  body.paulweiss .main-card[class*="profile-"] h5,
+  body.paulweiss .main-card[class*="service-directory-card"] h5,
+  body.paulweiss .main-card[class*="local-information"] h5,
+  body.paulweiss .main-card[class*="visiting-office"] h5,
+  body.paulweiss .main-card[class*="resource-card"] h5 {
+    margin-bottom: 32px; }
   body.paulweiss .profile-bio p {
     font-family: "Georgia"; }
   body.paulweiss .table thead {
