@@ -66,6 +66,7 @@ body.paulweiss {
     font-family: "Arial";
     font-size: 12px;
     margin-bottom: 5px;
+    color: #5e5d60;
     text-transform: uppercase; }
   body.paulweiss .mobile-heading-link-text {
     font-family: "Georgia";
@@ -401,8 +402,12 @@ body.paulweiss {
         margin: 0 10px 0 0; }
     body.paulweiss .d3-card .bottom {
       display: none; }
+  body.paulweiss .carousel .carousel-indicators {
+    display: none; }
   body.paulweiss .carousel .carousel-inner img {
-    padding: 20px 10px 20px 20px; }
+    padding: 20px 10px 20px 20px;
+    height: 319px;
+    width: 256px; }
   body.paulweiss .carousel .carousel-inner .carousel-content .sub-news-header {
     font-family: "Georgia"; }
   body.paulweiss .d3-new-hires-tab em {
@@ -770,10 +775,10 @@ body.paulweiss {
     body.paulweiss .search-results .right {
       border-left: 1px solid #dcdcdc; }
   body.paulweiss .read-more-button {
-    background-color: #802528;
+    background-color: #c13f27;
     font-weight: 300;
     font-size: 13px;
-    padding: 7px 10px; }
+    padding: 7px 20px; }
     body.paulweiss .read-more-button:hover {
       background-color: #c13f28; }
   body.paulweiss .read-more-small-button {
