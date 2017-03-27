@@ -198,11 +198,10 @@
     letter-spacing: .1px;
     color: #333; }
   .d3-card .sub-news-header {
-    font-size: 15px;
     font-weight: 400;
     font-style: normal;
     font-stretch: normal;
-    line-height: 1.4;
+    line-height: 21px;
     color: #333; }
   .d3-card .d3-more-link {
     float: right;

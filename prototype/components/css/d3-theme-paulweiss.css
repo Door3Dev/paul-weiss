@@ -2,7 +2,8 @@ body.paulweiss {
   /* TYPOGRAPHY (in the order of the "Style Tile" page)
     ***********************************/
   font-family: "Arial";
-  font-size: 15px;
+  font-size: 16px;
+  line-height: 21px;
   color: #333;
   background-color: #EFEFEF;
   /***********************************/
@@ -49,7 +50,7 @@ body.paulweiss {
   body.paulweiss .d3-tabs .tab-content h5 {
     font-family: "Georgia";
     font-weight: 700;
-    font-size: 17px;
+    font-size: 18px;
     letter-spacing: 2px;
     color: #333;
     margin-top: 0; }
@@ -63,16 +64,16 @@ body.paulweiss {
   body.paulweiss .heading-link-text, body.paulweiss .date-text,
   body.paulweiss .carousel-content .date {
     font-family: "Arial";
-    font-size: 14px;
+    font-size: 12px;
     margin-bottom: 5px; }
   body.paulweiss .mobile-heading-link-text {
     font-family: "Georgia";
     font-weight: 700;
-    font-size: 17px;
+    font-size: 18px;
     color: #2196f3; }
   body.paulweiss .unselected-text, body.paulweiss .search-box-text {
     font-family: "Georgia";
-    font-size: 17px;
+    font-size: 18px;
     letter-spacing: 2px;
     color: #999; }
   body.paulweiss .new-hire-name-text {
@@ -82,7 +83,7 @@ body.paulweiss {
   body.paulweiss .page-heading-text,
   body.paulweiss .d3-main h1 {
     font-family: "Georgia";
-    font-size: 51px;
+    font-size: 54px;
     color: #333;
     margin: 0 0 25px 0;
     border-bottom: 1px solid #dcdcdc;
@@ -90,23 +91,23 @@ body.paulweiss {
   body.paulweiss .title-text,
   body.paulweiss .news-header {
     font-family: "Georgia";
-    font-size: 32px;
+    font-size: 28px;
     color: #802528;
     margin-top: 5px; }
   body.paulweiss .bio-position-text {
     font-family: "Georgia";
     font-weight: 700;
-    font-size: 21px;
+    font-size: 22px;
     color: #333; }
   body.paulweiss .footer-copyright-text {
     font-family: "Georgia";
-    font-size: 15px;
+    font-size: 16px;
     letter-spacing: 1px;
     color: #fff;
     background-color: black; }
   body.paulweiss .footer-copyright-text-mobile {
     font-family: "Georgia";
-    font-size: 17px;
+    font-size: 18px;
     color: #fff;
     background-color: black; }
   body.paulweiss .body-text {
@@ -132,7 +133,7 @@ body.paulweiss {
   body.paulweiss .bio-current-workplace-text {
     font-family: "Arial";
     font-weight: 300;
-    font-size: 15px;
+    font-size: 16px;
     color: #333; }
   body.paulweiss .subcategory, body.paulweiss mobile-contact {
     font-family: "Arial";
@@ -146,7 +147,7 @@ body.paulweiss {
   body.paulweiss .d3-alert {
     background-color: #d90f0e;
     font-family: "Georgia";
-    font-size: 15px; }
+    font-size: 16px; }
     body.paulweiss .d3-alert .btn {
       font-family: "Arial";
       font-weight: 600;
@@ -253,7 +254,7 @@ body.paulweiss {
               line-height: normal;
               border-right: 1px solid #EFEFEF; }
           body.paulweiss .d3-navbar .d3-navmenu-wrapper .d3-navmenu .nav .dropdown .dropdown-menu h5 {
-            font-size: 21px; }
+            font-size: 22px; }
           body.paulweiss .d3-navbar .d3-navmenu-wrapper .d3-navmenu .nav .dropdown .dropdown-menu li em {
             color: #1976d2; }
           body.paulweiss .d3-navbar .d3-navmenu-wrapper .d3-navmenu .nav .dropdown .dropdown-menu li a {
@@ -305,7 +306,7 @@ body.paulweiss {
       body.paulweiss .d3-card.main-card h5 {
         font-family: "Georgia";
         font-weight: 700;
-        font-size: 17px;
+        font-size: 18px;
         letter-spacing: 0;
         color: #333;
         margin-top: 0;
@@ -387,7 +388,8 @@ body.paulweiss {
       padding: 30px 0;
       border-bottom: 1px solid #dcdcdc; }
       body.paulweiss .d3-card.side-card h5 {
-        line-height: 18px; }
+        line-height: 18px;
+        font-size: 16px; }
       body.paulweiss .d3-card.side-card .list-group-item.active, body.paulweiss .d3-card.side-card .list-group-item.active:focus, body.paulweiss .d3-card.side-card .list-group-item.active:hover {
         color: #333; }
       body.paulweiss .d3-card.side-card .d3-sharepoint-user-icon {
@@ -480,7 +482,7 @@ body.paulweiss {
         background: #999;
         cursor: pointer; }
   body.paulweiss .side-spotlight {
-    font-size: 15px;
+    font-size: 16px;
     font-family: "Georgia"; }
     body.paulweiss .side-spotlight .title {
       color: #802528; }
@@ -522,13 +524,13 @@ body.paulweiss {
       color: #802528;
       font-family: "Georgia"; }
     body.paulweiss .recent-arrivals .person .meta, body.paulweiss .key-contacts .person .meta {
-      font-size: 12px; }
+      font-size: 14px; }
   body.paulweiss .office-info .info {
     width: 60%;
     padding-right: 20px;
     font-family: "Georgia"; }
     body.paulweiss .office-info .info p {
-      font-size: 17px;
+      font-size: 18px;
       line-height: 24px;
       margin-bottom: 20px; }
     body.paulweiss .office-info .info div {
@@ -552,7 +554,7 @@ body.paulweiss {
     font-size: 12px;
     margin-bottom: 0; }
   body.paulweiss .security-updates .update p {
-    font-size: 15px;
+    font-size: 16px;
     font-family: "Georgia";
     color: #802528; }
   body.paulweiss .announcements .left > h6, body.paulweiss .announcements .right > h6, body.paulweiss .community-exchange .left > h6, body.paulweiss .community-exchange .right > h6 {
@@ -566,7 +568,7 @@ body.paulweiss {
       margin-bottom: 20px; }
       body.paulweiss .announcements ul li h6, body.paulweiss .community-exchange ul li h6 {
         color: #802528;
-        font-size: 17px;
+        font-size: 18px;
         margin-bottom: 5px; }
       body.paulweiss .announcements ul li > div, body.paulweiss .community-exchange ul li > div {
         font-size: 12px;
@@ -587,11 +589,11 @@ body.paulweiss {
       color: #802528;
       max-height: 45px;
       overflow: hidden;
-      font-family: font-1; }
+      font-family: "Georgia"; }
   body.paulweiss .office-card h3 {
     margin: 0 0 10px;
     line-height: normal;
-    font-size: 21px;
+    font-size: 22px;
     font-weight: 600; }
   body.paulweiss .office-card .read-more-small-button {
     margin-top: 3px; }
@@ -602,11 +604,11 @@ body.paulweiss {
     border-bottom: 1px solid #dcdcdc; }
     body.paulweiss .office-card .location h4 {
       color: #802528;
-      font-size: 15px;
+      font-size: 16px;
       margin: 15px 0 0; }
     body.paulweiss .office-card .location div {
       font-family: "Georgia";
-      line-height: 21px; }
+      line-height: 22px; }
   body.paulweiss .office-card .d3-clock-container {
     padding: 0; }
     body.paulweiss .office-card .d3-clock-container .d3-office-clock {
@@ -632,12 +634,12 @@ body.paulweiss {
       body.paulweiss .office-card .person .info a {
         color: #802528;
         font-family: "Georgia";
-        font-size: 15px; }
+        font-size: 16px; }
   body.paulweiss .d3-profile-card img {
     margin: 0 auto 20px; }
   body.paulweiss .d3-profile-card .basicinfo {
     font-family: "Georgia";
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 600;
     margin-bottom: 10px; }
   body.paulweiss .d3-profile-card fieldset {
@@ -715,7 +717,7 @@ body.paulweiss {
       padding: 0;
       background-color: transparent; }
       body.paulweiss .search-results .result .title {
-        font-size: 15px;
+        font-size: 16px;
         color: black; }
       body.paulweiss .search-results .result ul {
         color: #802528; }
@@ -747,7 +749,7 @@ body.paulweiss {
   body.paulweiss .read-more-button {
     background-color: #802528;
     font-weight: 300;
-    font-size: 12px;
+    font-size: 13px;
     padding: 7px 10px; }
     body.paulweiss .read-more-button:hover {
       background-color: #c13f28; }
@@ -818,7 +820,7 @@ body.paulweiss {
       border-bottom: none; }
       .modal-dialog .modal-content .modal-header h4 {
         color: black;
-        font-size: 15px; }
+        font-size: 16px; }
       .modal-dialog .modal-content .modal-header .close {
         text-align: right; }
     .modal-dialog .modal-content .modal-body {
