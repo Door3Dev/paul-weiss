@@ -18,6 +18,8 @@ $gray-1: #999;
 $gray-2: #333;
 $gray-3: #dcdcdc;
 $gray-4: #787878;
+$gray-5: #717073;
+$red-5:#c13f27;
 $font-weight-light: 300;
 $font-weight-semibold: 600;
 $font-weight-bold: 700;
@@ -90,6 +92,7 @@ body.paulweiss{
         font-family: $font-2;
         font-size: $font-size-2;
         margin-bottom: 5px;
+        color:$gray-5;
     }
     
     .mobile-heading-link-text{
@@ -583,9 +586,14 @@ body.paulweiss{
     
     //main: carousel
     .carousel {
+        .carousel-indicators {
+            display: none;
+        }
         .carousel-inner{
             img{
                 padding:20px 10px 20px 20px;
+                height:319px;
+                width:256px;
             }
             .carousel-content {
                 .sub-news-header{
@@ -1265,10 +1273,10 @@ body.paulweiss{
     /* UI-BUTTONS
     ***********************************/
     .read-more-button{
-        background-color: $red-2;
+        background-color: $red-5;
         font-weight: 300;
         font-size: $font-size-9;
-        padding: 7px 10px;
+        padding: 7px 20px;
         
         &:hover{
             background-color: $red-1;

@@ -65,7 +65,8 @@ body.paulweiss {
   body.paulweiss .carousel-content .date {
     font-family: "Arial";
     font-size: 12px;
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+    color: #717073; }
   body.paulweiss .mobile-heading-link-text {
     font-family: "Georgia";
     font-weight: 700;
@@ -338,7 +339,7 @@ body.paulweiss {
         color: #802528; }
       body.paulweiss .d3-card.service-directory-card .faq-click {
         font-family: "Georgia";
-        font-size: 17px;
+        font-size: 18px;
         color: black; }
       body.paulweiss .d3-card.service-directory-card .d3-tip-list {
         list-style: none;
@@ -396,8 +397,12 @@ body.paulweiss {
         margin: 0 10px 0 0; }
     body.paulweiss .d3-card .bottom {
       display: none; }
+  body.paulweiss .carousel .carousel-indicators {
+    display: none; }
   body.paulweiss .carousel .carousel-inner img {
-    padding: 20px 10px 20px 20px; }
+    padding: 20px 10px 20px 20px;
+    height: 319px;
+    width: 256px; }
   body.paulweiss .carousel .carousel-inner .carousel-content .sub-news-header {
     font-family: "Georgia"; }
   body.paulweiss .d3-new-hires-tab em {
@@ -747,10 +752,10 @@ body.paulweiss {
     body.paulweiss .search-results .right {
       border-left: 1px solid #dcdcdc; }
   body.paulweiss .read-more-button {
-    background-color: #802528;
+    background-color: #c13f27;
     font-weight: 300;
     font-size: 13px;
-    padding: 7px 10px; }
+    padding: 7px 20px; }
     body.paulweiss .read-more-button:hover {
       background-color: #c13f28; }
   body.paulweiss .read-more-small-button {
