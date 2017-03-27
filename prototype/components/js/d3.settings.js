@@ -60,4 +60,5 @@ var Settings = function(name) {
     self.KendoProfileFilterBox = ".d3-profile-filter";
     self.KendoWorkInProgress = ".d3-work-in-progress";
      self.SpolitLightContentHtml = ".side-spotlight";
+    self.ToolClass = ".tool";
 };

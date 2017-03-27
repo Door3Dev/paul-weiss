@@ -132,7 +132,22 @@ $(document).ready(function() {
         $(document).off('focusin.modal');
         $(D3SPCoreDOM.Settings.searchInputText).select();
     });
-
+    
+    $(D3SPCoreDOM.Settings.ToolClass).mouseenter(function() {
+     var src = $(this).children().first().attr('src');
+        if(src){
+            var newsrc = (src.indexOf("white")===-1) ? src.replace('.png', "-white.png")  : src ;
+            $(this).children().first().attr('src', newsrc);  
+        }
+    });
+    
+     $(D3SPCoreDOM.Settings.ToolClass).mouseleave(function() {
+        var src = $(this).children().first().attr('src');
+         if(src){
+            var newsrc = (src.indexOf("white")===-1) ?  src : src.replace('-white.png','.png');
+            $(this).children().first().attr('src', newsrc);
+         }
+    });
 
     //KENDO TAB
     $(D3SPCoreDOM.Settings.kendoTab).kendoTabStrip({
