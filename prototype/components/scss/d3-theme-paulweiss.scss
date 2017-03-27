@@ -19,6 +19,7 @@ $gray-2: #333;
 $gray-3: #dcdcdc;
 $gray-4: #717073;
 $gray-5: #5e5d60;
+$gray-6: #555;
 $font-weight-light: 300;
 $font-weight-semibold: 600;
 $font-weight-bold: 700;
@@ -33,7 +34,7 @@ $purple-1: #3a4d6d;
 
 //fonts
 $font-1: "Georgia";
-$font-2: "Arial"; //free proxima alternative
+$font-2: "Arial";
 
 //font sizes
 $font-size-0: 10px;
@@ -48,7 +49,7 @@ $font-size-8: 54px;
 $font-size-9: 13px;
 $font-size-10: 21px;
 $font-size-11: 20px;
-
+$font-size-12: 17px;
 
 body.paulweiss{
     
@@ -93,6 +94,7 @@ body.paulweiss{
         font-family: $font-2;
         font-size: $font-size-2;
         margin-bottom: 5px;
+        text-transform: uppercase;
     }
     
     .mobile-heading-link-text{
@@ -780,6 +782,7 @@ body.paulweiss{
             &>li{
                 &>div{
                     font-size: $font-size-3;
+                    text-transform: uppercase;
                 }
                 
                 ul{
@@ -791,11 +794,15 @@ body.paulweiss{
                     li{
                         h4{
                             color: $red-2;
+                            font-size: $font-size-12;
+                            margin-bottom: 5px;
+                            
                             small{
-                                font-size: $font-size-2;
-                                color: $gray-2;
+                                font-size: $font-size-3;
+                                color: $gray-6;
                                 font-family: $font-2;
                                 display: block;
+                                margin-top: 5px;
                             }
                         }
                         p{
@@ -913,6 +920,7 @@ body.paulweiss{
                 &>div{
                     font-size: $font-size-2;
                     color: $gray-1;
+                    text-transform: uppercase;
                 }
                 p{
                     font-family: $font-1;
@@ -1472,4 +1480,11 @@ body.paulweiss{
             }
         
     }
+}
+
+
+/* SHAREPOINT OVERRIDES
+**************************/
+.ms-rtestate-field p, p.ms-rteElement-P{
+    line-height: 21px;
 }

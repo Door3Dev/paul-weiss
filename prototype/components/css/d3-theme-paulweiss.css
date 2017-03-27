@@ -65,7 +65,8 @@ body.paulweiss {
   body.paulweiss .carousel-content .date {
     font-family: "Arial";
     font-size: 12px;
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+    text-transform: uppercase; }
   body.paulweiss .mobile-heading-link-text {
     font-family: "Georgia";
     font-weight: 700;
@@ -498,7 +499,8 @@ body.paulweiss {
       padding-left: 0;
       padding-right: 30px; }
       body.paulweiss .todays-activities > ul > li > div {
-        font-size: 14px; }
+        font-size: 14px;
+        text-transform: uppercase; }
       body.paulweiss .todays-activities > ul > li ul {
         list-style: none;
         padding-left: 0;
@@ -506,12 +508,15 @@ body.paulweiss {
         border-bottom: 1px solid #999;
         margin-bottom: 20px; }
         body.paulweiss .todays-activities > ul > li ul li h4 {
-          color: #802528; }
+          color: #802528;
+          font-size: 17px;
+          margin-bottom: 5px; }
           body.paulweiss .todays-activities > ul > li ul li h4 small {
-            font-size: 12px;
-            color: #333;
+            font-size: 14px;
+            color: #555;
             font-family: "Arial";
-            display: block; }
+            display: block;
+            margin-top: 5px; }
         body.paulweiss .todays-activities > ul > li ul li p {
           font-family: "Georgia"; }
   body.paulweiss .d3-general-list {
@@ -572,7 +577,8 @@ body.paulweiss {
         margin-bottom: 5px; }
       body.paulweiss .announcements ul li > div, body.paulweiss .community-exchange ul li > div {
         font-size: 12px;
-        color: #999; }
+        color: #999;
+        text-transform: uppercase; }
       body.paulweiss .announcements ul li p, body.paulweiss .community-exchange ul li p {
         font-family: "Georgia";
         color: #717073; }
@@ -862,5 +868,10 @@ body.paulweiss {
         border: 0;
         border-radius: 0;
         padding: 5px 30px; }
+
+/* SHAREPOINT OVERRIDES
+**************************/
+.ms-rtestate-field p, p.ms-rteElement-P {
+  line-height: 21px; }
 
 /*# sourceMappingURL=d3-theme-paulweiss.css.map */
