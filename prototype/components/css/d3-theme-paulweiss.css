@@ -306,6 +306,8 @@ body.paulweiss {
   body.paulweiss .d3-card {
     line-height: normal;
     padding: 24px; }
+    body.paulweiss .d3-card h5 {
+      font-weight: normal; }
     body.paulweiss .d3-card.main-card {
       border: none; }
       body.paulweiss .d3-card.main-card h5 {
@@ -441,13 +443,13 @@ body.paulweiss {
     min-height: 0; }
     body.paulweiss .d3-tools .fa-search {
       position: absolute;
-      left: 23px;
+      left: 18px;
       top: 16px; }
     body.paulweiss .d3-tools input {
       width: 100%;
       margin: 10px 0 15px;
       border: none;
-      height: 28px;
+      height: 30px;
       padding-left: 35px;
       font-size: 14px; }
     body.paulweiss .d3-tools .tool {
@@ -492,6 +494,8 @@ body.paulweiss {
   body.paulweiss .side-spotlight {
     font-size: 16px;
     font-family: "Georgia"; }
+    body.paulweiss .side-spotlight h5 {
+      margin-bottom: 24px; }
     body.paulweiss .side-spotlight .title {
       color: #802528; }
   body.paulweiss .todays-activities {
@@ -527,16 +531,19 @@ body.paulweiss {
   body.paulweiss .d3-general-list {
     padding-left: 25px; }
   body.paulweiss .recent-arrivals h5, body.paulweiss .key-contacts h5 {
-    margin-bottom: 20px; }
+    margin-bottom: 32px; }
   body.paulweiss .recent-arrivals .person, body.paulweiss .key-contacts .person {
-    margin-bottom: 20px; }
+    margin-bottom: 32px; }
     body.paulweiss .recent-arrivals .person img, body.paulweiss .key-contacts .person img {
-      margin-right: 10px; }
+      margin-right: 10px;
+      width: 50px; }
     body.paulweiss .recent-arrivals .person .name, body.paulweiss .key-contacts .person .name {
       color: #802528;
       font-family: "Georgia"; }
     body.paulweiss .recent-arrivals .person .meta, body.paulweiss .key-contacts .person .meta {
-      font-size: 14px; }
+      font-size: 14px;
+      line-height: 20px;
+      color: #5e5d60; }
   body.paulweiss .office-info .info {
     width: 60%;
     padding-right: 20px;
@@ -549,16 +556,18 @@ body.paulweiss {
       margin-bottom: 8px; }
   body.paulweiss .office-info img {
     width: 40%; }
-  body.paulweiss .visiting-office ul, body.paulweiss .local-information ul {
-    list-style: none;
-    padding-left: 0; }
-    body.paulweiss .visiting-office ul a, body.paulweiss .local-information ul a {
-      color: #802528;
-      font-family: "Georgia";
-      display: inline-block;
-      margin-bottom: 7px; }
+  body.paulweiss .visiting-office, body.paulweiss .local-information {
+    min-height: 270px; }
+    body.paulweiss .visiting-office ul, body.paulweiss .local-information ul {
+      list-style: none;
+      padding-left: 0; }
+      body.paulweiss .visiting-office ul a, body.paulweiss .local-information ul a {
+        color: #802528;
+        font-family: "Georgia";
+        display: inline-block;
+        margin-bottom: 7px; }
   body.paulweiss .security-updates h5 {
-    margin-bottom: 20px; }
+    margin-bottom: 24px; }
   body.paulweiss .security-updates .update h4 {
     font-family: "Arial";
     font-size: 12px;
@@ -568,9 +577,10 @@ body.paulweiss {
     font-family: "Georgia";
     color: #802528; }
   body.paulweiss .announcements .left > h6, body.paulweiss .announcements .right > h6, body.paulweiss .community-exchange .left > h6, body.paulweiss .community-exchange .right > h6 {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     margin-top: 20px;
-    font-family: "Arial"; }
+    font-family: "Arial";
+    font-size: 14px; }
   body.paulweiss .announcements ul, body.paulweiss .community-exchange ul {
     padding-left: 0;
     list-style: none; }
@@ -610,7 +620,7 @@ body.paulweiss {
   body.paulweiss .office-card .read-more-small-button {
     margin-top: 3px; }
   body.paulweiss .office-card .location {
-    min-height: 210px;
+    min-height: 215px;
     margin-bottom: 20px;
     padding-bottom: 40px;
     border-bottom: 1px solid #dcdcdc; }
@@ -638,15 +648,15 @@ body.paulweiss {
   body.paulweiss .office-card .person {
     margin-bottom: 10px; }
     body.paulweiss .office-card .person img {
-      width: 35px;
+      width: 38px;
       margin-right: 5px; }
-    body.paulweiss .office-card .person .info {
-      font-size: 12px;
+    body.paulweiss .office-card .person .info a {
+      color: #802528;
+      font-family: "Georgia";
+      font-size: 16px; }
+    body.paulweiss .office-card .person .info .meta {
+      font-size: 14px;
       color: #999; }
-      body.paulweiss .office-card .person .info a {
-        color: #802528;
-        font-family: "Georgia";
-        font-size: 16px; }
   body.paulweiss .d3-profile-card img {
     margin: 0 auto 27px; }
   body.paulweiss .d3-profile-card .basicinfo {
