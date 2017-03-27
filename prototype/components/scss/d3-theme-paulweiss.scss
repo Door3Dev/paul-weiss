@@ -17,7 +17,7 @@ $black: black;
 $gray-1: #999;
 $gray-2: #333;
 $gray-3: #dcdcdc;
-$gray-4: #787878;
+$gray-4: #717073;
 $font-weight-light: 300;
 $font-weight-semibold: 600;
 $font-weight-bold: 700;
@@ -58,7 +58,7 @@ body.paulweiss{
     font-family: $font-2;
     font-size: $font-size-4;
     line-height: 21px;
-    color: $gray-2; 
+    color: $gray-4; 
     background-color: $body-bg-color;
     
     h1, h2, h3, h4, h5, h6 {
@@ -160,7 +160,7 @@ body.paulweiss{
     .d3-navbar .search-box input[type="text"]
     {
         font-family: $font-2;
-        font-size: $font-size-3;
+        font-size: $font-size-4;
         color: $gray-2; 
         border: 0;
     }
@@ -675,7 +675,7 @@ body.paulweiss{
             border: none;
             height: 28px;
             padding-left: 35px;
-            font-size: $font-size-2;
+            font-size: $font-size-3;
         }
         .tool{
             border-radius: 0;
@@ -909,6 +909,7 @@ body.paulweiss{
                 }
                 p{
                     font-family: $font-1;
+                    color: $gray-4;
                 }
             }        
         }
@@ -924,7 +925,7 @@ body.paulweiss{
                     margin-right:10px;
                 }
                 p{
-                    font-size: $font-size-3;
+                    font-size: $font-size-4;
                 }
             }
         }
@@ -1154,7 +1155,7 @@ body.paulweiss{
     ***********************************/
     .search-results{
         padding: 15px 20px;
-        margin-top:-18px;
+        margin-top:-21px;
         width: 838px;
         
         a{
@@ -1167,7 +1168,7 @@ body.paulweiss{
             background-color: transparent;
             
             .title{
-                font-size: $font-size-4;
+                font-size: $font-size-5;
                 color: $black;
             }
             
@@ -1183,17 +1184,17 @@ body.paulweiss{
                 padding-right:20px;
                 
                 img{
-                    margin-right: 10px;
+                    margin-right: 16px;
                 }
                 
                 .name{
                     margin-bottom: 3px;
                 }
                 .metadata{
-                    color: $gray-2;
+                    color: $gray-4;
                     font-family: $font-2;
-                    font-size: $font-size-2;
-                    margin-bottom: 3px;
+                    font-size: $font-size-9;
+                    line-height: 18px;
                 }
             }
             
@@ -1321,7 +1322,7 @@ body.paulweiss{
     /* CLOCKS
     ***********************************/
     .clocks{
-        margin-top:60px;
+        margin-top:30px;
         background-color: $white;
         padding: 20px 0;
         .d3-clock-container{
@@ -1361,7 +1362,7 @@ body.paulweiss{
     
     .feedback{
         text-align: center;
-        margin-top: 40px;
+        margin-top: 10px;
         color: $gray-1;
         
         a{

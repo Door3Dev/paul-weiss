@@ -4,7 +4,7 @@ body.paulweiss {
   font-family: "Arial";
   font-size: 16px;
   line-height: 21px;
-  color: #333;
+  color: #717073;
   background-color: #EFEFEF;
   /***********************************/
   /* ELEMENTS / SECTIONS
@@ -115,7 +115,7 @@ body.paulweiss {
   body.paulweiss .navigation-text, body.paulweiss .advanced-search-text,
   body.paulweiss .d3-navbar .search-box input[type="text"] {
     font-family: "Arial";
-    font-size: 14px;
+    font-size: 16px;
     color: #333;
     border: 0; }
   body.paulweiss .hi-user-text, body.paulweiss .advanced-search-text {
@@ -439,13 +439,13 @@ body.paulweiss {
       border: none;
       height: 28px;
       padding-left: 35px;
-      font-size: 12px; }
+      font-size: 14px; }
     body.paulweiss .d3-tools .tool {
       border-radius: 0;
       background-color: #dcdcdc;
       line-height: 12px;
       height: 65px;
-      color: #787878;
+      color: #717073;
       padding: 2px;
       font-size: 11px;
       display: flex;
@@ -572,7 +572,8 @@ body.paulweiss {
         font-size: 12px;
         color: #999; }
       body.paulweiss .announcements ul li p, body.paulweiss .community-exchange ul li p {
-        font-family: "Georgia"; }
+        font-family: "Georgia";
+        color: #717073; }
   body.paulweiss .community-exchange .mart li {
     margin-bottom: 20px; }
     body.paulweiss .community-exchange .mart li h6 {
@@ -580,7 +581,7 @@ body.paulweiss {
     body.paulweiss .community-exchange .mart li img {
       margin-right: 10px; }
     body.paulweiss .community-exchange .mart li p {
-      font-size: 14px; }
+      font-size: 16px; }
   body.paulweiss .events ul {
     padding-left: 0; }
     body.paulweiss .events ul li .calendar-list-text {
@@ -706,7 +707,7 @@ body.paulweiss {
         border-bottom: 1px solid #999; }
   body.paulweiss .search-results {
     padding: 15px 20px;
-    margin-top: -18px;
+    margin-top: -21px;
     width: 838px; }
     body.paulweiss .search-results a {
       color: #802528; }
@@ -715,7 +716,7 @@ body.paulweiss {
       padding: 0;
       background-color: transparent; }
       body.paulweiss .search-results .result .title {
-        font-size: 16px;
+        font-size: 18px;
         color: black; }
       body.paulweiss .search-results .result ul {
         color: #802528; }
@@ -724,14 +725,14 @@ body.paulweiss {
       body.paulweiss .search-results .result.people-directory {
         padding-right: 20px; }
         body.paulweiss .search-results .result.people-directory img {
-          margin-right: 10px; }
+          margin-right: 16px; }
         body.paulweiss .search-results .result.people-directory .name {
           margin-bottom: 3px; }
         body.paulweiss .search-results .result.people-directory .metadata {
-          color: #333;
+          color: #717073;
           font-family: "Arial";
-          font-size: 12px;
-          margin-bottom: 3px; }
+          font-size: 13px;
+          line-height: 18px; }
       body.paulweiss .search-results .result.select-a-search, body.paulweiss .search-results .result.recent-search {
         padding-left: 20px; }
         body.paulweiss .search-results .result.select-a-search em, body.paulweiss .search-results .result.recent-search em {
@@ -764,7 +765,7 @@ body.paulweiss {
       color: #802528;
       line-height: 14px; }
   body.paulweiss .clocks {
-    margin-top: 60px;
+    margin-top: 30px;
     background-color: #fff;
     padding: 20px 0; }
     body.paulweiss .clocks .d3-clock-container > li {
@@ -788,7 +789,7 @@ body.paulweiss {
       line-height: 30px; }
   body.paulweiss .feedback {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 10px;
     color: #999; }
     body.paulweiss .feedback a {
       color: #999;
