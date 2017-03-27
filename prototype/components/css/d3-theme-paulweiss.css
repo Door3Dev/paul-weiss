@@ -535,7 +535,8 @@ body.paulweiss {
   body.paulweiss .recent-arrivals .person, body.paulweiss .key-contacts .person {
     margin-bottom: 32px; }
     body.paulweiss .recent-arrivals .person img, body.paulweiss .key-contacts .person img {
-      margin-right: 10px; }
+      margin-right: 10px;
+      width: 50px; }
     body.paulweiss .recent-arrivals .person .name, body.paulweiss .key-contacts .person .name {
       color: #802528;
       font-family: "Georgia"; }
