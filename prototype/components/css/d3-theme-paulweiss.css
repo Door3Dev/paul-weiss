@@ -4,7 +4,7 @@ body.paulweiss {
   font-family: "Arial";
   font-size: 16px;
   line-height: 21px;
-  color: #333;
+  color: #717073;
   background-color: #EFEFEF;
   /***********************************/
   /* ELEMENTS / SECTIONS
@@ -49,7 +49,7 @@ body.paulweiss {
   body.paulweiss .d3-card.main-card h5,
   body.paulweiss .d3-tabs .tab-content h5 {
     font-family: "Georgia";
-    font-weight: 700;
+    font-weight: 300;
     font-size: 18px;
     letter-spacing: 2px;
     color: #333;
@@ -66,7 +66,8 @@ body.paulweiss {
     font-family: "Arial";
     font-size: 12px;
     margin-bottom: 5px;
-    color: #717073; }
+    color: #5e5d60;
+    text-transform: uppercase; }
   body.paulweiss .mobile-heading-link-text {
     font-family: "Georgia";
     font-weight: 700;
@@ -116,7 +117,7 @@ body.paulweiss {
   body.paulweiss .navigation-text, body.paulweiss .advanced-search-text,
   body.paulweiss .d3-navbar .search-box input[type="text"] {
     font-family: "Arial";
-    font-size: 14px;
+    font-size: 16px;
     color: #333;
     border: 0; }
   body.paulweiss .hi-user-text, body.paulweiss .advanced-search-text {
@@ -289,24 +290,26 @@ body.paulweiss {
     padding: 0;
     margin-bottom: 0;
     font-family: "Georgia"; }
-    body.paulweiss .breadcrumb li:first-child a {
-      color: #5e5d60; }
+    body.paulweiss .breadcrumb li:last-child a {
+      font-weight: 600;
+      color: black; }
+    body.paulweiss .breadcrumb li a {
+      color: #5e5d60;
+      font-size: 14px; }
     body.paulweiss .breadcrumb > li + li:before {
       content: ">";
       padding-left: 5px;
       padding-right: 5px; }
-    body.paulweiss .breadcrumb .active {
-      font-weight: 600; }
   body.paulweiss .side-card-container {
     background-color: #E8E8E8;
     padding: 0 15px 0 15px; }
   body.paulweiss .d3-card {
-    line-height: normal; }
+    line-height: normal;
+    padding: 24px; }
     body.paulweiss .d3-card.main-card {
       border: none; }
       body.paulweiss .d3-card.main-card h5 {
         font-family: "Georgia";
-        font-weight: 700;
         font-size: 18px;
         letter-spacing: 0;
         color: #333;
@@ -446,13 +449,13 @@ body.paulweiss {
       border: none;
       height: 28px;
       padding-left: 35px;
-      font-size: 12px; }
+      font-size: 14px; }
     body.paulweiss .d3-tools .tool {
       border-radius: 0;
       background-color: #dcdcdc;
       line-height: 12px;
       height: 65px;
-      color: #787878;
+      color: #717073;
       padding: 2px;
       font-size: 11px;
       display: flex;
@@ -501,7 +504,8 @@ body.paulweiss {
       padding-left: 0;
       padding-right: 30px; }
       body.paulweiss .todays-activities > ul > li > div {
-        font-size: 14px; }
+        font-size: 14px;
+        text-transform: uppercase; }
       body.paulweiss .todays-activities > ul > li ul {
         list-style: none;
         padding-left: 0;
@@ -509,12 +513,15 @@ body.paulweiss {
         border-bottom: 1px solid #999;
         margin-bottom: 20px; }
         body.paulweiss .todays-activities > ul > li ul li h4 {
-          color: #802528; }
+          color: #802528;
+          font-size: 17px;
+          margin-bottom: 5px; }
           body.paulweiss .todays-activities > ul > li ul li h4 small {
-            font-size: 12px;
-            color: #333;
+            font-size: 14px;
+            color: #555;
             font-family: "Arial";
-            display: block; }
+            display: block;
+            margin-top: 5px; }
         body.paulweiss .todays-activities > ul > li ul li p {
           font-family: "Georgia"; }
   body.paulweiss .d3-general-list {
@@ -535,15 +542,13 @@ body.paulweiss {
     padding-right: 20px;
     font-family: "Georgia"; }
     body.paulweiss .office-info .info p {
-      font-size: 18px;
-      line-height: 24px;
-      margin-bottom: 20px; }
+      font-size: 20px;
+      line-height: 1.3;
+      margin-bottom: 24px; }
     body.paulweiss .office-info .info div {
-      margin-bottom: 7px; }
+      margin-bottom: 8px; }
   body.paulweiss .office-info img {
     width: 40%; }
-  body.paulweiss .visiting-office h5, body.paulweiss .local-information h5 {
-    margin-bottom: 20px; }
   body.paulweiss .visiting-office ul, body.paulweiss .local-information ul {
     list-style: none;
     padding-left: 0; }
@@ -577,9 +582,11 @@ body.paulweiss {
         margin-bottom: 5px; }
       body.paulweiss .announcements ul li > div, body.paulweiss .community-exchange ul li > div {
         font-size: 12px;
-        color: #999; }
+        color: #999;
+        text-transform: uppercase; }
       body.paulweiss .announcements ul li p, body.paulweiss .community-exchange ul li p {
-        font-family: "Georgia"; }
+        font-family: "Georgia";
+        color: #717073; }
   body.paulweiss .community-exchange .mart li {
     margin-bottom: 20px; }
     body.paulweiss .community-exchange .mart li h6 {
@@ -587,7 +594,7 @@ body.paulweiss {
     body.paulweiss .community-exchange .mart li img {
       margin-right: 10px; }
     body.paulweiss .community-exchange .mart li p {
-      font-size: 14px; }
+      font-size: 16px; }
   body.paulweiss .events ul {
     padding-left: 0; }
     body.paulweiss .events ul li .calendar-list-text {
@@ -596,10 +603,10 @@ body.paulweiss {
       overflow: hidden;
       font-family: "Georgia"; }
   body.paulweiss .office-card h3 {
-    margin: 0 0 10px;
+    margin: 0 0 16px;
     line-height: normal;
     font-size: 22px;
-    font-weight: 600; }
+    color: black; }
   body.paulweiss .office-card .read-more-small-button {
     margin-top: 3px; }
   body.paulweiss .office-card .location {
@@ -610,7 +617,7 @@ body.paulweiss {
     body.paulweiss .office-card .location h4 {
       color: #802528;
       font-size: 16px;
-      margin: 15px 0 0; }
+      margin: 16px 0 0; }
     body.paulweiss .office-card .location div {
       font-family: "Georgia";
       line-height: 22px; }
@@ -641,12 +648,12 @@ body.paulweiss {
         font-family: "Georgia";
         font-size: 16px; }
   body.paulweiss .d3-profile-card img {
-    margin: 0 auto 20px; }
+    margin: 0 auto 27px; }
   body.paulweiss .d3-profile-card .basicinfo {
     font-family: "Georgia";
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 10px; }
+    font-size: 21px;
+    margin-bottom: 29px;
+    color: black; }
   body.paulweiss .d3-profile-card fieldset {
     margin-bottom: 20px; }
     body.paulweiss .d3-profile-card fieldset legend {
@@ -657,7 +664,8 @@ body.paulweiss {
       margin-bottom: 15px;
       color: #999; }
     body.paulweiss .d3-profile-card fieldset .field {
-      margin-bottom: 7px; }
+      margin-bottom: 8px;
+      line-height: 19px; }
       body.paulweiss .d3-profile-card fieldset .field span {
         font-family: "Georgia";
         display: inline-block;
@@ -668,6 +676,12 @@ body.paulweiss {
         body.paulweiss .d3-profile-card fieldset .field span:last-child {
           width: 60%;
           color: black; }
+  body.paulweiss .main-card[class*="profile-"] h5,
+  body.paulweiss .main-card[class*="service-directory-card"] h5,
+  body.paulweiss .main-card[class*="local-information"] h5,
+  body.paulweiss .main-card[class*="visiting-office"] h5,
+  body.paulweiss .main-card[class*="resource-card"] h5 {
+    margin-bottom: 32px; }
   body.paulweiss .profile-bio p {
     font-family: "Georgia"; }
   body.paulweiss .table thead {
@@ -713,7 +727,7 @@ body.paulweiss {
         border-bottom: 1px solid #999; }
   body.paulweiss .search-results {
     padding: 15px 20px;
-    margin-top: -18px;
+    margin-top: -21px;
     width: 838px; }
     body.paulweiss .search-results a {
       color: #802528; }
@@ -722,7 +736,7 @@ body.paulweiss {
       padding: 0;
       background-color: transparent; }
       body.paulweiss .search-results .result .title {
-        font-size: 16px;
+        font-size: 18px;
         color: black; }
       body.paulweiss .search-results .result ul {
         color: #802528; }
@@ -731,14 +745,14 @@ body.paulweiss {
       body.paulweiss .search-results .result.people-directory {
         padding-right: 20px; }
         body.paulweiss .search-results .result.people-directory img {
-          margin-right: 10px; }
+          margin-right: 16px; }
         body.paulweiss .search-results .result.people-directory .name {
           margin-bottom: 3px; }
         body.paulweiss .search-results .result.people-directory .metadata {
-          color: #333;
+          color: #717073;
           font-family: "Arial";
-          font-size: 12px;
-          margin-bottom: 3px; }
+          font-size: 13px;
+          line-height: 18px; }
       body.paulweiss .search-results .result.select-a-search, body.paulweiss .search-results .result.recent-search {
         padding-left: 20px; }
         body.paulweiss .search-results .result.select-a-search em, body.paulweiss .search-results .result.recent-search em {
@@ -771,7 +785,7 @@ body.paulweiss {
       color: #802528;
       line-height: 14px; }
   body.paulweiss .clocks {
-    margin-top: 60px;
+    margin-top: 30px;
     background-color: #fff;
     padding: 20px 0; }
     body.paulweiss .clocks .d3-clock-container > li {
@@ -795,7 +809,7 @@ body.paulweiss {
       line-height: 30px; }
   body.paulweiss .feedback {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 10px;
     color: #999; }
     body.paulweiss .feedback a {
       color: #999;
@@ -859,5 +873,10 @@ body.paulweiss {
         border: 0;
         border-radius: 0;
         padding: 5px 30px; }
+
+/* SHAREPOINT OVERRIDES
+**************************/
+.ms-rtestate-field p, p.ms-rteElement-P {
+  line-height: 21px; }
 
 /*# sourceMappingURL=d3-theme-paulweiss.css.map */
