@@ -300,7 +300,8 @@ body.paulweiss {
     background-color: #E8E8E8;
     padding: 0 15px 0 15px; }
   body.paulweiss .d3-card {
-    line-height: normal; }
+    line-height: normal;
+    padding: 24px; }
     body.paulweiss .d3-card.main-card {
       border: none; }
       body.paulweiss .d3-card.main-card h5 {
