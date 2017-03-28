@@ -575,14 +575,13 @@ body.paulweiss {
       margin-right: 10px; }
     body.paulweiss .community-exchange .mart li p {
       font-size: 16px; }
-  body.paulweiss .partner-activity .scrollable {
-    height: 400px;
-    overflow-y: scroll;
-    list-style: none;
-    padding-left: 0;
-    padding-right: 20px; }
-  body.paulweiss .partner-activity ul {
-    margin-bottom: 0; }
+  body.paulweiss .partner-activity {
+    padding-bottom: 0; }
+    body.paulweiss .partner-activity .scrollable {
+      height: 400px;
+      overflow-y: scroll;
+      list-style: none;
+      padding-left: 0; }
   body.paulweiss .events ul {
     padding-left: 0; }
     body.paulweiss .events ul li .calendar-list-text {

@@ -922,17 +922,13 @@ body.paulweiss{
         
     //main: partner activity dashboard
     .partner-activity{
+        padding-bottom: 0;
         
         .scrollable{
             height:400px;
             overflow-y: scroll;
             list-style: none;
             padding-left: 0;
-            padding-right: 20px;
-        }
-        
-        ul{
-            margin-bottom: 0;
         }
     }
     
