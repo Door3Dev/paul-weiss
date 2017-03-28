@@ -783,52 +783,6 @@ body.paulweiss{
         }
     }
     
-    //main: todays activities
-    .todays-activities{
-        padding-bottom:0;
-        
-        &>ul{
-            margin-top:15px;
-            height:300px;
-            overflow-y: scroll;
-            list-style: none;
-            padding-left: 0;
-            padding-right: 30px;
-            &>li{
-                &>div{
-                    font-size: $font-size-3;
-                    text-transform: uppercase;
-                }
-                
-                ul{
-                    list-style: none;
-                    padding-left: 0;
-                    padding-bottom: 20px;
-                    border-bottom: 1px solid $gray-1;
-                    margin-bottom: 20px;
-                    li{
-                        h4{
-                            color: $red-2;
-                            font-size: $font-size-12;
-                            margin-bottom: 5px;
-                            
-                            small{
-                                font-size: $font-size-3;
-                                color: $gray-6;
-                                font-family: $font-2;
-                                display: block;
-                                margin-top: 5px;
-                            }
-                        }
-                        p{
-                            font-family: $font-1;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    
     //main: bullet list
     .d3-general-list{
         padding-left:25px;
@@ -917,7 +871,7 @@ body.paulweiss{
     }
     
     //main: announcements, exchange
-    .announcements, .community-exchange{
+    .announcements, .community-exchange, .partner-activity{
         .left, .right{ 
             &>h6{
                 margin-bottom: 16px;
@@ -963,6 +917,22 @@ body.paulweiss{
                     font-size: $font-size-4;
                 }
             }
+        }
+    }
+        
+    //main: partner activity dashboard
+    .partner-activity{
+        
+        .scrollable{
+            height:400px;
+            overflow-y: scroll;
+            list-style: none;
+            padding-left: 0;
+            padding-right: 20px;
+        }
+        
+        ul{
+            margin-bottom: 0;
         }
     }
     
