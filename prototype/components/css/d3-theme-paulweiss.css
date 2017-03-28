@@ -560,7 +560,7 @@ body.paulweiss {
         color: #802528;
         font-size: 18px;
         margin-bottom: 5px; }
-      body.paulweiss .announcements ul li > div, body.paulweiss .community-exchange ul li > div, body.paulweiss .partner-activity ul li > div {
+      body.paulweiss .announcements ul li .date, body.paulweiss .community-exchange ul li .date, body.paulweiss .partner-activity ul li .date {
         font-size: 12px;
         color: #999;
         text-transform: uppercase; }
