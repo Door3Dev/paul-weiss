@@ -51,6 +51,8 @@ $font-size-9: 13px;
 $font-size-10: 21px;
 $font-size-11: 20px;
 $font-size-12: 17px;
+$font-size-13: 19px;
+$font-size-14: 15px;
 
 body.paulweiss{
     
@@ -77,7 +79,7 @@ body.paulweiss{
                 font-weight: $font-weight-light;
                 font-size: $font-size-5;
                 letter-spacing: 2px;
-                color: $gray-2;
+                color: $black;
                 margin-top:0;
     }
     
@@ -95,8 +97,8 @@ body.paulweiss{
         font-family: $font-2;
         font-size: $font-size-2;
         margin-bottom: 5px;
-        color:$gray-5;
-         text-transform: uppercase;
+        color:$gray-4;
+        text-transform: uppercase;
     }
     
     .mobile-heading-link-text{
@@ -460,7 +462,6 @@ body.paulweiss{
                 font-family: $font-1;
                 font-size: $font-size-5;
                 letter-spacing: 0;
-                color: $gray-2;
                 margin-top:0;
                 text-transform: uppercase;
                 
@@ -560,7 +561,7 @@ body.paulweiss{
                   list-style: disc;
                  font-family: $font-1;
                 color:#717073;
-                font-size: $font-size-3;
+                font-size: $font-size-14;
                 line-height: 20px;
             }
             .resource-list li:before {
@@ -571,7 +572,7 @@ body.paulweiss{
         &.side-card {
             //margin-bottom: 15px;
             background-color: $background-3;
-            color: $gray-2;
+            color: $black;
             margin-bottom: 0px;
             padding: 30px 0;
             border-bottom:1px solid $gray-3;
@@ -600,6 +601,7 @@ body.paulweiss{
     
     //main: carousel
     .carousel {
+        margin-bottom: 0;
         .carousel-indicators {
             display: none;
         }
@@ -645,7 +647,7 @@ body.paulweiss{
             .calendar-date-outer {
                 height:41px;
                 width:41px;
-                font-size: 10px;
+                font-size: $font-size-13;
             }
             .calendar-list-item{
                 height:50px;
@@ -653,10 +655,13 @@ body.paulweiss{
                 
                 .calendar-date-inner{
                     background-color: #716f73;
-                    padding: 0;
+                    padding: 2px;
                     color: $white;
-                    height: 20px;
+                    font-weight: bold;
+                    height: 15px;
                     font-size:10px;
+                    display: block;
+                    float:none;
                     &:hover{
                         background-color: #c13f28;
                     }
@@ -828,6 +833,11 @@ body.paulweiss{
             div{
                 margin-bottom: 8px;
             }
+            
+            strong{
+                font-weight: normal;
+                color: $black; 
+            }
         }
         
         img{
@@ -877,7 +887,7 @@ body.paulweiss{
                 margin-bottom: 16px;
                 margin-top: 20px;
                 font-family: $font-2;
-                font-size: $font-size-3;
+                font-size: $font-size-2;
             }
         }
         ul{
@@ -893,7 +903,7 @@ body.paulweiss{
                 }
                 .date{
                     font-size: $font-size-2;
-                    color: $gray-1;
+                    color: $gray-4;
                     text-transform: uppercase;
                 }
                 p{
@@ -1380,6 +1390,7 @@ body.paulweiss{
         text-align: center;
         margin-top: 10px;
         color: $gray-1;
+        font-size: $font-size-3;
         
         a{
             color: $gray-1;

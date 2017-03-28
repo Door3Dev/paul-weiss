@@ -52,7 +52,7 @@ body.paulweiss {
     font-weight: 300;
     font-size: 18px;
     letter-spacing: 2px;
-    color: #333;
+    color: black;
     margin-top: 0; }
   body.paulweiss .view-all-text, body.paulweiss .more-text,
   body.paulweiss .read-more-small-button,
@@ -66,7 +66,7 @@ body.paulweiss {
     font-family: "Arial";
     font-size: 12px;
     margin-bottom: 5px;
-    color: #5e5d60;
+    color: #717073;
     text-transform: uppercase; }
   body.paulweiss .mobile-heading-link-text {
     font-family: "Georgia";
@@ -315,7 +315,6 @@ body.paulweiss {
         font-family: "Georgia";
         font-size: 18px;
         letter-spacing: 0;
-        color: #333;
         margin-top: 0;
         text-transform: uppercase; }
         body.paulweiss .d3-card.main-card h5 small {
@@ -383,13 +382,13 @@ body.paulweiss {
         list-style: disc;
         font-family: "Georgia";
         color: #717073;
-        font-size: 14px;
+        font-size: 15px;
         line-height: 20px; }
       body.paulweiss .d3-card.service-directory-card .resource-list li:before {
         content: none; }
     body.paulweiss .d3-card.side-card {
       background-color: #E8E8E8;
-      color: #333;
+      color: black;
       margin-bottom: 0px;
       padding: 30px 0;
       border-bottom: 1px solid #dcdcdc; }
@@ -402,14 +401,16 @@ body.paulweiss {
         margin: 0 10px 0 0; }
     body.paulweiss .d3-card .bottom {
       display: none; }
-  body.paulweiss .carousel .carousel-indicators {
-    display: none; }
-  body.paulweiss .carousel .carousel-inner img {
-    padding: 20px 10px 20px 20px;
-    height: 265px;
-    width: 316px; }
-  body.paulweiss .carousel .carousel-inner .carousel-content .sub-news-header {
-    font-family: "Georgia"; }
+  body.paulweiss .carousel {
+    margin-bottom: 0; }
+    body.paulweiss .carousel .carousel-indicators {
+      display: none; }
+    body.paulweiss .carousel .carousel-inner img {
+      padding: 20px 10px 20px 20px;
+      height: 265px;
+      width: 316px; }
+    body.paulweiss .carousel .carousel-inner .carousel-content .sub-news-header {
+      font-family: "Georgia"; }
   body.paulweiss .d3-new-hires-tab em {
     color: #c13f28; }
   body.paulweiss .d3-new-hires-tab li.active a {
@@ -419,16 +420,19 @@ body.paulweiss {
   body.paulweiss .d3-calendar .calendar-list .calendar-date-outer {
     height: 41px;
     width: 41px;
-    font-size: 10px; }
+    font-size: 19px; }
   body.paulweiss .d3-calendar .calendar-list .calendar-list-item {
     height: 50px;
     margin-bottom: 20px; }
     body.paulweiss .d3-calendar .calendar-list .calendar-list-item .calendar-date-inner {
       background-color: #716f73;
-      padding: 0;
+      padding: 2px;
       color: #fff;
-      height: 20px;
-      font-size: 10px; }
+      font-weight: bold;
+      height: 15px;
+      font-size: 10px;
+      display: block;
+      float: none; }
       body.paulweiss .d3-calendar .calendar-list .calendar-list-item .calendar-date-inner:hover {
         background-color: #c13f28; }
   body.paulweiss .office-tabs li {
@@ -524,6 +528,9 @@ body.paulweiss {
       margin-bottom: 24px; }
     body.paulweiss .office-info .info div {
       margin-bottom: 8px; }
+    body.paulweiss .office-info .info strong {
+      font-weight: normal;
+      color: black; }
   body.paulweiss .office-info img {
     width: 40%; }
   body.paulweiss .visiting-office, body.paulweiss .local-information {
@@ -550,7 +557,7 @@ body.paulweiss {
     margin-bottom: 16px;
     margin-top: 20px;
     font-family: "Arial";
-    font-size: 14px; }
+    font-size: 12px; }
   body.paulweiss .announcements ul, body.paulweiss .community-exchange ul, body.paulweiss .partner-activity ul {
     padding-left: 0;
     list-style: none; }
@@ -562,7 +569,7 @@ body.paulweiss {
         margin-bottom: 5px; }
       body.paulweiss .announcements ul li .date, body.paulweiss .community-exchange ul li .date, body.paulweiss .partner-activity ul li .date {
         font-size: 12px;
-        color: #999;
+        color: #717073;
         text-transform: uppercase; }
       body.paulweiss .announcements ul li p, body.paulweiss .community-exchange ul li p, body.paulweiss .partner-activity ul li p {
         font-family: "Georgia";
@@ -797,7 +804,8 @@ body.paulweiss {
   body.paulweiss .feedback {
     text-align: center;
     margin-top: 10px;
-    color: #999; }
+    color: #999;
+    font-size: 14px; }
     body.paulweiss .feedback a {
       color: #999;
       text-decoration: underline; }
