@@ -863,6 +863,43 @@ body.paulweiss {
 
 /* SHAREPOINT OVERRIDES
 **************************/
+/* css example with custom class */
+/* img tag technique */
+.custom-backtotop-iconouter {
+  outline: none;
+  display: inline-block;
+  height: 25px;
+  /* dimension of image */
+  width: 28px;
+  /* dimension of image */
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  margin-left: -3px; }
+
+.custom-backtotop-icon {
+  left: -97px;
+  /* position in the sprite image (negative) */
+  top: -30px;
+  /* position in the sprite image (negative) */
+  position: absolute; }
+
+/* background technique */
+.icon {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: middle; }
+
+.icon-top {
+  width: 28px;
+  height: 25px;
+  background: url("/sites/pw/SiteAssets/d3/images/spcommon.png") no-repeat -97px -30px; }
+
+.icon-info-white {
+  width: 18px;
+  height: 16px;
+  background: url("/sites/pw/SiteAssets/d3/images/spcommon.png") no-repeat -161px -178px; }
+
 .ms-cui-menu {
   z-index: 9999999 !important; }
 
