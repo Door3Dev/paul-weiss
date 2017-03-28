@@ -20,7 +20,7 @@
 .ms-dialog .ms-dlgCloseBtn > span {
   padding: 0 !important; }
 
-.ms-dialog header, .ms-dialog footer {
+.ms-dialog header, .ms-dialog footer, .ms-dialog .d3-clock-container, .ms-dialog .feedback {
   display: none; }
 
 .ms-dialog .d3-main {
