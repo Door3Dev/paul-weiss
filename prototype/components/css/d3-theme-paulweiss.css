@@ -886,6 +886,9 @@ body.paulweiss {
 
 /* SHAREPOINT OVERRIDES
 **************************/
+.ms-cui-menu {
+  z-index: 9999999 !important; }
+
 .ms-storefront-appiconspan {
   background-color: #c13f28; }
 
