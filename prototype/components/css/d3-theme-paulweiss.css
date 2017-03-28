@@ -309,14 +309,14 @@ body.paulweiss {
     body.paulweiss .d3-card h5 {
       font-weight: normal; }
     body.paulweiss .d3-card.main-card {
-      border: none; }
+      border: none;
+      margin-bottom: 15px; }
       body.paulweiss .d3-card.main-card h5 {
         font-family: "Georgia";
         font-size: 18px;
         letter-spacing: 0;
         color: #333;
         margin-top: 0;
-        margin-bottom: 15px;
         text-transform: uppercase; }
         body.paulweiss .d3-card.main-card h5 small {
           font-size: 11px; }
