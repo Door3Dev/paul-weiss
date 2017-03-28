@@ -886,6 +886,9 @@ body.paulweiss {
 
 /* SHAREPOINT OVERRIDES
 **************************/
+.ms-storefront-appiconspan {
+  background-color: #c13f28; }
+
 .ms-rtestate-field p, p.ms-rteElement-P {
   line-height: 21px; }
 
