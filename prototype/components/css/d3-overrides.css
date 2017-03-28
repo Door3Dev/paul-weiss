@@ -3,7 +3,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 9999999; }
+  z-index: 9999999;
+  width: 100%; }
   #ms-designer-ribbon #suiteBar, #ms-designer-ribbon #s4-ribbonrow {
     background-color: #ddd; }
   #ms-designer-ribbon #suiteBarButtons #siteactiontd .ms-siteactions-normal > a {

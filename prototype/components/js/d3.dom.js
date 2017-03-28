@@ -360,7 +360,7 @@ $(document).ready(function() {
      $(".calendar-list-text").dotdotdot();
     
     //feedback
-    $(".feedback a").on("click", () => {
+    $(".feedback a").on("click", (event) => {
         event.preventDefault();
         $(".feedback-modal").modal();
     });
