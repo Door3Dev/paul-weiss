@@ -607,7 +607,7 @@ body.paulweiss{
             img{
                 padding:20px 10px 20px 20px;
                 height:265px;
-                width:316px;
+                width: 316px;
             }
             .carousel-content {
                 .sub-news-header{
@@ -1476,6 +1476,9 @@ body.paulweiss{
 
 /* SHAREPOINT OVERRIDES
 **************************/
+.ms-cui-menu {
+    z-index: 9999999 !important;
+}
 .ms-storefront-appiconspan {
      background-color: $red-1;
 }
