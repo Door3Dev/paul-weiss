@@ -498,36 +498,6 @@ body.paulweiss {
       margin-bottom: 24px; }
     body.paulweiss .side-spotlight .title {
       color: #802528; }
-  body.paulweiss .todays-activities {
-    padding-bottom: 0; }
-    body.paulweiss .todays-activities > ul {
-      margin-top: 15px;
-      height: 300px;
-      overflow-y: scroll;
-      list-style: none;
-      padding-left: 0;
-      padding-right: 30px; }
-      body.paulweiss .todays-activities > ul > li > div {
-        font-size: 14px;
-        text-transform: uppercase; }
-      body.paulweiss .todays-activities > ul > li ul {
-        list-style: none;
-        padding-left: 0;
-        padding-bottom: 20px;
-        border-bottom: 1px solid #999;
-        margin-bottom: 20px; }
-        body.paulweiss .todays-activities > ul > li ul li h4 {
-          color: #802528;
-          font-size: 17px;
-          margin-bottom: 5px; }
-          body.paulweiss .todays-activities > ul > li ul li h4 small {
-            font-size: 14px;
-            color: #555;
-            font-family: "Arial";
-            display: block;
-            margin-top: 5px; }
-        body.paulweiss .todays-activities > ul > li ul li p {
-          font-family: "Georgia"; }
   body.paulweiss .d3-general-list {
     padding-left: 25px; }
   body.paulweiss .recent-arrivals h5, body.paulweiss .key-contacts h5 {
@@ -576,25 +546,25 @@ body.paulweiss {
     font-size: 16px;
     font-family: "Georgia";
     color: #802528; }
-  body.paulweiss .announcements .left > h6, body.paulweiss .announcements .right > h6, body.paulweiss .community-exchange .left > h6, body.paulweiss .community-exchange .right > h6 {
+  body.paulweiss .announcements .left > h6, body.paulweiss .announcements .right > h6, body.paulweiss .community-exchange .left > h6, body.paulweiss .community-exchange .right > h6, body.paulweiss .partner-activity .left > h6, body.paulweiss .partner-activity .right > h6 {
     margin-bottom: 16px;
     margin-top: 20px;
     font-family: "Arial";
     font-size: 14px; }
-  body.paulweiss .announcements ul, body.paulweiss .community-exchange ul {
+  body.paulweiss .announcements ul, body.paulweiss .community-exchange ul, body.paulweiss .partner-activity ul {
     padding-left: 0;
     list-style: none; }
-    body.paulweiss .announcements ul li, body.paulweiss .community-exchange ul li {
+    body.paulweiss .announcements ul li, body.paulweiss .community-exchange ul li, body.paulweiss .partner-activity ul li {
       margin-bottom: 20px; }
-      body.paulweiss .announcements ul li h6, body.paulweiss .community-exchange ul li h6 {
+      body.paulweiss .announcements ul li h6, body.paulweiss .community-exchange ul li h6, body.paulweiss .partner-activity ul li h6 {
         color: #802528;
         font-size: 18px;
         margin-bottom: 5px; }
-      body.paulweiss .announcements ul li > div, body.paulweiss .community-exchange ul li > div {
+      body.paulweiss .announcements ul li .date, body.paulweiss .community-exchange ul li .date, body.paulweiss .partner-activity ul li .date {
         font-size: 12px;
         color: #999;
         text-transform: uppercase; }
-      body.paulweiss .announcements ul li p, body.paulweiss .community-exchange ul li p {
+      body.paulweiss .announcements ul li p, body.paulweiss .community-exchange ul li p, body.paulweiss .partner-activity ul li p {
         font-family: "Georgia";
         color: #717073; }
   body.paulweiss .community-exchange .mart li {
@@ -605,6 +575,13 @@ body.paulweiss {
       margin-right: 10px; }
     body.paulweiss .community-exchange .mart li p {
       font-size: 16px; }
+  body.paulweiss .partner-activity {
+    padding-bottom: 0; }
+    body.paulweiss .partner-activity .scrollable {
+      height: 400px;
+      overflow-y: scroll;
+      list-style: none;
+      padding-left: 0; }
   body.paulweiss .events ul {
     padding-left: 0; }
     body.paulweiss .events ul li .calendar-list-text {
