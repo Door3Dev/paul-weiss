@@ -865,6 +865,13 @@ body.paulweiss {
 **************************/
 /* css example with custom class */
 /* img tag technique */
+.ms-vl-appadd-img {
+  display: none !important; }
+
+.ms-vl-appimage {
+  background: url("/sites/pw/SiteAssets/d3/images/spcommon.png");
+  background-position-y: 15%; }
+
 .custom-backtotop-iconouter {
   outline: none;
   display: inline-block;
