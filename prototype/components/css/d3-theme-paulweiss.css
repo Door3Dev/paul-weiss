@@ -49,7 +49,7 @@ body.paulweiss {
   body.paulweiss .d3-card.main-card h5,
   body.paulweiss .d3-tabs .tab-content h5 {
     font-family: "Georgia";
-    font-weight: 300;
+    font-weight: nprmal;
     font-size: 18px;
     letter-spacing: 2px;
     color: black;
