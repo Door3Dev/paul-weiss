@@ -306,6 +306,8 @@ body.paulweiss {
   body.paulweiss .d3-card {
     line-height: normal;
     padding: 24px; }
+    body.paulweiss .d3-card h5 {
+      font-weight: normal; }
     body.paulweiss .d3-card.main-card {
       border: none;
       margin-bottom: 15px; }
