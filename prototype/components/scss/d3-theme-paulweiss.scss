@@ -1478,6 +1478,11 @@ body.paulweiss{
 **************************/
 /* css example with custom class */
 /* img tag technique */
+
+.ms-dlgCloseBtn > span
+{
+    padding:0px !important;
+}
 .ms-vl-appadd-img  {
      display:none !important;
 
