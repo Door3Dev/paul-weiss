@@ -68,7 +68,7 @@ $(document).ready(function() {
 
 
     //close alert header
-    $(".d3-alert .close-button").on("click", () => {
+    $(".d3-alert .close-button").on("click", function() {
         $("body").removeClass("hasAlert");
     });
 
@@ -77,14 +77,14 @@ $(document).ready(function() {
     $("#currenttime").html(time);
     
    //search box expansion
-     $(D3SPCoreDOM.Settings.searchInputText).on("blur", () => {
-      setTimeout(() => {
+     $(D3SPCoreDOM.Settings.searchInputText).on("blur", function() {
+      setTimeout(function() {
        if (!$(D3SPCoreDOM.Settings.searchResultsBox).is(":visible")) {
         $(D3SPCoreDOM.Settings.searchResults).removeClass("active");
        }
       }, 150);
      });
-     $(D3SPCoreDOM.Settings.searchInputText).on("focus", () => {
+     $(D3SPCoreDOM.Settings.searchInputText).on("focus", function() {
       $(D3SPCoreDOM.Settings.searchResultsBox).addClass("active");
      });
 
@@ -93,7 +93,7 @@ $(document).ready(function() {
 
     
     //feedback
-    $(".feedback a").on("click", (event) => {
+    $(".feedback a").on("click", function(event) {
         event.preventDefault();
         $(".feedback-modal").modal();
     });
@@ -101,7 +101,7 @@ $(document).ready(function() {
     /// DEMO code
     
     //show alert
-    $("#alertTest").on("click", () => {
+    $("#alertTest").on("click", function() {
         $("body").addClass("hasAlert");
     });
     

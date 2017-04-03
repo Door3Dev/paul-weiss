@@ -43,11 +43,11 @@ var d3UI = function(SharePointSiteURL, SharePointRestAPI, framework) {
         }
     };
     
-    self.RemoveSearchHistoryItem = (id) => {
+    self.RemoveSearchHistoryItem = function(id) {
         alert("Removed search history item with ID: " + id);
     };
     
-    self.OnBackgroundOverlayClicked = () => {
+    self.OnBackgroundOverlayClicked = function() {
         //hide background
         $(D3SPCoreDOM.Settings.backgroundOverlay).removeClass('show');
         
@@ -421,7 +421,7 @@ var d3UI = function(SharePointSiteURL, SharePointRestAPI, framework) {
     
   
     //highlights the active menu link for the current page
-    self.ActiveNavMenuLink = (index) => {
+    self.ActiveNavMenuLink = function(index) {
         $(".paulweiss .nav.navbar-nav li").removeClass("active");
         $(".paulweiss .nav.navbar-nav li:nth-child(" + index + ")").addClass("active");
     };
