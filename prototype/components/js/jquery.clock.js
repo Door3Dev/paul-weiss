@@ -39,7 +39,7 @@
       {
         var hdegree = hours * 30 + (mins / 2);
         var hrotate = "rotate(" + hdegree + "deg)";
-        jQuery(_this).find(".hour").css({"-moz-transform" : hrotate, "-webkit-transform" : hrotate});
+        jQuery(_this).find(".hour").css({"-moz-transform" : hrotate, "-webkit-transform" : hrotate, "-ms-transform" : hrotate, "-sand-transform" : hrotate});
       }
       else
       {
