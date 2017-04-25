@@ -1,5 +1,5 @@
-@import 'globals';
-@import 'mixins';
+@import '_globals';
+@import '_mixins';
 
 
 //backgrounds
@@ -445,6 +445,9 @@ body.paulweiss{
         background-color: $background-3;
         //margin-left:-10px;
         padding: 0 15px 0 15px;
+        .date-range-card {
+            background-color:$white;
+        }
     }
     
     .d3-card { 
@@ -483,6 +486,180 @@ body.paulweiss{
                     padding-left:20px;
                 }
             }
+            
+             .flex-list{
+                  columns: 2;
+                  -webkit-columns: 2;
+                  -moz-columns: 2; 
+               
+                      li {
+                    list-style: disc;
+                            list-style-position: inside;
+                    color:$fontLink;
+                }
+                     a {
+                    font-family: $font-1;
+                      color: $fontLink;
+                         margin-left:-10px;
+                }
+            }
+            .archive-list {
+                border-bottom: 1px solid $gray-3;
+                margin-bottom: 32px;
+                padding-bottom: 32px;
+            }
+            .archive-list p {
+                font-weight: bold;
+                color:black;
+            }
+            .archive-list:last-child {
+                border-bottom: none;
+                margin-bottom: 32px;
+                padding-bottom: 32px;
+            }
+             .daily-bulletin-header-flex-list{
+                  columns: 3;
+                  -webkit-columns: 3;
+                  -moz-columns: 3; 
+                 border-bottom: 1px solid $gray-3;
+               padding:0px;
+                 margin-bottom: 24px;
+                padding-bottom: 24px;
+                      li {
+                    list-style: none;
+                          font-weight: bold;
+                }
+                    li:first-child {
+                    text-align: left;
+                }
+                    li:last-child {
+                    list-style: none;
+                        text-align: right;
+                }
+            } 
+            .media-list {
+                
+                .media {
+                      border-bottom: 1px solid $gray-3;
+                     margin-bottom: 32px;
+                    padding-bottom: 32px;
+                }
+                 .media:last-child {
+                      border-bottom: none;
+                     margin-bottom: 0px;
+                     padding-bottom: 0px;
+                }
+            }
+            
+            .jury-room {
+                border-bottom: 1px solid $gray-3;
+                margin-bottom: 32px;
+                padding-bottom: 10px;
+            }
+            .jury-room h5 {
+                 font-family: $font-1;
+                font-size: $font-size-7;
+               margin: 0px;
+                text-transform: none;
+            }
+             .jury-room h4 {
+                 font-family: $font-1;
+                font-size: $font-size-10;
+               margin: 0px;
+                text-transform: none;
+            }
+            .food-menu-item {
+                text-align: left;
+                padding-left: 0px;
+            }
+            .food-menu-item span {
+                 font-size: $font-size-2;
+                color: $gray-4;  
+                 text-transform: uppercase;
+            }
+            .food-menu-item li {
+                list-style: disc;
+                 color: $black; 
+                text-align: left;
+                padding-left:10px;
+            }
+            
+            .menu-side-item {
+                 color: $black; 
+                  border-bottom: 1px solid $gray-3;
+                 margin-bottom: 32px;
+                    padding-bottom: 32px;
+                    padding-left: 37px;
+            }
+             .menu-side-item h5 {
+                 font-family: $font-1;
+                font-size: $font-size-5;
+                 padding:0px;
+            }
+            .menu-side-item label {
+             font-size: $font-size-2;
+                color: $gray-4;  
+                 text-transform: uppercase;
+               
+            }
+            .menu-side-item p {
+                
+            }
+            .side-border {
+                border-right: 1px solid $gray-3;
+                margin-bottom: 32px;
+            }
+            .calendar-day
+            {
+                 border-bottom: 1px solid $gray-3;
+                 margin-bottom: 32px;
+                 padding-bottom: 32px;
+            }
+            .calendar-day:last-child
+            {
+                 border-bottom: none;
+                 padding-bottom: 32px;
+            }
+            
+            .pad {
+                 color:$black;
+            }
+            .pad .pad-date{
+                 border-bottom: 1px solid $gray-3;
+                 margin-bottom: 32px;
+                 padding-bottom: 32px;  
+                font-weight: bold;
+            }
+            .pad .media-body {
+                
+            }
+            .pad .media-body label {
+                color:$fontLink;
+                width: 100%;
+                font-weight: bold;
+                padding-top:12px;
+                
+            }
+             .pad .media-heading {
+                  font-family: $font-1;
+                font-size: $font-size-5;
+            }
+            
+            .calendar-event-item {
+                h5{
+                   font-family: $font-1;
+                font-size: $font-size-5;  
+                }
+                label {
+                    font-size: $font-size-2;
+                color: $gray-4;  
+                 text-transform: uppercase;
+                    width:100%;
+                }
+                p {
+                    
+                }
+            }
         }
         
         &.resource-card {
@@ -491,7 +668,7 @@ body.paulweiss{
             padding-bottom:0px;
             li {
                 list-style: disc;
-                color:#802528;
+                color:$fontLink;
             }
             a {
                 font-family: $font-1;
@@ -505,7 +682,7 @@ body.paulweiss{
             a {
                  font-family: $font-1;
                 padding:0px;
-                color:#802528;
+                color:$fontLink;
                 
             }
             .faq-click {
@@ -564,7 +741,7 @@ body.paulweiss{
             .resource-list li{
                   list-style: disc;
                  font-family: $font-1;
-                color:#717073;
+                color:$gray-4;
                 font-size: $font-size-14;
                 line-height: 20px;
             }
@@ -577,13 +754,13 @@ body.paulweiss{
             //margin-bottom: 15px;
             background-color: $background-3;
             color: $black;
-            margin-bottom: 0px;
+            margin-bottom: 0px; 
             padding: 30px 0;
             border-bottom:1px solid $gray-3;
             
             h5{
                 line-height: 18px;
-                font-size: $font-size-4;
+                font-size: $font-size-5;
             }
             
             .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover{
@@ -593,8 +770,36 @@ body.paulweiss{
             .d3-sharepoint-user-icon{
                 margin:0 10px 0 0;
             }
+            
+           .d3-quick-links {
+                padding-left:5px;
+	            padding-top:8px; 
+            }
+          
+            .d3-quick-links{
+                padding-left: 30px;
+	            padding-top:8px;
+                }
+            .d3-quick-links li {
+                list-style: disc;
+                font-family: $font-1;
+                font-size: $font-size-14;
+                line-height: 18px;
+                color: $fontLink;
+            }
+            .d3-quick-links li:before {
+                content:none;
+            }
+            .d3-quick-links li a {
+                font-family: $font-1;
+                  font-size: $font-size-14;
+                 color: $fontLink;
+            }
+            .d3-quick-links li a:hover {
+                text-decoration: underline;
+            }
         }
-        
+         
         .bottom{
             display: none;
         }
@@ -640,8 +845,9 @@ body.paulweiss{
     //main: calendar
     .d3-calendar{ 
         .calendar-list {
-            
+            padding: 0px;
             li{
+                list-style: none;
                 &:last-child{
                     .calendar-list-item{
                         margin-bottom: 0;
@@ -1486,8 +1692,22 @@ body.paulweiss{
     }
 }
 
-
-
+/* KENDO OVERRIDES
+**************************/
+/* css example with custom class */
+/* img tag technique */
+.k-state-default>.k-select {
+    background-color: $red-1;
+}
+.k-i-calendar {
+    background-position: 0px -274px !important;
+}
+.k-dropdown-wrap .k-input, .k-numeric-wrap .k-input, .k-picker-wrap .k-input {
+    background-color: $body-bg-color;
+    padding:5px;
+    font-family: $font-2;
+    color:$gray-4;
+}
 
 /* SHAREPOINT OVERRIDES
 **************************/

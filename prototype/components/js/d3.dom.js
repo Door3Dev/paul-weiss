@@ -58,7 +58,9 @@ $(document).ready(function() {
     D3SPCoreDOM.UI.GetCurrentSpotlight();
     D3SPCoreDOM.UI.GetSecurityUpdate();
     D3SPCoreDOM.UI.SetHeaderUI();
-
+    
+      //KENDO DATE PICKER
+    $(D3SPCoreDOM.Settings.DatePicker).kendoDatePicker();
     
     //add class to body if viewing as admin
     if ($(D3SPCoreDOM.Settings.SharePointMenuId).length) {

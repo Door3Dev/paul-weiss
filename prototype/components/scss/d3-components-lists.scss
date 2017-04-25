@@ -1,8 +1,7 @@
 .d3-list-alt {
     padding-top: 20px;
 }
-.d3-list-alt div {
-}
+
 .d3-list-alt li {
     list-style: none;
 }
@@ -201,4 +200,29 @@
 
 .d3-filter-list li a:hover:not(.header) {
   background-color: #eee; }
+
+  /* Components */
+
+.d3-side-resource-list {
+    list-style: none;
+}
+.d3-side-resource-list li:before {
+    font-family: fontawesome;
+    content: "\f016";
+    color: #9A1F32;
+    margin-right: 15px;
+    font-size: 24px;
+    vertical-align: middle;
+}
+.d3-side-resource-list li {
+    padding-top: 10px;
+}
+.d3-side-resource-list li a {
+    text-decoration: none;
+    color: #000;
+}
+.d3-side-resource-list li a:hover {
+    text-decoration: underline;
+    color: #000;
+}
 
