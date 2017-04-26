@@ -303,8 +303,21 @@ body.paulweiss {
   body.paulweiss .side-card-container {
     background-color: #E8E8E8;
     padding: 0 15px 0 15px; }
-    body.paulweiss .side-card-container .date-range-card {
-      background-color: #fff; }
+  body.paulweiss .side-card-container-white {
+    background-color: #fff;
+    padding: 0 15px 0 15px; }
+  body.paulweiss .date-range-card {
+    min-height: 273px; }
+    body.paulweiss .date-range-card h5 {
+      font-family: "Georgia";
+      font-size: 18px;
+      padding-top: 20px;
+      color: black; }
+    body.paulweiss .date-range-card h4 {
+      font-family: "Georgia";
+      font-size: 16px;
+      padding-top: 20px;
+      color: black; }
   body.paulweiss .d3-card {
     line-height: normal;
     padding: 24px; }
@@ -443,10 +456,12 @@ body.paulweiss {
         font-family: "Georgia";
         font-size: 18px; }
       body.paulweiss .d3-card.main-card .calendar-event-item label {
-        font-size: 12px;
+        font-size: 14px;
         color: #717073;
         text-transform: uppercase;
         width: 100%; }
+      body.paulweiss .d3-card.main-card .calendar-event-item p {
+        color: black; }
     body.paulweiss .d3-card.resource-card {
       margin-bottom: 0px;
       margin-top: 0px;
@@ -573,6 +588,7 @@ body.paulweiss {
       body.paulweiss .d3-calendar .calendar-list .calendar-list-item .calendar-date-inner {
         background-color: #716f73;
         padding: 2px;
+        text-transform: uppercase;
         color: #fff;
         font-weight: bold;
         height: 15px;
@@ -1020,7 +1036,11 @@ body.paulweiss {
 /* css example with custom class */
 /* img tag technique */
 .k-state-default > .k-select {
-  background-color: #c13f28; }
+  background-color: #c13f28;
+  height: 45px;
+  width: 45px;
+  border: none;
+  color: white; }
 
 .k-i-calendar {
   background-position: 0px -274px !important; }
@@ -1030,6 +1050,24 @@ body.paulweiss {
   padding: 5px;
   font-family: "Arial";
   color: #717073; }
+
+.form-group input[type="checkbox"] {
+  display: none; }
+
+.form-group input[type="checkbox"] + .btn-group > label span {
+  width: 20px; }
+
+.form-group input[type="checkbox"] + .btn-group > label span:first-child {
+  display: none; }
+
+.form-group input[type="checkbox"] + .btn-group > label span:last-child {
+  display: inline-block; }
+
+.form-group input[type="checkbox"]:checked + .btn-group > label span:first-child {
+  display: inline-block; }
+
+.form-group input[type="checkbox"]:checked + .btn-group > label span:last-child {
+  display: none; }
 
 /* SHAREPOINT OVERRIDES
 **************************/
