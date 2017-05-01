@@ -397,6 +397,31 @@ var d3UI = function(SharePointSiteURL, SharePointRestAPI, framework) {
   		
   	};	
     
+    
+      self.NewsModal = function(element) {
+            var input = $(D3SPCoreDOM.Settings.searchBox),
+                results = $(D3SPCoreDOM.Settings.searchResultsBox),
+                background = $(D3SPCoreDOM.Settings.backgroundOverlay);
+         if(results.hasClass('show')){
+                //input.removeClass("active");
+                results.removeClass('show');
+                background.removeClass('show');
+            } else{
+                //input.addClass("active");
+                results.slideDown({duration:250})
+                background.addClass('show');
+            }
+    };
+
+    self.CloseVideoModal = function() {
+        self.VideoPlayerOpen = false;
+        //order is important
+        $(D3SPCoreDOM.Settings.modalBgdrop).removeAttr('style');
+        $(D3SPCoreDOM.Settings.modalBgdrop).hide();
+        $(D3SPCoreDOM.Settings.VideoModalPlayer).modal('toggle');
+
+    };
+    
     //UPDATE THIS
     self.SetHeaderUI = function(){
        var w = window.location.pathname;

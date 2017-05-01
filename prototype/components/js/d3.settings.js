@@ -61,4 +61,5 @@ var Settings = function(name) {
     self.KendoWorkInProgress = ".d3-work-in-progress";
      self.SpolitLightContentHtml = ".side-spotlight";
     self.ToolClass = ".tool";
+    self.KendoGridPracticeGroupPeopleId = ".practice-group-people-grid";
 };
