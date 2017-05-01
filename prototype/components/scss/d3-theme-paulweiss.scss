@@ -445,10 +445,14 @@ body.paulweiss{
         background-color: $background-3;
         //margin-left:-10px;
         padding: 0 15px 0 15px;
+         margin-left: 10px;
+        max-width: 309px;
     }
     .side-card-container-white {
        background-color: $background-1;
         padding: 0 15px 0 15px;
+        margin-left: 10px;
+        max-width: 309px;
     }
     
     .date-range-card {
@@ -491,6 +495,16 @@ body.paulweiss{
                     font-size:$font-size-1;
                 }
             }
+             a {
+                    font-family: $font-1;
+                      color: $fontLink;
+                       text-decoration: none;
+                }
+             a:hover {
+                    font-family: $font-1;
+                      color: $fontLink;
+                         text-decoration: underline;
+                }
             
             .left{
                 border-right: 1px solid $gray-3;
@@ -509,6 +523,7 @@ body.paulweiss{
                   columns: 2;
                   -webkit-columns: 2;
                   -moz-columns: 2; 
+                     margin-left: -30px;
                
                       li {
                     list-style: disc;
@@ -529,6 +544,8 @@ body.paulweiss{
             .archive-list p {
                 font-weight: bold;
                 color:black;
+                margin-bottom: 20px;
+                font-family: $font-1;
             }
             .archive-list:last-child {
                 border-bottom: none;
@@ -546,6 +563,8 @@ body.paulweiss{
                       li {
                     list-style: none;
                           font-weight: bold;
+                          color: $black;
+                           font-family: $font-1;
                 }
                     li:first-child {
                     text-align: left;
@@ -556,7 +575,7 @@ body.paulweiss{
                 }
             } 
             .media-list {
-                
+                font-family: $font-1;
                 .media {
                       border-bottom: 1px solid $gray-3;
                      margin-bottom: 32px;
@@ -568,7 +587,10 @@ body.paulweiss{
                      padding-bottom: 0px;
                 }
             }
-            
+            h4.media-heading {
+                color: $black;
+                 font-family: $font-1;
+            }
             .jury-room {
                 border-bottom: 1px solid $gray-3;
                 margin-bottom: 32px;
@@ -579,21 +601,28 @@ body.paulweiss{
                 font-size: $font-size-7;
                margin: 0px;
                 text-transform: none;
+                  color: $black; 
             }
              .jury-room h4 {
                  font-family: $font-1;
                 font-size: $font-size-10;
                margin: 0px;
                 text-transform: none;
+                 color: $black; 
             }
             .food-menu-item {
                 text-align: left;
                 padding-left: 0px;
+                 margin-bottom: 15px;
             }
             .food-menu-item span {
                  font-size: $font-size-2;
                 color: $gray-4;  
                  text-transform: uppercase;
+            }
+            .foond-menu-item ul {
+                
+                padding-bottom: 10px;
             }
             .food-menu-item li {
                 list-style: disc;
@@ -613,11 +642,14 @@ body.paulweiss{
                  font-family: $font-1;
                 font-size: $font-size-5;
                  padding:0px;
+                 margin: 0px;
             }
             .menu-side-item label {
              font-size: $font-size-2;
                 color: $gray-4;  
                  text-transform: uppercase;
+                font-weight: normal;
+                padding-top: 24px;
                
             }
             .menu-side-item p {
@@ -638,15 +670,27 @@ body.paulweiss{
                  border-bottom: none;
                  padding-bottom: 32px;
             }
-            
+            .practice-group-people-grid {
+                margin-top:-40px;
+            }
             .pad {
-                 color:$black;
+             
+                  font-family: $font-1;
+                color:$gray-4;
+            }
+            .pad a {
+                 color:$fontLink;
+                text-decoration: none;
+            }
+            .pad a:hover{
+                text-decoration: underline;
             }
             .pad .pad-date{
                  border-bottom: 1px solid $gray-3;
                  margin-bottom: 32px;
                  padding-bottom: 32px;  
                  font-weight: bold;
+                color:$black;
             }
             .pad .media-body {
                 
@@ -656,6 +700,7 @@ body.paulweiss{
                 width: 100%;
                 font-weight: bold;
                 padding-top:12px;
+                padding-bottom: 10px;
                 
             }
              .pad .media-heading {
@@ -663,6 +708,16 @@ body.paulweiss{
                   font-size: $font-size-5;
             }
             
+            .calendar-row {
+                border-bottom: 1px solid $gray-3;
+                 margin-bottom: 32px;
+                 padding-bottom: 32px;  
+            }
+            .calendar-row:last-child {
+                border-bottom: none;
+                 margin-bottom: 32px;
+                 padding-bottom: 32px;  
+            }
             .calendar-event-item {
                 h5{
                    font-family: $font-1;
@@ -673,6 +728,7 @@ body.paulweiss{
                     color: $gray-4;  
                     text-transform: uppercase;
                     width:100%;
+                    font-weight: normal;
                 }
                 p {
                       color:$black;
@@ -804,6 +860,7 @@ body.paulweiss{
                 font-size: $font-size-14;
                 line-height: 18px;
                 color: $fontLink;
+                padding-top: 10px;
             }
             .d3-quick-links li:before {
                 content:none;
@@ -816,6 +873,22 @@ body.paulweiss{
             .d3-quick-links li a:hover {
                 text-decoration: underline;
             }
+            
+            
+                .field {
+                    color:$gray-4;
+                    margin-top: 10px;
+                    clear: both;
+                    span {
+                        width:50%;
+                    }
+                }
+                .field span:last-child{
+                    font-weight: bold;
+                       color: $black;
+                    text-align: right;
+                }
+            
         }
          
         .bottom{
@@ -871,6 +944,12 @@ body.paulweiss{
                         margin-bottom: 0;
                     }
                 }
+            }
+            span {
+                color:$black;
+            }
+            .calendar-big-text {
+                font-size: $font-size-7;
             }
             .calendar-date-outer {
                 height:41px;
@@ -1297,7 +1376,7 @@ body.paulweiss{
                     
                     &:first-child{
                         width: 40%;
-                        color: $gray-1;
+                        color: $gray-4;
                     }
                     &:last-child{
                         width: 60%; 
@@ -1715,45 +1794,197 @@ body.paulweiss{
 **************************/
 /* css example with custom class */
 /* img tag technique */
-.k-state-default>.k-select {
-    background-color: $red-1;
+.k-state-default .k-select {
+    background-color: $appColor !important;
     height: 45px;
-    width:45px;
+    width: 45px;
     border:none;
     color:white;
 }
-.k-i-calendar {
-    background-position: 0px -274px !important;
+.k-picker-wrap .k-select {
+    border-radius: 0px !important;
+    height: 45px;
+    width: 45px;
+    border-color:  $appColor !important;
 }
-.k-dropdown-wrap .k-input, .k-numeric-wrap .k-input, .k-picker-wrap .k-input {
+.k-picker-wrap .k-input {
     background-color: $body-bg-color;
     padding:5px;
+     height: 45px;
     font-family: $font-2;
     color:$gray-4;
 }
 
-
-
-.form-group input[type="checkbox"] {
-    display: none;
+.k-picker-wrap .k-input {
+    padding-left: 14px !important;
+        padding-top: 10px !important;
+    border-radius: 0px !important;
+}
+.k-picker-wrap.k-state-default {
+        background-color: #ececec !important;
+    border-color: #c5c5c5;
+    border-radius: 0px;
+        height: 45px;
+}
+.k-picker-wrap.k-state-hover {
+       background-color: #ececec !important;
+    border-color: #c5c5c5;
+    border-radius: 0px;
+        height: 45px;
+}
+.k-filter-help-text {
+    
+    font-family: $font-2;
+    color:$gray-4;
+}
+.k-filter-menu {
+    padding:20px !important;
+      font-family: $font-2;
+    color:$black;
+}
+.k-filter-menu input {
+    background-color:  $body-bg-color !important;
+     color:$gray-4;
+}
+.k-grid-header th.k-with-icon .k-link {
+     color:$gray-4 !important;
+    text-decoration: none;
+}
+.k-grid-header th.k-with-icon .k-link:hover {
+     text-decoration: underline;
+}
+.k-grid-content {
+    color:$black !important;
+    overflow-y: none !important;
+    overflow-x: none !important;
+    overflow: auto !important;
+}
+.k-grid-content td {
+    padding:5px 0px 0px 1px !important;
+}
+.k-i-calendar {
+     background-image: url(http://akins2016/sites/pw/SiteAssets/d3/images/cefa1523380.png) !important;
+  background-position: -15px -273px !important;  
+}
+.k-grid-filter {
+  left: 68px !important;
+    top: 15px !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    float: none !important;
+}
+.k-header.k-grid-filter:first-child {
+  left: 72px !important;
+    top: 15px !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    float: none !important;
 }
 
-.form-group input[type="checkbox"] + .btn-group > label span {
-    width: 20px;
+
+.k-filter-menu {
+    box-shadow: 0px 15px 50px black !important;
+}
+.k-primary {
+    background-color: $red-5 !important;
+    border-radius: 0px !important;
+    font-size: $font-size-14 !important;
 }
 
-.form-group input[type="checkbox"] + .btn-group > label span:first-child {
-    display: none;
+.search-check-box-list {
+    border-top: 1px solid $gray-3;
+     margin-top: 32px;
+     padding-top: 32px;  
 }
-.form-group input[type="checkbox"] + .btn-group > label span:last-child {
-    display: inline-block;   
+.search-check-box-list h5{
+     font-family: $font-1;
+                   font-size: $font-size-5; 
+    color:$black;
+}
+.search-check-box-list .checkbox * {
+  cursor: pointer;
+}
+.search-check-box-list .checkbox {
+  padding-left: 20px;
+  margin-top: 1px;
+    font-family: $font-2;
+    color:$black;
 }
 
-.form-group input[type="checkbox"]:checked + .btn-group > label span:first-child {
-    display: inline-block;
+.search-check-box-list .checkbox-container .checkbox label {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  padding-left: 5px;
 }
-.form-group input[type="checkbox"]:checked + .btn-group > label span:last-child {
-    display: none;   
+
+.search-check-box-list .checkbox-container label:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0;
+  margin-left: -22px;
+  margin-top: 2px;
+  border: 1px solid #555;
+  background-color: #fff;
+  -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+  -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+  transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+
+.search-check-box-list .checkbox-container label:after {
+  display: inline-block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0;
+  top: 2px;
+  margin-left: -21px;
+  padding-left: 3px;
+  padding-top: 1px;
+  font-size: 11px;
+  color: #555555;
+}
+
+.search-check-box-list .checkbox input[type="checkbox"]{
+  opacity: 0;
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+}
+
+
+.search-check-box-list .checkbox input[type="checkbox"]:checked + label::after{
+  font-family: "FontAwesome";
+  content: "\f00c";
+}
+
+.search-check-box-list .checkbox.checkbox-circle label::before {
+ 
+}
+
+.search-check-box-list .checkbox.checkbox-inline {
+  margin-top: 0;
+}
+
+.search-check-box-list .checkbox-red    input[type="checkbox"]:checked + label::after
+{color: #fff;background-color: $red-1; }
+
+.search-check-box-list .checkbox-red input[type="checkbox"] + label::before
+{ border-color:$red-1;}
+
+
+
+
+
+
+
+
+input[type="checkbox"].styled:checked + label:after {
+  font-family: 'FontAwesome';
+  content: "\f00c";
 }
 
 /* SHAREPOINT OVERRIDES
@@ -1818,4 +2049,5 @@ background: url('/sites/pw/SiteAssets/d3/images/spcommon.png') no-repeat -161px 
 }
 .ms-rtestate-field p, p.ms-rteElement-P{
     line-height: 21px;
+    margin: 0px;
 }

@@ -26,6 +26,8 @@ $(document).ready(function() {
     };
     $.extend(D3SPCoreDOM, UI);
 
+      //KENDO DATE PICKER
+    $(D3SPCoreDOM.Settings.DatePicker).kendoDatePicker();
     
     //for the FAQ panels takes the data-faq="id#" generated from list
     $(D3SPCoreDOM.Settings.FAQClass).click(function() {
@@ -58,9 +60,7 @@ $(document).ready(function() {
     D3SPCoreDOM.UI.GetCurrentSpotlight();
     D3SPCoreDOM.UI.GetSecurityUpdate();
     D3SPCoreDOM.UI.SetHeaderUI();
-    
-      //KENDO DATE PICKER
-    $(D3SPCoreDOM.Settings.DatePicker).kendoDatePicker();
+
     
     //add class to body if viewing as admin
     if ($(D3SPCoreDOM.Settings.SharePointMenuId).length) {
@@ -106,5 +106,70 @@ $(document).ready(function() {
     $("#alertTest").on("click", function() {
         $("body").addClass("hasAlert");
     });
+     $(D3SPCoreDOM.Settings.KendoGridPracticeGroupPeopleId).kendoGrid({
+        dataSource: localPracticeGroupPeopleDataSource,
+        schema: {
+            model: {
+                fields: {
+                    article: {
+                        type: "string"
+                    }, 
+                    source: {
+                        type: "string"
+                    },
+                    location: {
+                        type: "string"
+                    }                 
+                }
+            }
+        },
+        pageSize: 20,
+        serverPaging: false,
+        serverFiltering: false,
+		sortable: {
+		    mode: "single",
+		    allowUnsort: true
+		},
+		filterable: {
+                            extra: false,
+                            operators: {
+                                string: {
+                                    startswith: "Starts with",
+                                    eq: "Is equal to",
+                                    neq: "Is not equal to"
+                                }
+                            }
+                        },
+        pageable: false,
+        columns: [
+        	{
+                field: "article",
+                width: '424px',
+                title: "ARTICLE",
+                encoded: false,
+                
+                filterable: {
+                    ui: titleFilter
+               }
+            },
+            {
+                field: "source",
+                width: '212px',
+                title: "SOURCE"
+            }, 
+            {
+                field: "location",
+                width: '212px',
+                title: "LOCATION"
+            }
+             ]
+    });
     
+function titleFilter(element) {
+                    element.kendoAutoComplete({
+                        dataSource: localPracticeGroupPeopleDataSource
+                    });
+                    $(element).append("<br/>");
+                  
+                }
 });

@@ -302,10 +302,14 @@ body.paulweiss {
       padding-right: 5px; }
   body.paulweiss .side-card-container {
     background-color: #E8E8E8;
-    padding: 0 15px 0 15px; }
+    padding: 0 15px 0 15px;
+    margin-left: 10px;
+    max-width: 309px; }
   body.paulweiss .side-card-container-white {
     background-color: #fff;
-    padding: 0 15px 0 15px; }
+    padding: 0 15px 0 15px;
+    margin-left: 10px;
+    max-width: 309px; }
   body.paulweiss .date-range-card {
     min-height: 273px; }
     body.paulweiss .date-range-card h5 {
@@ -334,6 +338,14 @@ body.paulweiss {
         text-transform: uppercase; }
         body.paulweiss .d3-card.main-card h5 small {
           font-size: 11px; }
+      body.paulweiss .d3-card.main-card a {
+        font-family: "Georgia";
+        color: #802528;
+        text-decoration: none; }
+      body.paulweiss .d3-card.main-card a:hover {
+        font-family: "Georgia";
+        color: #802528;
+        text-decoration: underline; }
       body.paulweiss .d3-card.main-card .left {
         border-right: 1px solid #dcdcdc; }
         body.paulweiss .d3-card.main-card .left .left-content {
@@ -343,7 +355,8 @@ body.paulweiss {
       body.paulweiss .d3-card.main-card .flex-list {
         columns: 2;
         -webkit-columns: 2;
-        -moz-columns: 2; }
+        -moz-columns: 2;
+        margin-left: -30px; }
         body.paulweiss .d3-card.main-card .flex-list li {
           list-style: disc;
           list-style-position: inside;
@@ -358,7 +371,9 @@ body.paulweiss {
         padding-bottom: 32px; }
       body.paulweiss .d3-card.main-card .archive-list p {
         font-weight: bold;
-        color: black; }
+        color: black;
+        margin-bottom: 20px;
+        font-family: "Georgia"; }
       body.paulweiss .d3-card.main-card .archive-list:last-child {
         border-bottom: none;
         margin-bottom: 32px;
@@ -373,20 +388,27 @@ body.paulweiss {
         padding-bottom: 24px; }
         body.paulweiss .d3-card.main-card .daily-bulletin-header-flex-list li {
           list-style: none;
-          font-weight: bold; }
+          font-weight: bold;
+          color: black;
+          font-family: "Georgia"; }
         body.paulweiss .d3-card.main-card .daily-bulletin-header-flex-list li:first-child {
           text-align: left; }
         body.paulweiss .d3-card.main-card .daily-bulletin-header-flex-list li:last-child {
           list-style: none;
           text-align: right; }
-      body.paulweiss .d3-card.main-card .media-list .media {
-        border-bottom: 1px solid #dcdcdc;
-        margin-bottom: 32px;
-        padding-bottom: 32px; }
-      body.paulweiss .d3-card.main-card .media-list .media:last-child {
-        border-bottom: none;
-        margin-bottom: 0px;
-        padding-bottom: 0px; }
+      body.paulweiss .d3-card.main-card .media-list {
+        font-family: "Georgia"; }
+        body.paulweiss .d3-card.main-card .media-list .media {
+          border-bottom: 1px solid #dcdcdc;
+          margin-bottom: 32px;
+          padding-bottom: 32px; }
+        body.paulweiss .d3-card.main-card .media-list .media:last-child {
+          border-bottom: none;
+          margin-bottom: 0px;
+          padding-bottom: 0px; }
+      body.paulweiss .d3-card.main-card h4.media-heading {
+        color: black;
+        font-family: "Georgia"; }
       body.paulweiss .d3-card.main-card .jury-room {
         border-bottom: 1px solid #dcdcdc;
         margin-bottom: 32px;
@@ -395,19 +417,24 @@ body.paulweiss {
         font-family: "Georgia";
         font-size: 28px;
         margin: 0px;
-        text-transform: none; }
+        text-transform: none;
+        color: black; }
       body.paulweiss .d3-card.main-card .jury-room h4 {
         font-family: "Georgia";
         font-size: 21px;
         margin: 0px;
-        text-transform: none; }
+        text-transform: none;
+        color: black; }
       body.paulweiss .d3-card.main-card .food-menu-item {
         text-align: left;
-        padding-left: 0px; }
+        padding-left: 0px;
+        margin-bottom: 15px; }
       body.paulweiss .d3-card.main-card .food-menu-item span {
         font-size: 12px;
         color: #717073;
         text-transform: uppercase; }
+      body.paulweiss .d3-card.main-card .foond-menu-item ul {
+        padding-bottom: 10px; }
       body.paulweiss .d3-card.main-card .food-menu-item li {
         list-style: disc;
         color: black;
@@ -422,11 +449,14 @@ body.paulweiss {
       body.paulweiss .d3-card.main-card .menu-side-item h5 {
         font-family: "Georgia";
         font-size: 18px;
-        padding: 0px; }
+        padding: 0px;
+        margin: 0px; }
       body.paulweiss .d3-card.main-card .menu-side-item label {
         font-size: 12px;
         color: #717073;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        font-weight: normal;
+        padding-top: 24px; }
       body.paulweiss .d3-card.main-card .side-border {
         border-right: 1px solid #dcdcdc;
         margin-bottom: 32px; }
@@ -437,21 +467,39 @@ body.paulweiss {
       body.paulweiss .d3-card.main-card .calendar-day:last-child {
         border-bottom: none;
         padding-bottom: 32px; }
+      body.paulweiss .d3-card.main-card .practice-group-people-grid {
+        margin-top: -40px; }
       body.paulweiss .d3-card.main-card .pad {
-        color: black; }
+        font-family: "Georgia";
+        color: #717073; }
+      body.paulweiss .d3-card.main-card .pad a {
+        color: #802528;
+        text-decoration: none; }
+      body.paulweiss .d3-card.main-card .pad a:hover {
+        text-decoration: underline; }
       body.paulweiss .d3-card.main-card .pad .pad-date {
         border-bottom: 1px solid #dcdcdc;
         margin-bottom: 32px;
         padding-bottom: 32px;
-        font-weight: bold; }
+        font-weight: bold;
+        color: black; }
       body.paulweiss .d3-card.main-card .pad .media-body label {
         color: #802528;
         width: 100%;
         font-weight: bold;
-        padding-top: 12px; }
+        padding-top: 12px;
+        padding-bottom: 10px; }
       body.paulweiss .d3-card.main-card .pad .media-heading {
         font-family: "Georgia";
         font-size: 18px; }
+      body.paulweiss .d3-card.main-card .calendar-row {
+        border-bottom: 1px solid #dcdcdc;
+        margin-bottom: 32px;
+        padding-bottom: 32px; }
+      body.paulweiss .d3-card.main-card .calendar-row:last-child {
+        border-bottom: none;
+        margin-bottom: 32px;
+        padding-bottom: 32px; }
       body.paulweiss .d3-card.main-card .calendar-event-item h5 {
         font-family: "Georgia";
         font-size: 18px; }
@@ -459,7 +507,8 @@ body.paulweiss {
         font-size: 14px;
         color: #717073;
         text-transform: uppercase;
-        width: 100%; }
+        width: 100%;
+        font-weight: normal; }
       body.paulweiss .d3-card.main-card .calendar-event-item p {
         color: black; }
     body.paulweiss .d3-card.resource-card {
@@ -547,7 +596,8 @@ body.paulweiss {
         font-family: "Georgia";
         font-size: 15px;
         line-height: 18px;
-        color: #802528; }
+        color: #802528;
+        padding-top: 10px; }
       body.paulweiss .d3-card.side-card .d3-quick-links li:before {
         content: none; }
       body.paulweiss .d3-card.side-card .d3-quick-links li a {
@@ -556,6 +606,16 @@ body.paulweiss {
         color: #802528; }
       body.paulweiss .d3-card.side-card .d3-quick-links li a:hover {
         text-decoration: underline; }
+      body.paulweiss .d3-card.side-card .field {
+        color: #717073;
+        margin-top: 10px;
+        clear: both; }
+        body.paulweiss .d3-card.side-card .field span {
+          width: 50%; }
+      body.paulweiss .d3-card.side-card .field span:last-child {
+        font-weight: bold;
+        color: black;
+        text-align: right; }
     body.paulweiss .d3-card .bottom {
       display: none; }
   body.paulweiss .carousel {
@@ -578,6 +638,10 @@ body.paulweiss {
       list-style: none; }
       body.paulweiss .d3-calendar .calendar-list li:last-child .calendar-list-item {
         margin-bottom: 0; }
+    body.paulweiss .d3-calendar .calendar-list span {
+      color: black; }
+    body.paulweiss .d3-calendar .calendar-list .calendar-big-text {
+      font-size: 28px; }
     body.paulweiss .d3-calendar .calendar-list .calendar-date-outer {
       height: 41px;
       width: 41px;
@@ -828,7 +892,7 @@ body.paulweiss {
         vertical-align: top; }
         body.paulweiss .d3-profile-card fieldset .field span:first-child {
           width: 40%;
-          color: #999; }
+          color: #717073; }
         body.paulweiss .d3-profile-card fieldset .field span:last-child {
           width: 60%;
           color: black; }
@@ -1035,39 +1099,174 @@ body.paulweiss {
 **************************/
 /* css example with custom class */
 /* img tag technique */
-.k-state-default > .k-select {
-  background-color: #c13f28;
+.k-state-default .k-select {
+  background-color: #c13f28 !important;
   height: 45px;
   width: 45px;
   border: none;
   color: white; }
 
-.k-i-calendar {
-  background-position: 0px -274px !important; }
+.k-picker-wrap .k-select {
+  border-radius: 0px !important;
+  height: 45px;
+  width: 45px;
+  border-color: #c13f28 !important; }
 
-.k-dropdown-wrap .k-input, .k-numeric-wrap .k-input, .k-picker-wrap .k-input {
+.k-picker-wrap .k-input {
   background-color: #EFEFEF;
   padding: 5px;
+  height: 45px;
   font-family: "Arial";
   color: #717073; }
 
-.form-group input[type="checkbox"] {
-  display: none; }
+.k-picker-wrap .k-input {
+  padding-left: 14px !important;
+  padding-top: 10px !important;
+  border-radius: 0px !important; }
 
-.form-group input[type="checkbox"] + .btn-group > label span {
-  width: 20px; }
+.k-picker-wrap.k-state-default {
+  background-color: #ececec !important;
+  border-color: #c5c5c5;
+  border-radius: 0px;
+  height: 45px; }
 
-.form-group input[type="checkbox"] + .btn-group > label span:first-child {
-  display: none; }
+.k-picker-wrap.k-state-hover {
+  background-color: #ececec !important;
+  border-color: #c5c5c5;
+  border-radius: 0px;
+  height: 45px; }
 
-.form-group input[type="checkbox"] + .btn-group > label span:last-child {
-  display: inline-block; }
+.k-filter-help-text {
+  font-family: "Arial";
+  color: #717073; }
 
-.form-group input[type="checkbox"]:checked + .btn-group > label span:first-child {
-  display: inline-block; }
+.k-filter-menu {
+  padding: 20px !important;
+  font-family: "Arial";
+  color: black; }
 
-.form-group input[type="checkbox"]:checked + .btn-group > label span:last-child {
-  display: none; }
+.k-filter-menu input {
+  background-color: #EFEFEF !important;
+  color: #717073; }
+
+.k-grid-header th.k-with-icon .k-link {
+  color: #717073 !important;
+  text-decoration: none; }
+
+.k-grid-header th.k-with-icon .k-link:hover {
+  text-decoration: underline; }
+
+.k-grid-content {
+  color: black !important;
+  overflow-y: none !important;
+  overflow-x: none !important;
+  overflow: auto !important; }
+
+.k-grid-content td {
+  padding: 5px 0px 0px 1px !important; }
+
+.k-i-calendar {
+  background-image: url(http://akins2016/sites/pw/SiteAssets/d3/images/cefa1523380.png) !important;
+  background-position: -15px -273px !important; }
+
+.k-grid-filter {
+  left: 68px !important;
+  top: 15px !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  float: none !important; }
+
+.k-header.k-grid-filter:first-child {
+  left: 72px !important;
+  top: 15px !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  float: none !important; }
+
+.k-filter-menu {
+  box-shadow: 0px 15px 50px black !important; }
+
+.k-primary {
+  background-color: #c13f27 !important;
+  border-radius: 0px !important;
+  font-size: 15px !important; }
+
+.search-check-box-list {
+  border-top: 1px solid #dcdcdc;
+  margin-top: 32px;
+  padding-top: 32px; }
+
+.search-check-box-list h5 {
+  font-family: "Georgia";
+  font-size: 18px;
+  color: black; }
+
+.search-check-box-list .checkbox * {
+  cursor: pointer; }
+
+.search-check-box-list .checkbox {
+  padding-left: 20px;
+  margin-top: 1px;
+  font-family: "Arial";
+  color: black; }
+
+.search-check-box-list .checkbox-container .checkbox label {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  padding-left: 5px; }
+
+.search-check-box-list .checkbox-container label:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0;
+  margin-left: -22px;
+  margin-top: 2px;
+  border: 1px solid #555;
+  background-color: #fff;
+  -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+  -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+  transition: border 0.15s ease-in-out, color 0.15s ease-in-out; }
+
+.search-check-box-list .checkbox-container label:after {
+  display: inline-block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0;
+  top: 2px;
+  margin-left: -21px;
+  padding-left: 3px;
+  padding-top: 1px;
+  font-size: 11px;
+  color: #555555; }
+
+.search-check-box-list .checkbox input[type="checkbox"] {
+  opacity: 0;
+  z-index: 1;
+  width: 20px;
+  height: 20px; }
+
+.search-check-box-list .checkbox input[type="checkbox"]:checked + label::after {
+  font-family: "FontAwesome";
+  content: "\f00c"; }
+
+.search-check-box-list .checkbox.checkbox-inline {
+  margin-top: 0; }
+
+.search-check-box-list .checkbox-red input[type="checkbox"]:checked + label::after {
+  color: #fff;
+  background-color: #c13f28; }
+
+.search-check-box-list .checkbox-red input[type="checkbox"] + label::before {
+  border-color: #c13f28; }
+
+input[type="checkbox"].styled:checked + label:after {
+  font-family: 'FontAwesome';
+  content: "\f00c"; }
 
 /* SHAREPOINT OVERRIDES
 **************************/
@@ -1125,6 +1324,7 @@ body.paulweiss {
   background-color: #c13f28; }
 
 .ms-rtestate-field p, p.ms-rteElement-P {
-  line-height: 21px; }
+  line-height: 21px;
+  margin: 0px; }
 
 /*# sourceMappingURL=d3-theme-paulweiss.css.map */
