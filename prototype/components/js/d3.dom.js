@@ -50,7 +50,16 @@ $(document).ready(function() {
             $(this).children().first().attr('src', newsrc);
          }
     });
-
+    
+    $(D3SPCoreDOM.Settings.Photogrid + ' li').mouseenter(function() {
+     $('.photo-overlay').toggleFade();
+    });
+    
+     $(D3SPCoreDOM.Settings.Photogrid+ ' li').mouseleave(function() {
+        $('.photo-overlay').toggleFade();
+    });
+    
+    
  
     //Run on the office only page
     D3SPCoreDOM.UI.CraftClocks($(D3SPCoreDOM.Settings.ClockContainer));
