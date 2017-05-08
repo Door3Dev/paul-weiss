@@ -519,6 +519,63 @@ body.paulweiss{
                 }
             }
             
+            .photo-grid {
+                 columns: 4;
+                  -webkit-columns: 4;
+                  -moz-columns: 4; 
+                padding: 0px;
+                margin-bottom: 0px;
+                li {
+                       list-style: none;
+                    position: relative;
+                    width:230px;
+                    height:230px;
+                    margin-bottom:8px;
+                    
+                }
+                .photo-overlay {
+                    position: absolute;
+                    top:0px;
+                    left:0px;
+                       text-align: center;
+                    width:100%;
+                    height:100%;
+                    display: none;
+                    background-color: rgba(128, 37, 40, 0.8);
+                    a {
+                        color:white;
+                    }
+                    a:hover {
+                        text-decoration: none;
+                    }
+                    h5 {
+                        font-family: $font-1;
+                        font-size: $font-size-10;
+                        position: relative;
+                        text-decoration: none;
+                        top: 35%;
+                        color: white;
+                        padding:5px;
+                        text-transform:none;
+                    }
+                    h6 {
+                        font-family: $font-1;
+                        font-size:$font-size-4;
+                        position: relative;
+                         text-decoration: none;
+                        top: 30%;
+                        color: white;
+                        margin:0px;
+                        padding:0px;
+                     
+                    }
+                }
+                .women-photo {
+                    width:230px;
+                    height:230px;
+                }
+            }
+            
              .flex-list{
                   columns: 2;
                   -webkit-columns: 2;
@@ -593,8 +650,9 @@ body.paulweiss{
             }
             .jury-room {
                 border-bottom: 1px solid $gray-3;
-                margin-bottom: 32px;
+                margin-bottom: 16px;
                 padding-bottom: 10px;
+                  font-family: $font-1;
             }
             .jury-room h5 {
                  font-family: $font-1;
@@ -629,6 +687,7 @@ body.paulweiss{
                  color: $black; 
                 text-align: left;
                 padding-left:10px;
+                 font-family: $font-1;
             }
             
             .menu-side-item {
@@ -653,7 +712,7 @@ body.paulweiss{
                
             }
             .menu-side-item p {
-                
+                   font-family: $font-1;
             }
             .side-border {
                 border-right: 1px solid $gray-3;
@@ -880,13 +939,15 @@ body.paulweiss{
                     margin-top: 10px;
                     clear: both;
                     span {
-                        width:50%;
+                        width:40%;
+                         font-family: $font-1;
                     }
                 }
                 .field span:last-child{
                     font-weight: bold;
                        color: $black;
                     text-align: right;
+                    min-width: 150px;
                 }
             
         }
@@ -1203,7 +1264,7 @@ body.paulweiss{
             list-style: none;
             
             li{
-                margin-bottom: 20px;
+               
                 h6{
                     color: $red-2;
                     font-size: $font-size-5;
@@ -1485,6 +1546,28 @@ body.paulweiss{
         }
     }
     
+    /* UI NEW MODAL 
+    ************************************/
+    .content-modal {
+        margin-top:-21px;
+        width: 838px;
+        display: none;
+        position: absolute;
+        z-index: 999;
+        top: 189px;
+        padding: 0px 10px 10px;
+        min-height: 100px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        width: 100%;
+        .modal-content {
+            width:1192px;
+            height:794px;
+            overflow-y: scroll;
+            overflow-x: none;
+        }
+    }
+    
     /* UI-SEARCH
     ***********************************/
     .search-results{
@@ -1603,9 +1686,12 @@ body.paulweiss{
         font-weight: 300;
         font-size: $font-size-9;
         padding: 7px 20px;
-        
+        text-decoration: none;
+        color:white !important;
         &:hover{
             background-color: $red-1;
+            color:white;
+            text-decoration: underline;
         }
     }
 
@@ -1721,12 +1807,14 @@ body.paulweiss{
       vertical-align: middle;
       margin-right: -4px;
     } 
-
+   .modal-content-hidden {
+                display:none;
+            }
     .modal-dialog {
       display: inline-block;
       text-align: left;
       vertical-align: middle;
-        
+       
         .modal-content{
             border-radius: 1px;
             padding: 10px;
@@ -2002,7 +2090,8 @@ input[type="checkbox"].styled:checked + label:after {
 }
 
 .ms-vl-appimage {
-     background: url('/sites/pw/SiteAssets/d3/images/spcommon.png');
+    /*Update CSS URL PATH */
+     background: url('../images/spcommon.png');
      background-position-y : 15%;
 }
 .custom-backtotop-iconouter {
@@ -2033,13 +2122,15 @@ vertical-align: middle;
 .icon-top {
 width: 28px;
 height: 25px;
-background: url('/sites/pw/SiteAssets/d3/images/spcommon.png') no-repeat -97px -30px;
+    /*Update CSS URL PATH */
+background: url('../spcommon.png') no-repeat -97px -30px;
 }
 
 .icon-info-white {
 width: 18px;
 height: 16px;
-background: url('/sites/pw/SiteAssets/d3/images/spcommon.png') no-repeat -161px -178px;
+    /*Update CSS URL PATH */
+background: url('../images/spcommon.png') no-repeat -161px -178px;
 }
 .ms-cui-menu {
     z-index: 9999999 !important;

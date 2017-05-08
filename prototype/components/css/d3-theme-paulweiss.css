@@ -21,6 +21,8 @@ body.paulweiss {
     ***********************************/
   /* TABS
     ***********************************/
+  /* UI NEW MODAL 
+    ************************************/
   /* UI-SEARCH
     ***********************************/
   /* UI-NAVIGATION
@@ -352,6 +354,52 @@ body.paulweiss {
           padding-right: 20px; }
       body.paulweiss .d3-card.main-card .right .right-content {
         padding-left: 20px; }
+      body.paulweiss .d3-card.main-card .photo-grid {
+        columns: 4;
+        -webkit-columns: 4;
+        -moz-columns: 4;
+        padding: 0px;
+        margin-bottom: 0px; }
+        body.paulweiss .d3-card.main-card .photo-grid li {
+          list-style: none;
+          position: relative;
+          width: 230px;
+          height: 230px;
+          margin-bottom: 8px; }
+        body.paulweiss .d3-card.main-card .photo-grid .photo-overlay {
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          text-align: center;
+          width: 100%;
+          height: 100%;
+          display: none;
+          background-color: rgba(128, 37, 40, 0.8); }
+          body.paulweiss .d3-card.main-card .photo-grid .photo-overlay a {
+            color: white; }
+          body.paulweiss .d3-card.main-card .photo-grid .photo-overlay a:hover {
+            text-decoration: none; }
+          body.paulweiss .d3-card.main-card .photo-grid .photo-overlay h5 {
+            font-family: "Georgia";
+            font-size: 21px;
+            position: relative;
+            text-decoration: none;
+            top: 35%;
+            color: white;
+            padding: 5px;
+            text-transform: none; }
+          body.paulweiss .d3-card.main-card .photo-grid .photo-overlay h6 {
+            font-family: "Georgia";
+            font-size: 16px;
+            position: relative;
+            text-decoration: none;
+            top: 30%;
+            color: white;
+            margin: 0px;
+            padding: 0px; }
+        body.paulweiss .d3-card.main-card .photo-grid .women-photo {
+          width: 230px;
+          height: 230px; }
       body.paulweiss .d3-card.main-card .flex-list {
         columns: 2;
         -webkit-columns: 2;
@@ -411,8 +459,9 @@ body.paulweiss {
         font-family: "Georgia"; }
       body.paulweiss .d3-card.main-card .jury-room {
         border-bottom: 1px solid #dcdcdc;
-        margin-bottom: 32px;
-        padding-bottom: 10px; }
+        margin-bottom: 16px;
+        padding-bottom: 10px;
+        font-family: "Georgia"; }
       body.paulweiss .d3-card.main-card .jury-room h5 {
         font-family: "Georgia";
         font-size: 28px;
@@ -439,7 +488,8 @@ body.paulweiss {
         list-style: disc;
         color: black;
         text-align: left;
-        padding-left: 10px; }
+        padding-left: 10px;
+        font-family: "Georgia"; }
       body.paulweiss .d3-card.main-card .menu-side-item {
         color: black;
         border-bottom: 1px solid #dcdcdc;
@@ -457,6 +507,8 @@ body.paulweiss {
         text-transform: uppercase;
         font-weight: normal;
         padding-top: 24px; }
+      body.paulweiss .d3-card.main-card .menu-side-item p {
+        font-family: "Georgia"; }
       body.paulweiss .d3-card.main-card .side-border {
         border-right: 1px solid #dcdcdc;
         margin-bottom: 32px; }
@@ -611,11 +663,13 @@ body.paulweiss {
         margin-top: 10px;
         clear: both; }
         body.paulweiss .d3-card.side-card .field span {
-          width: 50%; }
+          width: 40%;
+          font-family: "Georgia"; }
       body.paulweiss .d3-card.side-card .field span:last-child {
         font-weight: bold;
         color: black;
-        text-align: right; }
+        text-align: right;
+        min-width: 150px; }
     body.paulweiss .d3-card .bottom {
       display: none; }
   body.paulweiss .carousel {
@@ -787,19 +841,17 @@ body.paulweiss {
   body.paulweiss .announcements ul, body.paulweiss .community-exchange ul, body.paulweiss .partner-activity ul {
     padding-left: 0;
     list-style: none; }
-    body.paulweiss .announcements ul li, body.paulweiss .community-exchange ul li, body.paulweiss .partner-activity ul li {
-      margin-bottom: 20px; }
-      body.paulweiss .announcements ul li h6, body.paulweiss .community-exchange ul li h6, body.paulweiss .partner-activity ul li h6 {
-        color: #802528;
-        font-size: 18px;
-        margin-bottom: 5px; }
-      body.paulweiss .announcements ul li .date, body.paulweiss .community-exchange ul li .date, body.paulweiss .partner-activity ul li .date {
-        font-size: 12px;
-        color: #717073;
-        text-transform: uppercase; }
-      body.paulweiss .announcements ul li p, body.paulweiss .community-exchange ul li p, body.paulweiss .partner-activity ul li p {
-        font-family: "Georgia";
-        color: #717073; }
+    body.paulweiss .announcements ul li h6, body.paulweiss .community-exchange ul li h6, body.paulweiss .partner-activity ul li h6 {
+      color: #802528;
+      font-size: 18px;
+      margin-bottom: 5px; }
+    body.paulweiss .announcements ul li .date, body.paulweiss .community-exchange ul li .date, body.paulweiss .partner-activity ul li .date {
+      font-size: 12px;
+      color: #717073;
+      text-transform: uppercase; }
+    body.paulweiss .announcements ul li p, body.paulweiss .community-exchange ul li p, body.paulweiss .partner-activity ul li p {
+      font-family: "Georgia";
+      color: #717073; }
   body.paulweiss .community-exchange .mart li {
     margin-bottom: 20px; }
     body.paulweiss .community-exchange .mart li h6 {
@@ -945,6 +997,23 @@ body.paulweiss {
         color: #333;
         margin: 0;
         border-bottom: 1px solid #999; }
+  body.paulweiss .content-modal {
+    margin-top: -21px;
+    width: 838px;
+    display: none;
+    position: absolute;
+    z-index: 999;
+    top: 189px;
+    padding: 0px 10px 10px;
+    min-height: 100px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 100%; }
+    body.paulweiss .content-modal .modal-content {
+      width: 1192px;
+      height: 794px;
+      overflow-y: scroll;
+      overflow-x: none; }
   body.paulweiss .search-results {
     padding: 15px 20px;
     margin-top: -21px;
@@ -989,9 +1058,13 @@ body.paulweiss {
     background-color: #c13f27;
     font-weight: 300;
     font-size: 13px;
-    padding: 7px 20px; }
+    padding: 7px 20px;
+    text-decoration: none;
+    color: white !important; }
     body.paulweiss .read-more-button:hover {
-      background-color: #c13f28; }
+      background-color: #c13f28;
+      color: white;
+      text-decoration: underline; }
   body.paulweiss .read-more-small-button {
     color: #802528;
     font-weight: 500; }
@@ -1048,6 +1121,9 @@ body.paulweiss {
   height: 100%;
   vertical-align: middle;
   margin-right: -4px; }
+
+.modal-content-hidden {
+  display: none; }
 
 .modal-dialog {
   display: inline-block;
@@ -1279,7 +1355,8 @@ input[type="checkbox"].styled:checked + label:after {
   display: none !important; }
 
 .ms-vl-appimage {
-  background: url("/sites/pw/SiteAssets/d3/images/spcommon.png");
+  /*Update CSS URL PATH */
+  background: url("../images/spcommon.png");
   background-position-y: 15%; }
 
 .custom-backtotop-iconouter {
@@ -1310,12 +1387,14 @@ input[type="checkbox"].styled:checked + label:after {
 .icon-top {
   width: 28px;
   height: 25px;
-  background: url("/sites/pw/SiteAssets/d3/images/spcommon.png") no-repeat -97px -30px; }
+  /*Update CSS URL PATH */
+  background: url("../spcommon.png") no-repeat -97px -30px; }
 
 .icon-info-white {
   width: 18px;
   height: 16px;
-  background: url("/sites/pw/SiteAssets/d3/images/spcommon.png") no-repeat -161px -178px; }
+  /*Update CSS URL PATH */
+  background: url("../images/spcommon.png") no-repeat -161px -178px; }
 
 .ms-cui-menu {
   z-index: 9999999 !important; }

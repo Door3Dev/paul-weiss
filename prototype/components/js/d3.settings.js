@@ -62,4 +62,8 @@ var Settings = function(name) {
      self.SpolitLightContentHtml = ".side-spotlight";
     self.ToolClass = ".tool";
     self.KendoGridPracticeGroupPeopleId = ".practice-group-people-grid";
+    self.Photogrid = ".photo-grid";
+    self.NewsModal = ".content-modal";
+    self.NewModalContentContainerId = '.modal-content';
+    self.NewsModalContentId = ".modal-content-hidden";
 };
