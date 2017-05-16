@@ -75,3 +75,37 @@ ClockData.push(a13);
 //var clock = Clock.fromJson(json);
 //var c = clock.city;
 
+
+
+//EXAMPLE
+//var json = dc.toJson();
+//var clock = Clock.fromJson(json);
+//var c = clock.city;
+var practiceGroupPolicyData= [];
+for (var i = 0; i < 5; i++) {
+	practiceGroupPolicyData.push({
+	    article: '<a href="">Family and Medical Leave of Absence</a>',
+	    source: 'Employee Hankbook '+i+'.10.10',
+	    location: 'DC'
+	    	});
+	practiceGroupPolicyData.push({
+	    article: '<a href="">Parental Leave</a>',
+	    source: 'Employee Handbook 3.'+i+'.10',
+	    location: 'NY'
+	   });
+	practiceGroupPolicyData.push({
+	    article: '<a href="">Parental Leave - Applies to Staff</a>',
+	    source: 'Employee Handbook '+i+'.10.10',
+	    location: 'NY'
+	});
+	practiceGroupPolicyData.push({
+	    article: '<a href="">Child Care Services</a>',
+	    source: 'Employee Handbook 3.10.'+i+'',
+	    location: 'NJ'
+	});
+}
+var localPracticeGroupPeopleDataSource = new kendo.data.DataSource({
+    data: practiceGroupPolicyData
+});
+
+ 

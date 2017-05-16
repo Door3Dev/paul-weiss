@@ -441,7 +441,9 @@ var d3UI = function(SharePointSiteURL, SharePointRestAPI, framework) {
          if(w.indexOf("resources") != -1){
                $('.resource').toggleClass('active');
         }
-        
+        var profileHeaderDom = $(D3SPCoreDOM.Settings.HeaderTopMenu).wrap('<p/>').parent().html();
+        $(D3SPCoreDOM.Settings.HeaderProfileClass).html(profileHeaderDom);
+
     }
     
   
@@ -450,4 +452,186 @@ var d3UI = function(SharePointSiteURL, SharePointRestAPI, framework) {
         $(".paulweiss .nav.navbar-nav li").removeClass("active");
         $(".paulweiss .nav.navbar-nav li:nth-child(" + index + ")").addClass("active");
     };
+	
+	self.GetAlertsForOffice = function () {
+        self.GetAlertListData(D3SPCoreDOM.Settings.API, D3SPCoreDOM.Settings.AlertListName, self.GetAlertsComplete);
+    };
+    
+    self.GetAlertListData = function (url, listname, complete, failure) {
+        $.ajax({
+            url: url + "/_api/web/lists/getbytitle('" + listname + "')/GetItems(query=@v1)?@v1={'ViewXml':'<View><Query></Query></View>'}",
+            //(" + id + ")"
+            method: "POST",
+            headers: {
+                "Accept": "application/json; odata=verbose",
+                "X-RequestDigest": $("#__REQUESTDIGEST").val()
+            },
+            success: function (data) {
+                // Returning the results
+                complete(data);
+            },
+            error: function (data) {
+                failure(data);
+            }
+        });
+    };
+
+    function IsForOffice(AlertLocation) {
+        if (D3SPCoreDOM.WeatherLocation !== null || AlertLocation.Label.length === 0) {
+            if (AlertLocation.Label.indexOf(D3SPCoreDOM.WeatherLocation) !== -1) {
+                return true;
+            }
+            return false;
+        }
+        return false;
+    }
+
+    function IsForYou(userId) {
+        //_api/web/getuserbyid(20)
+        var returnValue;
+        jQuery.ajax({
+            url: D3SPCoreDOM.Settings.API + "/_api/Web/GetUserById(" + userId + ")",
+            type: "GET",
+            headers: {
+                "Accept": "application/json;odata=verbose"
+            },
+            success: function (data) {
+                var userInfo = data.d;
+                //this message is for this person name
+                if (userInfo.Title === D3SPCoreDOM.Settings.SPUserName) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+        });
+    }
+    
+	self.MoveToNextAlert = function(element)
+	{
+		var lastDom = $(D3SPCoreDOM.Settings.alertContentClass).find('.' + D3SPCoreDOM.Settings.ActiveAlertClass).removeClass(D3SPCoreDOM.Settings.ActiveAlertClass);
+		
+		if($(lastDom).next().length === 0)
+		{
+		 	$(lastDom).parent().children().first().addClass(D3SPCoreDOM.Settings.ActiveAlertClass);
+		 	var currentColor = $(element).parent().attr('class').split(' ')[1];
+			var alertColor = $(lastDom).parent().children().first().attr('class').split(' ')[0];
+			$(D3SPCoreDOM.Settings.alertClass).removeClass(currentColor).addClass(alertColor);
+
+		}
+		else
+		{
+		 	$(lastDom).next().addClass(D3SPCoreDOM.Settings.ActiveAlertClass);
+		 	var currentColor = $(element).parent().attr('class').split(' ')[1];
+			var alertColor = $(lastDom).next().attr('class').split(' ')[0];
+			$(D3SPCoreDOM.Settings.alertClass).removeClass(currentColor).addClass(alertColor);
+		}
+		
+		
+	}
+	
+    self.DrawAlertUI = function (index, alertDom, alertTitle, alertMessage, alertColor, alertPerson) {
+
+        var clone = $(alertDom).clone();
+        $(clone).addClass(alertColor + (index === 0 ? " "+D3SPCoreDOM.Settings.ActiveAlertClass :"")).html("{0} - {1}".format((alertPerson !== undefined) ? alertPerson : alertTitle, alertMessage));
+        $(D3SPCoreDOM.Settings.alertContentClass).append(clone);
+    }
+
+    self.GetAlertsComplete = function (data) {
+        var sortedDateAlerts = [];
+        if (data.d.results.length > 0) {
+            $(D3SPCoreDOM.Settings.alertClass).show();
+            sortedDateAlerts = data.d.results;
+            var alertDom = document.createElement("DIV");
+            var alertsCount = sortedDateAlerts.length;
+            var date = moment();
+            if(alertsCount > 1) {
+            	$(D3SPCoreDOM.Settings.moreAlertId).show(); 
+            }else{
+            	
+            	$(D3SPCoreDOM.Settings.moreAlertId).hide(); 
+            }
+            $.each(sortedDateAlerts, function (index, alert) {
+             
+                //PER SHAREPOINT UI VARS
+                var displayOveride = alert.qu5h;
+                var officeLocation = alert.Location;
+                var startDate = new Date(alert.OData__x0078_jz2);
+                var endDate = new Date(alert.eazx);
+                var alertColor = alert.AlertColorType;
+                var userID = alert.OData__x006e_bl7Id;
+                var alertMessage = alert.vj3r;
+                var alertTitle = alert.Title;
+                //if the alert is for the person
+                if (userID !== null) {
+					if(IsForYou(userID))
+					{
+					 	D3SPCoreDOM.UI.DrawAlertUI(index, alertDom, alertTitle, alertMessage, alertColor, D3SPCoreDOM.Settings.SPUserName);
+					}
+				//if the alert not for a person then is in the date range or a overide or for a office
+                } else {
+	                if (date.isBetween(startDate, endDate) || ( displayOveride === "yes")) 
+	                {
+	                    D3SPCoreDOM.UI.DrawAlertUI(index, alertDom, alertTitle, alertMessage, alertColor);
+	                    
+					//if the alert is for a office
+	                } else if (IsForOffice(officeLocation)) 
+	                {
+	                    D3SPCoreDOM.UI.DrawAlertUI(index, alertDom, alertTitle, alertMessage, alertColor);
+	                }
+                
+            });
+        }
+    };
+	
+	
+    function createListItem(siteUrl, listName, itemProperties, success, failure) {
+
+        var itemType = getItemTypeForListName(listName);
+        itemProperties["__metadata"] = {
+            "type": itemType
+        };
+
+        $.ajax({
+            url: siteUrl + "/_api/web/lists/getbytitle('" + listName + "')/items",
+            type: "POST",
+            contentType: "application/json;odata=verbose",
+            data: JSON.stringify(itemProperties),
+            headers: {
+                "Accept": "application/json;odata=verbose",
+                "X-RequestDigest": $("#__REQUESTDIGEST").val()
+            },
+            success: function (data) {
+                success(data.d);
+            },
+            error: function (data) {
+                failure(data);
+            }
+        });
+    }
+
+    // Get List Item Type metadata
+    function getItemTypeForListName(name) {
+        return "SP.Data." + name.charAt(0).toUpperCase() + name.split(" ").join("").slice(1) + "ListItem";
+    }
+    
+    self.SubmitFeedbackForm = function (feedbackTxt, userNameTxt) {
+        //specify item properties from Sharepoint DB
+        var itemProperties = {
+            'Title' : D3SPCoreDOM.Settings.feedbackDefaultTitle,
+            'c0ci': userNameTxt,
+            'w9pt': new Date(),
+            'zd7t' :feedbackTxt 
+        };
+        //create item
+        createListItem(_spPageContextInfo.webAbsoluteUrl, D3SPCoreDOM.Settings.FormName, itemProperties,
+            function (entity) {
+                console.log('New Post ' + entity.Title + ' has been created');
+            },
+            function (error) {
+                console.log(JSON.stringify(error));
+            }
+        );
+    }
+
 };
