@@ -360,7 +360,7 @@ var d3UI = function(SharePointSiteURL, SharePointRestAPI, framework) {
 					complete(data);
 				},
 				error: function (data) {
-					failure(data);
+					//failure(data);
 				}
 				});
 			
@@ -399,26 +399,22 @@ var d3UI = function(SharePointSiteURL, SharePointRestAPI, framework) {
     
     
       self.NewsModal = function(element) {
-            var input = $(D3SPCoreDOM.Settings.searchBox),
-                results = $(D3SPCoreDOM.Settings.searchResultsBox),
-                background = $(D3SPCoreDOM.Settings.backgroundOverlay);
-         if(results.hasClass('show')){
-                //input.removeClass("active");
-                results.removeClass('show');
-                background.removeClass('show');
-            } else{
-                //input.addClass("active");
-                results.slideDown({duration:250})
-                background.addClass('show');
-            }
+          var background = $(D3SPCoreDOM.Settings.backgroundOverlay);
+          var modal =  $(D3SPCoreDOM.Settings.NewsModal);
+          var modalContent = $(element).next();
+          if($(modalContent).hasClass("modal-content-hidden")){
+              var content = $(modalContent).html();
+              $(D3SPCoreDOM.Settings.NewsModal).find(D3SPCoreDOM.Settings.NewModalContentContainerId).html(content);
+               background.toggleClass('show');
+              modal.toggleClass('show');
+          }
     };
 
-    self.CloseVideoModal = function() {
-        self.VideoPlayerOpen = false;
-        //order is important
-        $(D3SPCoreDOM.Settings.modalBgdrop).removeAttr('style');
-        $(D3SPCoreDOM.Settings.modalBgdrop).hide();
-        $(D3SPCoreDOM.Settings.VideoModalPlayer).modal('toggle');
+    self.CloseNewsModal = function() {
+      var background = $(D3SPCoreDOM.Settings.backgroundOverlay);
+          var modal =  $(D3SPCoreDOM.Settings.NewsModal);
+         background.toggleClass('show');
+              modal.toggleClass('show');
 
     };
     
