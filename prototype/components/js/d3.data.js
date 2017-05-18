@@ -74,61 +74,38 @@ ClockData.push(a13);
 //var json = dc.toJson();
 //var clock = Clock.fromJson(json);
 //var c = clock.city;
-var practiceGroupPeopleData = [];
-for (var i = 0; i < 100; i++) {
-	practiceGroupPeopleData .push({
-	    name: '<img src="/sites/bbk/SiteAssets/d3/images/sharepoint_user_icon.png" class="sp-user-profile" /> <a href="#">Alex Archer</a>',
-	    title: 'Partner',
-	    office: 'San Diego',
-	    practice: 'Public Finance',
-	    officeTel: '619) 463-2091',
-	    officeTelExt: '12124',
-	    mobile: '619) 462-2039',
-	    barNo: '483920',
-	    email: 'alex.archer@bbklaw.com',
-	    secretary: '<a href="#">Abbie Blauser</a>',
-	    secretaryExt: '12384'
+
+
+
+//EXAMPLE
+//var json = dc.toJson();
+//var clock = Clock.fromJson(json);
+//var c = clock.city;
+var practiceGroupPolicyData= [];
+for (var i = 0; i < 5; i++) {
+	practiceGroupPolicyData.push({
+	    article: '<a href="">Family and Medical Leave of Absence</a>',
+	    source: 'Employee Hankbook '+i+'.10.10',
+	    location: 'DC'
+	    	});
+	practiceGroupPolicyData.push({
+	    article: '<a href="">Parental Leave</a>',
+	    source: 'Employee Handbook 3.'+i+'.10',
+	    location: 'NY'
+	   });
+	practiceGroupPolicyData.push({
+	    article: '<a href="">Parental Leave - Applies to Staff</a>',
+	    source: 'Employee Handbook '+i+'.10.10',
+	    location: 'NY'
 	});
-	practiceGroupPeopleData .push({
-	    name: '<img src="/sites/bbk/SiteAssets/d3/images/sharepoint_user_icon.png" class="sp-user-profile" /> <a href="#">Christopher Bolton</a>',
-	    title: 'Associate',
-	    office: 'Los Angeles',
-	    practice: 'Business',
-	    officeTel: '728) 923-2342',
-	    officeTelExt: '23423',
-	    mobile: '619) 389-0923',
-	    barNo: '2345424',
-	    email: 'chris.bolton@bbklaw.com',
-	    secretary: '<a href="#">Holly Webb</a>',
-	    secretaryExt: '51852'
-	});
-	practiceGroupPeopleData .push({
-	    name: '<img src="/sites/bbk/SiteAssets/d3/images/sharepoint_user_icon.png" class="sp-user-profile" /> <a href="#">Bill Fulford Christopher</a>',
-	    title: 'Partner',
-	    office: 'Riverside',
-	    practice: 'Labor & Employment',
-	    officeTel: '951) 389-0293',
-	    officeTelExt: '23452',
-	    mobile: '212) 928-2029',
-	    barNo: '54353',
-	    email: 'bill.fulfor@bbklaw.com',
-	    secretary: '<a href="#">Linda Chu</a>',
-	    secretaryExt: '24242'
-	});
-	practiceGroupPeopleData .push({
-	    name: '<img src="/sites/bbk/SiteAssets/d3/images/sharepoint_user_icon.png" class="sp-user-profile" /> <a href="#">James Griffin</a>',
-	    title: 'partner',
-	    office: 'Sacramento',
-	    practice: 'Municipal Law',
-	    officeTel: '982) 923-0232',
-	    officeTelExt: '2422',
-	    mobile: '917) 928-0232',
-	    barNo: '53532',
-	    email: 'james.griffin@bbklaw.com',
-	    secretary: '<a href="#">Dan Light</a>',
-	    secretaryExt: '2342'
+	practiceGroupPolicyData.push({
+	    article: '<a href="">Child Care Services</a>',
+	    source: 'Employee Handbook 3.10.'+i+'',
+	    location: 'NJ'
 	});
 }
 var localPracticeGroupPeopleDataSource = new kendo.data.DataSource({
-    data: practiceGroupPeopleData 
+    data: practiceGroupPolicyData
 });
+
+ 

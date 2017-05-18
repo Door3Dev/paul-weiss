@@ -9,8 +9,10 @@
                 "sourceComments": false,
                 "outputStyle": "nested"
             },
-            "linting.collapsed": false,
-            "debug.showErrorsInStatusBar": true
+            "linting.collapsed": true,
+            "debug.showErrorsInStatusBar": true,
+            "livedev.multibrowser": true,
+            "useTabChar": true
         }
     }
 }
